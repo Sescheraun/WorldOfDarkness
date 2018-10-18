@@ -53,6 +53,8 @@ public class CritterDAO {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Critter> query = builder.createQuery(Critter.class);
         Root<Critter> root = query.from(Critter.class);
+
+
         Expression<Boolean> isDeleted = root.get("isDeleted");
         query.select(root).where(builder.isFalse(isDeleted));
 

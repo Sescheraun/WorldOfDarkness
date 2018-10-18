@@ -6,23 +6,23 @@
 - [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
 - [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used.  Not sure I really understan this.
-- [ ] Weekly journal entry  - kinda forgot this at all.
+- [ ] List technologies, versions and how they will be used.  Not sure I really understand this.
+- [x] Weekly journal entry  - kinda forgot this at all.
 - [ ] Write project plan  - can I really check this off while I'm doing it?
 - [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
 - [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
 - [x] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
-- [ ] Create user dao unit tests
+- [x] Create the database and user table
+- [x] Create the user entity class and annotate for hibernate
+- [x] Create user dao
+- [x] Create the test database
+- [x] Create user dao unit tests
 - [ ] Weekly journal entry
-- [ ] Set up logging
+- [x] Set up logging
 - [ ] Create class uml diagram
-- [ ] Prepare for Week 5 peer design/code review
+- [x] Prepare for Week 5 peer design/code review
 
 
 ### Week 5
