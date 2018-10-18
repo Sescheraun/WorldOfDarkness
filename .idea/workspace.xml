@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CurrentERD.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDB.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +33,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="167" />
+    <option name="myElementSize" value="330" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -89,10 +90,11 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.29" value="1" />
@@ -103,14 +105,15 @@
           <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.60" value="2" />
+          <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.67" value="1" />
-          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.69" value="2" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,14 +121,14 @@
           <entry key="DATABASE/6b4a9013-02dd-42ab-92d4-f4b101ab2803" value="1" />
           <entry key="class" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="77" />
+          <entry key="java" value="78" />
           <entry key="jsp" value="2" />
           <entry key="log" value="30" />
           <entry key="md" value="6" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="4" />
           <entry key="properties" value="10" />
-          <entry key="sql" value="16" />
+          <entry key="sql" value="17" />
           <entry key="subCritter" value="1" />
           <entry key="txt" value="6" />
           <entry key="user" value="1" />
@@ -137,12 +140,12 @@
           <entry key="CLASS" value="4" />
           <entry key="Database Element" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="78" />
           <entry key="JSP" value="2" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="Properties" value="10" />
-          <entry key="SQL" value="10" />
+          <entry key="SQL" value="11" />
           <entry key="Scratch" value="6" />
           <entry key="UML" value="2" />
           <entry key="XML" value="13" />
@@ -152,7 +155,7 @@
         <counts>
           <entry key="dummy" value="6" />
           <entry key="gitignore" value="15" />
-          <entry key="java" value="7044" />
+          <entry key="java" value="7097" />
           <entry key="log" value="1" />
           <entry key="md" value="2779" />
           <entry key="properties" value="144" />
@@ -163,7 +166,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7044" />
+          <entry key="JAVA" value="7097" />
           <entry key="Markdown" value="2779" />
           <entry key="PLAIN_TEXT" value="80" />
           <entry key="Properties" value="144" />
@@ -183,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="43" />
+            <state relative-caret-position="792">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,11 +195,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="1638">
+              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,7 +211,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -221,11 +224,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-954">
-              <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="18">
+              <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -254,8 +278,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="55" selection-end-column="41" />
+            <state relative-caret-position="828">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="55" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -303,7 +327,6 @@
         <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SessionFactorProvider.java" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/timeLog.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -322,7 +345,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
         <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/generator/Critter.java" />
@@ -331,6 +353,8 @@
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
       </list>
     </option>
   </component>
@@ -374,10 +398,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="59" />
-    <option name="y" value="25" />
-    <option name="width" value="1861" />
-    <option name="height" value="1055" />
+    <option name="x" value="544" />
+    <option name="y" value="138" />
+    <option name="width" value="1851" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -402,7 +426,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -413,11 +436,6 @@
             <path>
               <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,59 +443,6 @@
               <item name="indieproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="data_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
@@ -491,14 +456,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
@@ -514,118 +471,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-              <item name="persistance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-              <item name="persistance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="sescheraun" type="462c0819:PsiDirectoryNode" />
-              <item name="WorldOfFutureDarkness" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -633,7 +486,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539032755646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539877319886" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -649,22 +502,22 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="sescheraun.WorldOfFutureDarkness.persistance" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="sescheraun.WorldOfFutureDarkness.persistance" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/data_files" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/Screen_Design" />
-      <recent name="$PROJECT_DIR$/Screen_Design/" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Screen Design" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Screen Design" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sescheraun.WorldOfFutureDarkness.persistance" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data_files" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/Screen_Design" />
+      <recent name="$PROJECT_DIR$/Screen_Design/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -804,23 +657,14 @@
       <workItem from="1538934353399" duration="8530000" />
       <workItem from="1538953892322" duration="1930000" />
       <workItem from="1539014801288" duration="2701000" />
-      <workItem from="1539027178267" duration="2981000" />
+      <workItem from="1539027178267" duration="3847000" />
+      <workItem from="1539372628130" duration="1198000" />
+      <workItem from="1539551045980" duration="10000" />
+      <workItem from="1539875720944" duration="1546000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SubCritterDAOTest_insertSuccess - 2018.10.07 at 18h 31m 38s.xml">
-      <configuration name="SubCritterDAOTest.insertSuccess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SubCritterDAOTest - 2018.10.07 at 18h 32m 02s.xml">
-      <configuration name="SubCritterDAOTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CritterDAOTest_createCritterWithSubCritter - 2018.10.08 at 11h 20m 55s.xml">
-      <configuration name="CritterDAOTest.createCritterWithSubCritter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="[engine_junit-jupiter]_[class_sescheraun_WorldOfFutureDarkness_persistance_CritterDAOTest] - 2018.10.08 at 11h 31m 22s.xml">
-      <configuration name="[engine:junit-jupiter]/[class:sescheraun.WorldOfFutureDarkness.persistance.CritterDAOTest]" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SubCritterDAOTest_insertSuccess - 2018.10.08 at 14h 48m 13s.xml">
       <configuration name="SubCritterDAOTest.insertSuccess" configurationId="JUnit" />
     </history-entry>
@@ -839,9 +683,21 @@
     <history-entry file="UserDAOTest - 2018.10.08 at 15h 57m 56s.xml">
       <configuration name="UserDAOTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SubCritterDAOTest_getSubCritterBy - 2018.10.08 at 16h 03m 59s.xml">
+      <configuration name="SubCritterDAOTest.getSubCritterBy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SubCritterDAOTest_getSubCritterBy - 2018.10.08 at 16h 04m 26s.xml">
+      <configuration name="SubCritterDAOTest.getSubCritterBy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SubCritterDAOTest_getSubCritterBy - 2018.10.08 at 16h 05m 01s.xml">
+      <configuration name="SubCritterDAOTest.getSubCritterBy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SubCritterDAOTest - 2018.10.08 at 16h 05m 24s.xml">
+      <configuration name="SubCritterDAOTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113656000" />
+    <option name="totallyTimeSpent" value="117276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,7 +712,7 @@
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945945" weight="0.30082646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.30082646" />
       <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.28099173" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -866,11 +722,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32864866" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.3827027" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" visible="true" weight="0.3827027" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002755" side_tool="true" weight="0.3827027" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3294979" />
@@ -975,13 +831,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/hibernate.log" />
-    <entry file="das://6b4a9013-02dd-42ab-92d4-f4b101ab2803/schema/WorldOfDarknessTest/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6b4a9013-02dd-42ab-92d4-f4b101ab2803/schema/WorldOfDarknessTest/table/user" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/SessionFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -990,13 +840,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181003 15:35.log" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="110" selection-start-line="110" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/internal/SessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1225,13 +1068,6 @@
     <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="42" selection-end-line="51" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0-sources.jar!/org/junit/jupiter/engine/execution/ThrowableCollector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1274,6 +1110,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/generator/SubCritter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3150">
@@ -1291,66 +1167,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="828">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="55" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-954">
-          <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+        <state relative-caret-position="18">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="43" />
+        <state relative-caret-position="84">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/CritterDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="422">
+          <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
         </state>
       </provider>
     </entry>
