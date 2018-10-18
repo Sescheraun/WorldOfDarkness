@@ -1,8 +1,8 @@
-package sescheraun.WorldOfFutureDarkness.persistance;
+package sescheraun.worldoffuturedarkness.persistance;
 
 
-import sescheraun.WorldOfFutureDarkness.generator.User;
-import sescheraun.WorldOfFutureDarkness.test.util.Database;
+import sescheraun.worldoffuturedarkness.generator.User;
+import sescheraun.worldoffuturedarkness.test.util.Database;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

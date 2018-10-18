@@ -1,10 +1,12 @@
-package sescheraun.WorldOfFutureDarkness.persistance;
+package sescheraun.worldoffuturedarkness.persistance;
 
 import sescheraun.WorldOfFutureDarkness.generator.*;
-import sescheraun.WorldOfFutureDarkness.test.util.Database;
+import sescheraun.worldoffuturedarkness.test.util.Database;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sescheraun.worldoffuturedarkness.generator.Critter;
+import sescheraun.worldoffuturedarkness.generator.SubCritter;
 
 import java.util.List;
 

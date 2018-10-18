@@ -1,4 +1,4 @@
-package sescheraun.WorldOfFutureDarkness.persistance;
+package sescheraun.worldoffuturedarkness.persistance;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

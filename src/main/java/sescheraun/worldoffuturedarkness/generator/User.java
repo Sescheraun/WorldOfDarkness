@@ -1,4 +1,4 @@
-package sescheraun.WorldOfFutureDarkness.generator;
+package sescheraun.worldoffuturedarkness.generator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

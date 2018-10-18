@@ -1,4 +1,4 @@
-package sescheraun.WorldOfFutureDarkness.generator;
+package sescheraun.worldoffuturedarkness.generator;
 
 
 import javax.persistence.Entity;

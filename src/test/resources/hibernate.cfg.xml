@@ -16,9 +16,9 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
-        <mapping class="sescheraun.WorldOfFutureDarkness.generator.User"/>
-        <mapping class="sescheraun.WorldOfFutureDarkness.generator.Critter"/>
-        <mapping class="sescheraun.WorldOfFutureDarkness.generator.SubCritter"/>
+        <mapping class="sescheraun.worldoffuturedarkness.generator.User"/>
+        <mapping class="sescheraun.worldoffuturedarkness.generator.Critter"/>
+        <mapping class="sescheraun.worldoffuturedarkness.generator.SubCritter"/>
 
     </session-factory>
 

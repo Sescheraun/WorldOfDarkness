@@ -1,4 +1,4 @@
-package sescheraun.WorldOfFutureDarkness.persistance;
+package sescheraun.worldoffuturedarkness.persistance;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,6 +9,7 @@ import org.hibernate.Transaction;
 import javax.persistence.criteria.*;
 import java.util.List;
 import sescheraun.WorldOfFutureDarkness.generator.*;
+import sescheraun.worldoffuturedarkness.generator.Critter;
 
 public class CritterDAO {
     private final Logger logger = LogManager.getLogger(this.getClass());
