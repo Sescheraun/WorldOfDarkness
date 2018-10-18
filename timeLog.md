@@ -19,5 +19,6 @@
 | | is when I discovered that my SQL statements didn't work for my large sample data | | |
 | 10.11.2018 | Added a method to add sample data programatically.  This is called in my @beforeEach | 2 hours | This will form the basis of the method to add things under the admin. |
 | 10.12.2018 | blew the dust off my AWS account from ADV PHP, sent paula the info and did most of the the configuration. | 5 hours | while helping in the lab |
-
+| 10.15.2018 | Everything looks right, but its just not working.  Got help from Paula and a few classmates, finally got it running late in the evening. | 10 hours | Silly mistake, remember to chect the notes and the videos. |
+| 10.17.2018 | Caught up my logs and started to add the generic DAO | PENDING | Will also add the security this weekend. |
 
