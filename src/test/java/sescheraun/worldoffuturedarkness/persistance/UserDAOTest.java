@@ -54,8 +54,16 @@ class UserDAOTest {
         List<User> users = (List<User>)genericDAO.getAll();
         assertEquals(4, users.size());
         User user = (User)genericDAO.getByID(1);
-        logger.debug(users.get(0));
         assertEquals(user, users.get(0));
+    }
+
+    /**
+     * Get deleted users.
+     */
+    @Test
+    void getDeletedUsers(){
+        List<User> users = (List<User>)genericDAO.getDeleted();
+        assertEquals(1, users.size());
     }
 
     /**

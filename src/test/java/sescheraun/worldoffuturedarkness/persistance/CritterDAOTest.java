@@ -56,6 +56,15 @@ public class CritterDAOTest {
     }
 
     /**
+     * Get all critters.
+     */
+    @Test
+    void getDeletedCritters(){
+        List<Critter> critters = (List<Critter>)genericDAO.getDeleted();
+        assertEquals(0, critters.size());
+    }
+
+    /**
      * Gets critter by a specific category and value.
      */
     @Test

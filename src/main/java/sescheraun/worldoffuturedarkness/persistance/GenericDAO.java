@@ -103,4 +103,26 @@ public class GenericDAO<T> {
 
         return entities;
     }
+
+    /**
+     * Gets a list of entities.
+     *
+     * @return the list
+     */
+    public List<T> getDeleted(){
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+
+        Root<T> root = query.from(type);
+
+        Expression<Boolean> isDeleted = root.get("isDeleted");
+        query.select(root).where(builder.isTrue(isDeleted));
+
+        List<T> entities = session.createQuery(query).getResultList();
+        session.close();
+
+        return entities;
+    }
 }

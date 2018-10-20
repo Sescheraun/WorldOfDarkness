@@ -69,6 +69,16 @@ public class SubCritterDAOTest {
     }
 
     /**
+     * Get all subCritters.
+     */
+    @Test
+    void getDeletedSubCritters(){
+        List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getDeleted();
+        assertEquals(0, subCritters.size());
+
+    }
+
+    /**
      * Gets critter by a specific category and value.
      */
     @Test

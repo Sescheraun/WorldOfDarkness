@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" line="123" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" line="133" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/CritterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/CritterDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" afterDir="false" />
@@ -158,7 +157,7 @@
         <counts>
           <entry key="dummy" value="6" />
           <entry key="gitignore" value="15" />
-          <entry key="java" value="9224" />
+          <entry key="java" value="9330" />
           <entry key="log" value="1" />
           <entry key="md" value="2861" />
           <entry key="properties" value="144" />
@@ -169,7 +168,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9224" />
+          <entry key="JAVA" value="9330" />
           <entry key="Markdown" value="2861" />
           <entry key="PLAIN_TEXT" value="80" />
           <entry key="Properties" value="144" />
@@ -189,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="70" selection-start-line="70" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="317">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,8 +209,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="65" column="81" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
+            <state relative-caret-position="203">
+              <caret line="63" column="19" lean-forward="true" selection-start-line="59" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,11 +236,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="267">
+              <caret line="114" column="63" lean-forward="true" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,11 +281,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="59" column="7" lean-forward="true" selection-start-line="57" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="387">
+              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -365,10 +364,10 @@
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAO.java" />
         <option value="$PROJECT_DIR$/timeLog.md" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/CritterDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java" />
       </list>
     </option>
   </component>
@@ -535,7 +534,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/student/IdeaProjects/indieproject/src/main/java/sescheraun/worldoffuturedarkness/persistance/CritterDAO.java&#10;Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540069897691" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540072509101" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -581,8 +580,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDAOTest.getUserBy">
-    <configuration name="CritterDAOTest.getCritterBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CritterDAOTest.getDeletedCritters">
+    <configuration name="CritterDAOTest.getDeletedCritters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="indieproject" />
       <extension name="coverage">
         <pattern>
@@ -592,23 +591,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sescheraun.worldoffuturedarkness.persistance" />
       <option name="MAIN_CLASS_NAME" value="sescheraun.worldoffuturedarkness.persistance.CritterDAOTest" />
-      <option name="METHOD_NAME" value="getCritterBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubCritterDAOTest.getAllCritters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="indieproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sescheraun.worldoffuturedarkness.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sescheraun.worldoffuturedarkness.persistance" />
-      <option name="MAIN_CLASS_NAME" value="sescheraun.worldoffuturedarkness.persistance.SubCritterDAOTest" />
-      <option name="METHOD_NAME" value="getAllCritters" />
+      <option name="METHOD_NAME" value="getDeletedCritters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -630,7 +613,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAOTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubCritterDAOTest.getDeletedSubCritters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="indieproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sescheraun.worldoffuturedarkness.persistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sescheraun.worldoffuturedarkness.persistance" />
+      <option name="MAIN_CLASS_NAME" value="sescheraun.worldoffuturedarkness.persistance.SubCritterDAOTest" />
+      <option name="METHOD_NAME" value="getDeletedSubCritters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.getDeletedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="indieproject" />
       <extension name="coverage">
         <pattern>
@@ -640,7 +639,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sescheraun.worldoffuturedarkness.persistance" />
       <option name="MAIN_CLASS_NAME" value="sescheraun.worldoffuturedarkness.persistance.UserDAOTest" />
-      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="METHOD_NAME" value="getDeletedUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -663,19 +662,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SubCritterDAOTest.getAllCritters" />
-      <item itemvalue="JUnit.UserDAOTest.getAllUsers" />
-      <item itemvalue="JUnit.CritterDAOTest.getCritterBy" />
       <item itemvalue="JUnit.SubCritterDAOTest.getCritterBy" />
       <item itemvalue="JUnit.UserDAOTest.getUserBy" />
+      <item itemvalue="JUnit.UserDAOTest.getDeletedUsers" />
+      <item itemvalue="JUnit.SubCritterDAOTest.getDeletedSubCritters" />
+      <item itemvalue="JUnit.CritterDAOTest.getDeletedCritters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CritterDAOTest.getDeletedCritters" />
+        <item itemvalue="JUnit.SubCritterDAOTest.getDeletedSubCritters" />
+        <item itemvalue="JUnit.UserDAOTest.getDeletedUsers" />
         <item itemvalue="JUnit.UserDAOTest.getUserBy" />
         <item itemvalue="JUnit.SubCritterDAOTest.getCritterBy" />
-        <item itemvalue="JUnit.CritterDAOTest.getCritterBy" />
-        <item itemvalue="JUnit.UserDAOTest.getAllUsers" />
-        <item itemvalue="JUnit.SubCritterDAOTest.getAllCritters" />
       </list>
     </recent_temporary>
   </component>
@@ -718,20 +717,11 @@
       <workItem from="1539875720944" duration="7068000" />
       <workItem from="1539980945999" duration="608000" />
       <workItem from="1540050019572" duration="5315000" />
-      <workItem from="1540061494737" duration="8072000" />
+      <workItem from="1540061494737" duration="10681000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CritterDAOTest_getAllCritters - 2018.10.20 at 14h 01m 30s.xml">
-      <configuration name="CritterDAOTest.getAllCritters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SubCritterDAOTest_getAllCritters - 2018.10.20 at 14h 05m 53s.xml">
-      <configuration name="SubCritterDAOTest.getAllCritters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_getAllUsers - 2018.10.20 at 14h 23m 41s.xml">
-      <configuration name="UserDAOTest.getAllUsers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDAOTest_getAllUsers - 2018.10.20 at 14h 24m 20s.xml">
       <configuration name="UserDAOTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
@@ -753,9 +743,18 @@
     <history-entry file="UserDAOTest_getUserBy - 2018.10.20 at 15h 56m 46s.xml">
       <configuration name="UserDAOTest.getUserBy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDAOTest_getUserBy - 2018.10.20 at 16h 11m 56s.xml">
+      <configuration name="UserDAOTest.getUserBy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_getDeletedUsers - 2018.10.20 at 16h 48m 39s.xml">
+      <configuration name="UserDAOTest.getDeletedUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SubCritterDAOTest_getDeletedSubCritters - 2018.10.20 at 16h 52m 08s.xml">
+      <configuration name="SubCritterDAOTest.getDeletedSubCritters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136793000" />
+    <option name="totallyTimeSpent" value="139402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -770,7 +769,7 @@
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.1184573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.1184573" />
       <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.28099173" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -780,13 +779,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38702703" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38702703" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.3827027" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002755" side_tool="true" weight="0.3827027" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32864866" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32864866" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -1174,26 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="57" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="70" selection-start-line="70" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/SessionFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -1208,20 +1187,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="65" column="81" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
+        <state relative-caret-position="267">
+          <caret line="114" column="63" lean-forward="true" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="203">
+          <caret line="63" column="19" lean-forward="true" selection-start-line="59" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/SubCritterDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/CritterDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
