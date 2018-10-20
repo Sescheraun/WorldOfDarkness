@@ -2,6 +2,7 @@ package sescheraun.worldoffuturedarkness.persistance;
 
 import org.apache.logging.log4j.*;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import sescheraun.worldoffuturedarkness.generator.*;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -36,6 +37,26 @@ public class GenericDAO<T> {
      * @return the session
      */
     private Session getSession() { return SessionFactoryProvider.getSessionFactory().openSession();  }
+
+/* ********************************************************************************************************************/
+/*                                                   Create Methods                                                   */
+/* ********************************************************************************************************************/
+
+    /**
+     * Create entity int.
+     *
+     * @param critter the critter
+     * @return the int
+     */
+    public int create(T entity){
+        int id = 0;
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(entity);
+        transaction.commit();
+        session.close();
+        return id;
+    }
 
 /* ********************************************************************************************************************/
 /*                                                    Read Methods                                                    */

@@ -83,13 +83,13 @@ public class CritterDAOTest {
         newCritter.setImplemented(false);
         newCritter.setIsDeleted(false);
 
-        int id = dao.createCritter(newCritter);
+        int id = genericDAO.create(newCritter);
 
         assertNotEquals(0,id);
-        Critter insertedCritter = dao.getById(id);
-        assertEquals(insertedCritter, insertedCritter);
+        Critter insertedCritter = (Critter)genericDAO.getByID(id);
+        assertEquals(insertedCritter, newCritter);
 
-        List<Critter> critters = dao.getAllCritters();
+        List<Critter> critters = (List<Critter>)genericDAO.getAll();
 
         assertEquals(11, critters.size());
    }
