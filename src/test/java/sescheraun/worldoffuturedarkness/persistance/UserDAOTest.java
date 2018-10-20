@@ -19,6 +19,7 @@ class UserDAOTest {
      * The Dao.
      */
     UserDAO dao;
+    GenericDAO genericDAO;
 
     /**
      * Sets up.
@@ -26,6 +27,7 @@ class UserDAOTest {
     @BeforeEach
     void setUp() {
         dao = new UserDAO();
+        genericDAO = new GenericDAO(User.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
@@ -37,7 +39,7 @@ class UserDAOTest {
      */
     @Test
     void getByID() {
-        User user = dao.getById(4);
+        User user = (User)genericDAO.getByID(4);
         assertEquals("Allard", user.getLastName());
     }
 
