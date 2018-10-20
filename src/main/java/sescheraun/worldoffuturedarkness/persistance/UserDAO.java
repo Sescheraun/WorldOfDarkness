@@ -8,8 +8,7 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.*;
 import java.util.List;
-import sescheraun.WorldOfFutureDarkness.generator.*;
-import sescheraun.worldoffuturedarkness.generator.User;
+import sescheraun.worldoffuturedarkness.generator.*;
 
 
 /**

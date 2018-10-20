@@ -18,6 +18,7 @@ public class CritterDAOTest {
      * The Dao.
      */
     CritterDAO dao;
+    GenericDAO genericDAO;
 
     /**
      * Sets up.
@@ -35,7 +36,7 @@ public class CritterDAOTest {
      */
     @Test
     void getByID() {
-        Critter critter = dao.getById(4);
+        Critter critter = (Critter)genericDAO.getById(4);
         assertEquals(critter, critter);
     }
 

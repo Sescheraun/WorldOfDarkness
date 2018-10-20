@@ -10,8 +10,7 @@ import org.hibernate.Transaction;
 import javax.persistence.criteria.*;
 import java.util.List;
 
-import sescheraun.WorldOfFutureDarkness.generator.*;
-import sescheraun.worldoffuturedarkness.generator.SubCritter;
+import sescheraun.worldoffuturedarkness.generator.*;
 
 
 /**
