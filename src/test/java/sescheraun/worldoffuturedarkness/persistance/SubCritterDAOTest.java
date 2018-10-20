@@ -3,8 +3,7 @@ package sescheraun.worldoffuturedarkness.persistance;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import sescheraun.WorldOfFutureDarkness.generator.*;
-import sescheraun.worldoffuturedarkness.test.util.Database;
+import sescheraun.worldoffuturedarkness.test.util.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
