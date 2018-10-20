@@ -36,7 +36,7 @@ public class CritterDAOTest {
      */
     @Test
     void getByID() {
-        Critter critter = (Critter)genericDAO.getById(4);
+        Critter critter = (Critter)genericDAO.getByID(4);
         assertEquals(critter, critter);
     }
 
