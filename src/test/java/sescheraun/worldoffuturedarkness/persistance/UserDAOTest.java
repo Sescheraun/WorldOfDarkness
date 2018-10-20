@@ -59,12 +59,12 @@ class UserDAOTest {
     }
 
     /**
-     * Gets user by.
+     * Gets critter by a specific category and value.
      */
     @Test
     void getUserBy() {
-        List<User> users = dao.getUserBy("lastName", "a");
-        assertEquals(3, users.size());
+        List<User> users = (List<User>)genericDAO.getEntityBy("phoneNumber", "555");
+        assertEquals(2, users.size());
     }
 
     /**

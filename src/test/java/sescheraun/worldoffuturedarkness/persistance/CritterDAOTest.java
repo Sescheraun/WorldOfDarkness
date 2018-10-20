@@ -56,11 +56,11 @@ public class CritterDAOTest {
     }
 
     /**
-     * Gets critter by.
+     * Gets critter by a specific category and value.
      */
     @Test
     void getCritterBy() {
-        List<Critter> critters = dao.getCritterBy("critterName", "a");
+        List<Critter> critters = (List<Critter>)genericDAO.getEntityBy("critterName", "a");
         assertEquals(7, critters.size());
     }
 

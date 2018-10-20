@@ -2,7 +2,7 @@ package sescheraun.worldoffuturedarkness.persistance;
 
 import org.apache.logging.log4j.*;
 import org.hibernate.Session;
-import sescheraun.worldoffuturedarkness.generator.Critter;
+import sescheraun.worldoffuturedarkness.generator.*;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -35,10 +35,11 @@ public class GenericDAO<T> {
      *
      * @return the session
      */
-    private Session getSession() {
-        return SessionFactoryProvider.getSessionFactory().openSession();
-    }
+    private Session getSession() { return SessionFactoryProvider.getSessionFactory().openSession();  }
 
+/* ********************************************************************************************************************/
+/*                                                    Read Methods                                                    */
+/* ********************************************************************************************************************/
     /**
      * Gets a list of entities.
      *
@@ -73,5 +74,33 @@ public class GenericDAO<T> {
         T entity = (T)session.get(type, id);
         session.close();
         return entity;
+    }
+
+    /**
+     * Gets entity by.
+     *
+     * @param field the field
+     * @param value the value
+     * @return the entity by
+     */
+    public List<T> getEntityBy(String field, String value) {
+
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+
+        Root<T> root = query.from(type);
+
+
+        Expression<Boolean> isDeleted = root.get("isDeleted");
+
+        Expression<String> propertyPath = root.get(field);
+        query.select(root).where(builder.like(propertyPath, "%" + value + "%"), builder.isFalse(isDeleted));
+
+        List<T> entities = session.createQuery(query).getResultList();
+        session.close();
+
+        return entities;
     }
 }

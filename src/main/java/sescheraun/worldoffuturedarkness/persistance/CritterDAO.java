@@ -61,8 +61,6 @@ public class CritterDAO {
         List<Critter> critters = session.createQuery(query).getResultList();
         session.close();
 
-
-
         return critters;
     }
 

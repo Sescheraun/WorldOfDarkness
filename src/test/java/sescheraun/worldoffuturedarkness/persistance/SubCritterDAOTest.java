@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import sescheraun.worldoffuturedarkness.generator.Critter;
 import sescheraun.worldoffuturedarkness.generator.SubCritter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -59,7 +60,7 @@ public class SubCritterDAOTest {
      * Get all subCritters.
      */
     @Test
-    void getAllCritters(){
+    void getAllSubCritters(){
         List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getAll();
         assertEquals(2, subCritters.size());
         SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
@@ -68,14 +69,12 @@ public class SubCritterDAOTest {
     }
 
     /**
-     * Get all sub critters.
+     * Gets critter by a specific category and value.
      */
     @Test
-    void getAllSubCritters(){
-
-        List<SubCritter> subCritters = dao.getAllSubCritters();
+    void getCritterBy() {
+        List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getEntityBy("critterSubName", "o");
         assertEquals(2, subCritters.size());
-
     }
 
 
@@ -136,38 +135,38 @@ public class SubCritterDAOTest {
     private void populateSubCritters() {
         critterDao = new CritterDAO();
         Critter critter = critterDao.getById(4);
-        String subCritterLabel[] = new String[2];
-        String critterSubName[] = new String[2];
-        String firstAdvantage[] = new String[2];
-        String secondAdvantage[] = new String[2];
-        String flaw[] = new String[2];
+        List<String> subCritterLabels = new ArrayList<>();
+        List<String> critterSubNames = new ArrayList<>();
+        List<String> firstAdvantages = new ArrayList<>();
+        List<String> secondAdvantages = new ArrayList<>();
+        List<String> flaws = new ArrayList<>();
 
-        subCritterLabel[0] = "Kith";
-        critterSubName[0] = "Sidhe";
-        firstAdvantage[0] = "Awe and Beauty: Sidhe get two extra dots of Appearance during character creation, even if this increases their score above 5. They cannot help but stand out in a crowd. The fury of a sidhe scorned is a majestic and terrifying sight. When impassioned, all their Social rolls (especially Empathy or Intimidation rolls) are at a -2 difficulty. Anyone who tries to attack an angry sidhe head-on must make a Willpower roll; the difficulty ranges from 6 (for the average sidhe) to an 8 or 9 (for one of suitable high station). This birthright only affects other Kithain and the Enchanted, unless the sidhe calls upon the Wyrd.";
-        secondAdvantage[0] = "Noble Bearing: Whether heroes or villains, all sidhe are dignified. Any cantrip that would directly make them look foolish immediately fails.   Further, Sidhe cannot botch Etiquette rolls.";
-        flaw[0] = "Banality's Curse: Sidhe are not truly of this world. The taint of Banality affects them more strongly than it does other fae. Each temporary point of Banality that a Dream Lord gains becomes two points. If a sidhe character must make a roll at a difficulty equal their Banality (or a roll resisted by Banality), treat it as one level higher.";
-
-
-        subCritterLabel[1] = "Kith";
-        critterSubName[1] = "Troll";
-        firstAdvantage[1] = "Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.";
-        secondAdvantage[1] = "Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.";
-        flaw[1] = "Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.";
+        subCritterLabels.add("Kith");
+        critterSubNames.add("Sidhe");
+        firstAdvantages.add("Awe and Beauty: Sidhe get two extra dots of Appearance during character creation, even if this increases their score above 5. They cannot help but stand out in a crowd. The fury of a sidhe scorned is a majestic and terrifying sight. When impassioned, all their Social rolls (especially Empathy or Intimidation rolls) are at a -2 difficulty. Anyone who tries to attack an angry sidhe head-on must make a Willpower roll; the difficulty ranges from 6 (for the average sidhe) to an 8 or 9 (for one of suitable high station). This birthright only affects other Kithain and the Enchanted, unless the sidhe calls upon the Wyrd.");
+        secondAdvantages.add("Noble Bearing: Whether heroes or villains, all sidhe are dignified. Any cantrip that would directly make them look foolish immediately fails.   Further, Sidhe cannot botch Etiquette rolls.");
+        flaws.add("Banality's Curse: Sidhe are not truly of this world. The taint of Banality affects them more strongly than it does other fae. Each temporary point of Banality that a Dream Lord gains becomes two points. If a sidhe character must make a roll at a difficulty equal their Banality (or a roll resisted by Banality), treat it as one level higher.");
 
 
-        subCritterLabel[2] = "Kith";
-        critterSubName[2] = "Boggan";
-        firstAdvantage[2] = "Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.";
-        secondAdvantage[2] = "Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.";
-        flaw[2] = "Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.";
+        subCritterLabels.add("Kith");
+        critterSubNames.add("Troll");
+        firstAdvantages.add("Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.");
+        secondAdvantages.add("Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.");
+        flaws.add("Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.");
+
+
+        subCritterLabels.add("Kith");
+        critterSubNames.add("Boggan");
+        firstAdvantages.add("Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.");
+        secondAdvantages.add("Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.");
+        flaws.add("Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.");
 
 
         SubCritter subCritter;
-        logger.debug(flaw.length);
+        logger.debug(flaws.size());
 
-        for (int index = 0; index < flaw.length; index++) {
-            subCritter = new SubCritter(critter, subCritterLabel[index], critterSubName[index], firstAdvantage[index], secondAdvantage[index], flaw[index]);
+        for (int index = 0; index < flaws.size(); index++) {
+            subCritter = new SubCritter(critter, subCritterLabels.get(index), critterSubNames.get(index), firstAdvantages.get(index), secondAdvantages.get(index), flaws.get(index));
             critter.addSubCritter(subCritter);
 
             int id = dao.createSubCritter(subCritter);
