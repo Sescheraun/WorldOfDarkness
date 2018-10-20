@@ -56,6 +56,18 @@ public class SubCritterDAOTest {
 
 
     /**
+     * Get all subCritters.
+     */
+    @Test
+    void getAllCritters(){
+        List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getAll();
+        assertEquals(2, subCritters.size());
+        SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
+        logger.debug(subCritters.get(0));
+        assertEquals(subCritter, subCritters.get(0));
+    }
+
+    /**
      * Get all sub critters.
      */
     @Test
@@ -142,6 +154,14 @@ public class SubCritterDAOTest {
         firstAdvantage[1] = "Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.";
         secondAdvantage[1] = "Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.";
         flaw[1] = "Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.";
+
+
+        subCritterLabel[2] = "Kith";
+        critterSubName[2] = "Boggan";
+        firstAdvantage[2] = "Titan's Power: Wilders gain an additional Bruised Health Level and an additional dot of Strength during character creation, even if this raises the Trait above 5. Grumps get two extra dots in Strength and two additional Bruised Levels (for a total of 9 Health levels). Grumps, though, also add a +1 difficulty to all Dexterity-based rolls. This extra strength does not function in the presence of mortals to the unenchanted unless the troll has called upon the Wyrd, further, No troll can botch an Athletics of Alertness roll.";
+        secondAdvantage[2] = "Stubbornness: Nothing can interfere with a troll's devotion to duty. When in the service of a cause, they get an extra two dice to any Willpower roll to resist temptation or distraction. This Birthright is always in effect.";
+        flaw[2] = "Bond of Duty: Any troll who dares to renege on a sworn contract or oath becomes sickly and looses their Titan's Power. Only by atoning for the lapse of trust can they regain their strength. Usually this involves fulfilling a new oath. Seelie trolls never lie to fae they are protecting; Unseelie ogres uphold their bond of duty, but usually prefer to support more disreputable fae. This trust must extend both ways; if a troll's trust is betrayed, they will be filled with anger and must roll Willpower, difficulty 8, to avoid becoming violent. Their stoicism belies great rage, perhaps one that has been with them since the Earth was young.";
+
 
         SubCritter subCritter;
         logger.debug(flaw.length);

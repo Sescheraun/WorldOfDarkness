@@ -1,6 +1,8 @@
 package sescheraun.worldoffuturedarkness.persistance;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sescheraun.worldoffuturedarkness.generator.User;
 import sescheraun.worldoffuturedarkness.test.util.Database;
 
@@ -20,6 +22,7 @@ class UserDAOTest {
      */
     UserDAO dao;
     GenericDAO genericDAO;
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * Sets up.
@@ -48,9 +51,11 @@ class UserDAOTest {
      */
     @Test
     void getAllUsers(){
-        List<User> users = dao.getAllUsers();
+        List<User> users = (List<User>)genericDAO.getAll();
         assertEquals(4, users.size());
-
+        User user = (User)genericDAO.getByID(1);
+        logger.debug(users.get(0));
+        assertEquals(user, users.get(0));
     }
 
     /**

@@ -1,5 +1,7 @@
 package sescheraun.worldoffuturedarkness.persistance;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sescheraun.worldoffuturedarkness.test.util.*;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -18,6 +20,7 @@ public class CritterDAOTest {
      */
     CritterDAO dao;
     GenericDAO genericDAO;
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * Sets up.
@@ -45,9 +48,11 @@ public class CritterDAOTest {
      */
     @Test
     void getAllCritters(){
-        List<Critter> critters = dao.getAllCritters();
+        List<Critter> critters = (List<Critter>)genericDAO.getAll();
         assertEquals(10, critters.size());
-
+        Critter critter = (Critter)genericDAO.getByID(1);
+        logger.debug(critters.get(0));
+        assertEquals(critter, critters.get(0));
     }
 
     /**

@@ -2,6 +2,13 @@ package sescheraun.worldoffuturedarkness.persistance;
 
 import org.apache.logging.log4j.*;
 import org.hibernate.Session;
+import sescheraun.worldoffuturedarkness.generator.Critter;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Root;
+import java.util.List;
 
 
 /**
@@ -30,6 +37,28 @@ public class GenericDAO<T> {
      */
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
+    }
+
+    /**
+     * Gets a list of entities.
+     *
+     * @return the list
+     */
+    public List<T> getAll(){
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+
+        Root<T> root = query.from(type);
+
+        Expression<Boolean> isDeleted = root.get("isDeleted");
+        query.select(root).where(builder.isFalse(isDeleted));
+
+        List<T> entities = session.createQuery(query).getResultList();
+        session.close();
+
+        return entities;
     }
 
     /**
