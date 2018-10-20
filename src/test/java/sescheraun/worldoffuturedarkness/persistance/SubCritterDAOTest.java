@@ -28,6 +28,7 @@ public class SubCritterDAOTest {
      * The Critter dao.
      */
     CritterDAO critterDao;
+    GenericDAO genericDAO;
 
     /**
      * Sets up.
@@ -35,6 +36,7 @@ public class SubCritterDAOTest {
     @BeforeEach
     void setUp() {
         dao = new SubCritterDAO();
+        genericDAO = new GenericDAO(SubCritter.class);
 
 
         Database database = Database.getInstance();
@@ -42,9 +44,12 @@ public class SubCritterDAOTest {
         populateSubCritters();
     }
 
+    /**
+     * Gets an entity by id.
+     */
     @Test
     void getByID() {
-        SubCritter subCritter = dao.getById(1);
+        SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
         assertEquals("Sidhe", subCritter.getCritterSubName());
     }
 

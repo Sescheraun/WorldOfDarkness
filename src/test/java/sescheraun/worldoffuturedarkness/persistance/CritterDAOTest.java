@@ -32,12 +32,12 @@ public class CritterDAOTest {
     }
 
     /**
-     * Gets by id.
+     * Gets an entity by id.
      */
     @Test
     void getByID() {
         Critter critter = (Critter)genericDAO.getByID(4);
-        assertEquals(critter, critter);
+        assertEquals("Mage", critter.getCritterName());
     }
 
     /**
