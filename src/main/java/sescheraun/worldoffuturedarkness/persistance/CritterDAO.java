@@ -68,18 +68,18 @@ public class CritterDAO {
         return critters;
     }
 
-//    /**
-//     * Get critter by id
-//     *
-//     * @param id the id
-//     * @return the critter that matches the ID
-//     */
-//    public Critter getById(int id) {
-//        Session session = sessionFactory.openSession();
-//        Critter critter = session.get( Critter.class, id );
-//        session.close();
-//        return critter;
-//    }
+    /**
+     * Get critter by id
+     *
+     * @param id the id
+     * @return the critter that matches the ID
+     */
+    public Critter getById(int id) {
+        Session session = sessionFactory.openSession();
+        Critter critter = session.get( Critter.class, id );
+        session.close();
+        return critter;
+    }
 
     /**
      * Create critter int.

@@ -26,6 +26,7 @@ public class CritterDAOTest {
     @BeforeEach
     void setUp() {
         dao = new CritterDAO();
+        genericDAO = new GenericDAO(Critter.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
