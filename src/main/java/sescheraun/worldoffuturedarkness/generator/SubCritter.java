@@ -235,7 +235,7 @@ public class SubCritter {
         return "SubCritter{" +
                 "subCritterId=" + subCritterId +
                 ", subCritterLabel='" + subCritterLabel + '\'' +
-                ", critter=" + critter +
+                ", critter=" + critter.getCritterName() +
                 ", critterSubName='" + critterSubName + '\'' +
                 ", firstAdvantage='" + firstAdvantage + '\'' +
                 ", secondAdvantage='" + secondAdvantage + '\'' +

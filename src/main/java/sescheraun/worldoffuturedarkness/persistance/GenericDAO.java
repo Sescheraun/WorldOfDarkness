@@ -146,4 +146,49 @@ public class GenericDAO<T> {
 
         return entities;
     }
+
+/* ********************************************************************************************************************/
+/*                                                  Delete Methods                                                    */
+/* ********************************************************************************************************************/
+
+    /**
+     * Update critter.
+     *
+     * @param entity the entity to be altered
+     */
+    public void update(T entity){
+        Session session = getSession();
+
+        session.beginTransaction();
+        session.saveOrUpdate(entity);
+        session.getTransaction().commit();
+        session.close();
+    }
+
+
+//    /**
+//     * Undelete an entity
+//     *
+//     * @param id the id
+//     */
+//    public void undelete(int id){
+//        T  entityToDelete = getByID(id);
+//        entityToDelete.setIsDeleted(false);
+//        update(entityToDelete);
+//    }
+
+/* ********************************************************************************************************************/
+/*                                                  Delete Methods                                                    */
+/* ********************************************************************************************************************/
+//    /**
+//     * Delete an entity
+//     *
+//     * @param id the id
+//     */
+//    public void delete(int id){
+//        T  entityToDelete = getByID(id);
+//        entityToDelete.setIsDeleted(true);
+//        update(entityToDelete);
+//    }
+
 }

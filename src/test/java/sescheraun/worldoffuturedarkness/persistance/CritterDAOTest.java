@@ -18,8 +18,9 @@ public class CritterDAOTest {
     /**
      * The Dao.
      */
-    CritterDAO dao;
+
     GenericDAO genericDAO;
+    GenericDAO subCritterDAO;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -27,8 +28,8 @@ public class CritterDAOTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new CritterDAO();
         genericDAO = new GenericDAO(Critter.class);
+        subCritterDAO = new GenericDAO(SubCritter.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
@@ -50,9 +51,9 @@ public class CritterDAOTest {
     void getAllCritters(){
         List<Critter> critters = (List<Critter>)genericDAO.getAll();
         assertEquals(10, critters.size());
-        Critter critter = (Critter)genericDAO.getByID(1);
-        logger.debug(critters.get(0));
-        assertEquals(critter, critters.get(0));
+        Critter critter = (Critter)genericDAO.getByID(5);
+        logger.debug(critters.get(4));
+        assertEquals(critter, critters.get(4));
     }
 
     /**
@@ -112,14 +113,14 @@ public class CritterDAOTest {
 
         newCritter.addSubCritter(subCritter);
 
-        int id = dao.createCritter(newCritter);
+        int id = genericDAO.create(newCritter);
 
         assertNotEquals(0,id);
-        Critter insertedCritter = dao.getById(id);
+        Critter insertedCritter = (Critter)genericDAO.getByID(id);
         assertEquals(insertedCritter, insertedCritter);
         assertEquals(1, newCritter.getSubCritters().size());
 
-        List<Critter> critters = dao.getAllCritters();
+        List<Critter> critters = (List<Critter>)genericDAO.getAll();
 
         assertEquals(11, critters.size());
     }
@@ -132,13 +133,13 @@ public class CritterDAOTest {
 
         String newName = "Garou";
 
-        Critter critter = dao.getById(3);
+        Critter critter = (Critter)genericDAO.getByID(3);
 
         critter.setCritterName(newName);
 
-        dao.updateCritter(critter);
+        genericDAO.update(critter);
 
-        dao.getById(1);
+        genericDAO.getByID(1);
 
         assertEquals(critter, critter);
 
@@ -150,11 +151,15 @@ public class CritterDAOTest {
      */
     @Test
     void deleteCritter() {
-        dao.deleteCritter(1);
+//        genericDAO.delete(1);
 
         //assertEquals(true, critter.getIsDeleted());
 
-        List<Critter> critters = dao.getAllCritters();
+        Critter critter = (Critter)genericDAO.getByID(1);
+        critter.setIsDeleted(true);
+        genericDAO.update(critter);
+
+        List<Critter> critters = (List<Critter>)genericDAO.getAll();
 
         assertEquals(9, critters.size());
     }

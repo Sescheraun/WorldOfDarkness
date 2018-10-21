@@ -180,7 +180,7 @@ public class Critter {
                 ", critterName='" + critterName + '\'' +
                 ", implemented=" + implemented +
                 ", isDeleted=" + isDeleted +
-                ", subCritters=" + subCritters +
+                ",     subCritters=" + subCritters +
                 '}';
     }
 }

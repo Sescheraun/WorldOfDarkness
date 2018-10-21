@@ -24,11 +24,14 @@ public class SubCritterDAOTest {
     /**
      * The Dao.
      */
-    SubCritterDAO dao;
+//    SubCritterDAO dao;
     /**
      * The Critter dao.
      */
-    CritterDAO critterDao;
+    GenericDAO critterDao;
+    /**
+     * The Generic dao.
+     */
     GenericDAO genericDAO;
 
     /**
@@ -36,8 +39,9 @@ public class SubCritterDAOTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new SubCritterDAO();
+//        dao = new SubCritterDAO();
         genericDAO = new GenericDAO(SubCritter.class);
+        critterDao = new GenericDAO(Critter.class);
 
 
         Database database = Database.getInstance();
@@ -55,14 +59,13 @@ public class SubCritterDAOTest {
     }
 
 
-
     /**
      * Get all subCritters.
      */
     @Test
     void getAllSubCritters(){
         List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getAll();
-        assertEquals(2, subCritters.size());
+        assertEquals(3, subCritters.size());
         SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
         logger.debug(subCritters.get(0));
         assertEquals(subCritter, subCritters.get(0));
@@ -94,8 +97,8 @@ public class SubCritterDAOTest {
     @Test
     void insertSuccess() {
 
-        critterDao = new CritterDAO();
-        Critter critter = critterDao.getById(1);
+        critterDao = new GenericDAO(Critter.class);
+        Critter critter = (Critter)critterDao.getByID(1);
 
         String subCritterLabel = "Breed";
         String critterSubName = "Mallard";
@@ -107,35 +110,50 @@ public class SubCritterDAOTest {
         SubCritter subCritter = new SubCritter(critter, subCritterLabel, critterSubName, firstAdvantage, secondAdvantage, flaw);
         critter.addSubCritter(subCritter);
 
-        int id = dao.createSubCritter(subCritter);
+        int id = genericDAO.create(subCritter);
         assertNotEquals(0, id);
 
-        SubCritter newSubCritter = dao.getById(id);
+        SubCritter newSubCritter = (SubCritter)genericDAO.getByID(id);
         assertNotNull(newSubCritter);
         assertEquals(subCritter, newSubCritter);
         assertNotNull(newSubCritter.getCritter());
         assertEquals(critter, newSubCritter.getCritter());
     }
 
+    /**
+     * Update sub critter.
+     */
     @Test
     void updateSubCritter() {
         String newName = "igNoble";
-        SubCritter subCritter = dao.getById(1);
+        SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
         subCritter.setCritterSubName(newName);
-        dao.updateSubCritter(subCritter);
-        SubCritter newSubCritter = dao.getById(1);
+        genericDAO.update(subCritter);
+        SubCritter newSubCritter = (SubCritter)genericDAO.getByID(1);
         Assertions.assertEquals(newSubCritter, subCritter);
     }
 
+    /**
+     * Delete sub critter.
+     */
     @Test
     void deleteSubCritter() {
-        dao.deleteSubCritter(1);
-        List<SubCritter> subCritters = this.dao.getAllSubCritters();
-        Assertions.assertEquals(1, subCritters.size());
+        SubCritter subCritter = (SubCritter)genericDAO.getByID(1);
+
+        subCritter.setIsDeleted(true);
+
+        genericDAO.update(subCritter);
+
+        List<SubCritter> subCritters = (List<SubCritter>)genericDAO.getAll();
+        Assertions.assertEquals(2, subCritters.size());
     }
+
+    /**
+     * Get sub critter by.
+     */
     @Test
     void getSubCritterBy(){
-        List<SubCritter> subCritters = dao.getSubCritterBy("critterSubName", "Sid");
+        List<SubCritter> subCritters = genericDAO.getEntityBy("critterSubName", "Sid");
         assertEquals(1, subCritters.size());
     }
 
@@ -143,8 +161,7 @@ public class SubCritterDAOTest {
      * Populate sub critters list for testing.
      */
     private void populateSubCritters() {
-        critterDao = new CritterDAO();
-        Critter critter = critterDao.getById(4);
+        Critter critter = (Critter)critterDao.getByID(5);
         List<String> subCritterLabels = new ArrayList<>();
         List<String> critterSubNames = new ArrayList<>();
         List<String> firstAdvantages = new ArrayList<>();
@@ -179,7 +196,7 @@ public class SubCritterDAOTest {
             subCritter = new SubCritter(critter, subCritterLabels.get(index), critterSubNames.get(index), firstAdvantages.get(index), secondAdvantages.get(index), flaws.get(index));
             critter.addSubCritter(subCritter);
 
-            int id = dao.createSubCritter(subCritter);
+            int id = genericDAO.create(subCritter);
 
             logger.debug(index + "===================================================================");
         }

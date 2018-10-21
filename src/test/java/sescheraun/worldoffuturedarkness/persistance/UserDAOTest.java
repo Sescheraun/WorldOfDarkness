@@ -20,7 +20,6 @@ class UserDAOTest {
     /**
      * The Dao.
      */
-    UserDAO dao;
     GenericDAO genericDAO;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -29,7 +28,6 @@ class UserDAOTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new UserDAO();
         genericDAO = new GenericDAO(User.class);
 
         Database database = Database.getInstance();
@@ -89,13 +87,13 @@ class UserDAOTest {
         newUser.setPhoneNumber("608-555-1234");
         newUser.setIsDeleted(false);
 
-        int id = dao.createUser(newUser);
+        int id = genericDAO.create(newUser);
 
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDAO.getByID(id);
         assertEquals(newUser, insertedUser);
 
-        List<User> users = dao.getAllUsers();
+        List<User> users = (List<User>)genericDAO.getAll();
 
         assertEquals(5, users.size());
     }
@@ -108,16 +106,15 @@ class UserDAOTest {
 
         String newName = "Super";
 
-        User user = dao.getById(1);
+        User user = (User)genericDAO.getByID(1);
 
         user.setFirstName(newName);
 
-        dao.updateUser(user);
+        genericDAO.update(user);
 
-        User testUser = dao.getById(1);
+        User testUser = (User)genericDAO.getByID(1);
 
         assertEquals(testUser, user);
-
 
     }
 
@@ -126,11 +123,14 @@ class UserDAOTest {
      */
     @Test
     void deleteUser() {
-        dao.deleteUser(1);
+        User user = (User)genericDAO.getByID(1);
 
+        user.setIsDeleted(true);
+
+        genericDAO.update(user);
         //assertEquals(true, user.getIsDeleted());
 
-        List<User> users = dao.getAllUsers();
+        List<User> users = (List<User>)genericDAO.getAll();
 
         assertEquals(3, users.size());
     }
