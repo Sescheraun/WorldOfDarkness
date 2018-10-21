@@ -17,8 +17,9 @@
 | 10.8.2018 | finished the code side of the one to many. | 3 hours | Need to get some data in the sub critter table. Build up more lines to generate sample data |
 | 10.10.2018 | Started trying to add my sample data... of course this | 2 hours | Not sure how to handle this |
 | | is when I discovered that my SQL statements didn't work for my large sample data | | |
-| 10.11.2018 | Added a method to add sample data programatically.  This is called in my @beforeEach | 2 hours | This will form the basis of the method to add things under the admin. |
+| 10.11.2018 | Added a method to add sample data programmatically.  This is called in my @beforeEach | 2 hours | This will form the basis of the method to add things under the admin. |
 | 10.12.2018 | blew the dust off my AWS account from ADV PHP, sent paula the info and did most of the the configuration. | 5 hours | while helping in the lab |
 | 10.15.2018 | Everything looks right, but its just not working.  Got help from Paula and a few classmates, finally got it running late in the evening. | 10 hours | Silly mistake, remember to chect the notes and the videos. |
 | 10.17.2018 | Caught up my logs and started to add the generic DAO | 3 hours | Will also add the security this weekend. |
-| 10.20.2018 | More adventures in genericDAO creation. | | |
+| 10.20.2018 | More adventures in genericDAO creation. | 6 hours | I get the idea.  Should be all finished Sunday |
+| 10.21.2018 | Got the generic DAO finished and added to the the tests.  Started working on the authentication, getting a few errors there. |5.5 hours| At the open lab, helping a few students. |

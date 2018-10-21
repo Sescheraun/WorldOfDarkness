@@ -35,7 +35,7 @@ public class Critter {
     private boolean isDeleted;
 
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<SubCritter> subCritters = new HashSet<SubCritter>();
+    private Set<SubCritter> subCritters = new HashSet<>();
 
 
     /**

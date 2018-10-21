@@ -32,7 +32,7 @@ public class User {
     private int id;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Role> roles = new HashSet<Role>();
+    private Set<Role> roles = new HashSet<>();
 
 
     private String userName;
@@ -188,13 +188,9 @@ public class User {
         return id;
     }
 
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
+    public void addRole (Role role) {
+        role.setUser(this);
+        roles.add(role);
     }
 
     @Override

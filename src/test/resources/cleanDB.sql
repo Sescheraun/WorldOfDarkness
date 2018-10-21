@@ -13,7 +13,7 @@ CREATE TABLE characterTraits (character_characterID int NOT NULL, traitID int NO
 -- Table: critter
 CREATE TABLE critter (critterID int NOT NULL AUTO_INCREMENT, critterName varchar(100) NOT NULL, implemented bool NOT NULL, isDeleted bool NOT NULL DEFAULT 0, CONSTRAINT critter_pk PRIMARY KEY (critterID)) COMMENT 'Human, vampire, Changeling ect...';
 -- Table: role
-CREATE TABLE role (id int NOT NULL,userID int NOT NULL, roleName varchar(100) NOT NULL DEFAULT 'player', userName varchar(100) NOT NULL, CONSTRAINT role_pk PRIMARY KEY (id));
+CREATE TABLE role (id int NOT NULL,userID int NOT NULL, roleName varchar(100) NOT NULL DEFAULT 'player', userName varchar(100) NOT NULL , isDeleted bool NOT NULL DEFAULT 0, CONSTRAINT role_pk PRIMARY KEY (id));
 -- Table: subCritter
 CREATE TABLE subCritter (subCritterID int NOT NULL AUTO_INCREMENT, subCritterLabel varchar(20) NOT NULL COMMENT 'this will be Kith if the subCritter is pooka for example', critterID int NOT NULL, critterSubName varchar(20) NOT NULL COMMENT 'Pooka, Gangrel, Get of Fenris ect..', firstAdvantage blob NOT NULL, secondAdvantage blob NOT NULL, flaw varchar(500) NOT NULL, isDeleted bool NOT NULL DEFAULT 0, CONSTRAINT subCritter_pk PRIMARY KEY (subCritterID) ) COMMENT 'Vampire : clan Werewolf: tribe, auspice, breed Changeling: Kith, seeming, house mage: tradition/convention Wraith ???';
 -- Table: trait
@@ -55,3 +55,7 @@ INSERT INTO critter (critterName, implemented) VALUES ('Mummy',FALSE);
 INSERT INTO critter (critterName, implemented) VALUES ('Bygone',FALSE);
 INSERT INTO critter (critterName, implemented) VALUES ('Exalted',FALSE);
 INSERT INTO critter (critterName, implemented) VALUES ('Dragon',FALSE);
+INSERT INTO role (userID, roleName, userName) VALUES (1, 'Nerf Herder', 'Negaduck');
+INSERT INTO role (userID, roleName, userName) VALUES (1, 'The Villain', 'Negaduck');
+INSERT INTO role (userID, roleName, userName) VALUES (2, 'The token Female', 'theDoctor');
+INSERT INTO role (userID, roleName, userName, isDeleted) VALUES (5, 'The Terror that Flaps', 'totallyNotDarkwingDuck', 1);

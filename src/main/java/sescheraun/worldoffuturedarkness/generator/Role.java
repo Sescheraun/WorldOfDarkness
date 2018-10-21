@@ -33,6 +33,26 @@ public class Role {
 
     private String userName;
 
+    private Boolean isDeleted;
+
+    /**
+     * Gets isDeleted.
+     *
+     * @return the is deleted
+     */
+    public Boolean getIsDeleted() {
+        return isDeleted;
+    }
+
+    /**
+     * Sets isDeleted.
+     *
+     * @param deleted the deleted
+     */
+    public void setIsDeleted(Boolean deleted) {
+        isDeleted = deleted;
+    }
+
     /**
      * Instantiates a new Role.
      */
