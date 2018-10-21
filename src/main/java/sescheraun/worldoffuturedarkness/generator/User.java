@@ -6,7 +6,9 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * The user bean
@@ -28,6 +30,10 @@ public class User {
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<Role>();
+
 
     private String userName;
 
@@ -203,7 +209,8 @@ public class User {
                 Objects.equals(userName, user.userName) &&
                 Objects.equals(authenticator, user.authenticator) &&
                 Objects.equals(emailAddress, user.emailAddress) &&
-                Objects.equals(phoneNumber, user.phoneNumber);
+                Objects.equals(phoneNumber, user.phoneNumber) &&
+                Objects.equals(roles, user.roles);
     }
 
     @Override
