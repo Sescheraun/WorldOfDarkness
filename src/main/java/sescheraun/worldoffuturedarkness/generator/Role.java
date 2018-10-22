@@ -1,13 +1,12 @@
 package sescheraun.worldoffuturedarkness.generator;
 
-import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+import java.util.Objects;
 
 
 /**
@@ -65,10 +64,10 @@ public class Role {
      * @param roleName the role name
      * @param userName the user name
      */
-    public Role(User user, String roleName, String userName) {
+    public Role(User user, String roleName) {
         this.user = user;
         this.roleName = roleName;
-        this.userName = userName;
+        this.userName = user.getUserName();
     }
 
 
@@ -97,6 +96,7 @@ public class Role {
      */
     public void setUser(User user) {
         this.user = user;
+        this.userName = user.getUserName();
     }
 
     /**
@@ -126,14 +126,6 @@ public class Role {
         return userName;
     }
 
-    /**
-     * Sets user name.
-     *
-     * @param userName the user name
-     */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
     /**
      * Over ridden .equals method

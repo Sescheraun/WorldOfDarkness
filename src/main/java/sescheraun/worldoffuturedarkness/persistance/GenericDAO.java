@@ -91,6 +91,7 @@ public class GenericDAO<T> {
      * @return the entity that was searched for.
      */
     public <T>T getByID(int id){
+        logger.debug("Inside: type = " + type);
         Session session = getSession();
         T entity = (T)session.get(type, id);
         session.close();
