@@ -205,8 +205,9 @@ public class User {
                 Objects.equals(userName, user.userName) &&
                 Objects.equals(authenticator, user.authenticator) &&
                 Objects.equals(emailAddress, user.emailAddress) &&
-                Objects.equals(phoneNumber, user.phoneNumber) &&
-                Objects.equals(roles, user.roles);
+                Objects.equals(phoneNumber, user.phoneNumber)
+//                && Objects.equals(roles, user.roles)
+         ;
     }
 
     @Override

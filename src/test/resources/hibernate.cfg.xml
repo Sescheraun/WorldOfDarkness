@@ -19,6 +19,7 @@
         <mapping class="sescheraun.worldoffuturedarkness.generator.User"/>
         <mapping class="sescheraun.worldoffuturedarkness.generator.Critter"/>
         <mapping class="sescheraun.worldoffuturedarkness.generator.SubCritter"/>
+        <mapping class="sescheraun.worldoffuturedarkness.generator.Role"/>
 
     </session-factory>
 
