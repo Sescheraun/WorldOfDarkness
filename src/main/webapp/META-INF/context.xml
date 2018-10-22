@@ -1,0 +1,8 @@
+<Context docBase="WorldOfFutureDarkness" path="/WorldOfFutureDarkness" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=tomcat"
+           userTable="user" userNameCol="user_name" userCredCol="authenticator"
+           userRoleTable="role" roleNameCol="roleName" >
+    </Realm>
+</Context>

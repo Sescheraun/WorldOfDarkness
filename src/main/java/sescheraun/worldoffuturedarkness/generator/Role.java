@@ -68,6 +68,7 @@ public class Role {
         this.user = user;
         this.roleName = roleName;
         this.userName = user.getUserName();
+        this.isDeleted = false;
     }
 
 

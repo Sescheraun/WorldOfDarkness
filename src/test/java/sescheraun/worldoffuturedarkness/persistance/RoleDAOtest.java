@@ -109,41 +109,41 @@ public class RoleDAOtest {
         assertNotNull(newRole.getUser());
         assertEquals(user, newRole.getUser());
     }
-//
-//    /**
-//     * Update sub critter.
-//     */
-//    @Test
-//    void updateRole() {
-//        String newName = "igNoble";
-//        Role role = (Role)roleDAO.getByID(1);
-//        role.setRoleName(newName);
-//        roleDAO.update(role);
-//        Role newRole = (Role) roleDAO.getByID(1);
-//        Assertions.assertEquals(newRole, role);
-//    }
-//
-//    /**
-//     * Delete sub critter.
-//     */
-//    @Test
-//    void deleteRole() {
-//        Role subUser = (Role) roleDAO.getByID(1);
-//
-//        subUser.setIsDeleted(true);
-//
-//        roleDAO.update(subUser);
-//
-//        List<Role> subUsers = (List<Role>) roleDAO.getAll();
-//        Assertions.assertEquals(2, subUsers.size());
-//    }
-//
-//    /**
-//     * Get sub critter by.
-//     */
-//    @Test
-//    void getRoleBy() {
-//        List<Role> roles = roleDAO.getEntityBy("userName", "Negaduck");
-//        assertEquals(2, roles.size());
-//    }
+
+    /**
+     * Update Role.
+     */
+    @Test
+    void updateRole() {
+        String newName = "igNoble";
+        Role role = (Role)roleDAO.getByID(1);
+        role.setRoleName(newName);
+        roleDAO.update(role);
+        Role newRole = (Role) roleDAO.getByID(1);
+        Assertions.assertEquals(newRole, role);
+    }
+
+    /**
+     * Delete role.
+     */
+    @Test
+    void deleteRole() {
+        Role role = (Role) roleDAO.getByID(1);
+
+        role.setIsDeleted(true);
+
+        roleDAO.update(role);
+
+        List<Role> roles = (List<Role>) roleDAO.getAll();
+        Assertions.assertEquals(2, roles.size());
+    }
+
+    /**
+     * Get role.
+     */
+    @Test
+    void getRoleBy() {
+        List<Role> roles = roleDAO.getEntityBy("userName", "Negaduck");
+        assertEquals(2, roles.size());
+    }
 }
