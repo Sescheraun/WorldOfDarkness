@@ -12,8 +12,9 @@
 </head>
 <body>
     This is the launching off point for the page.
-    <a href="admin/index.jsp">Link to the admin pages</a>
-    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
-    <a href="player/index.jsp">link tot he player pages</a>
+    <br />    <a href="admin/index.jsp">Link to the admin pages</a>
+    <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
+    <br />    <a href="player/index.jsp">link tot he player pages</a>
+    <br />    <a href="logout.jsp">logout</a>
 </body>
 </html>

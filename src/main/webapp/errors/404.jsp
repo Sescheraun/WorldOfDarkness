@@ -2,17 +2,16 @@
   Created by IntelliJ IDEA.
   User: student
   Date: 10/23/18
-  Time: 11:58 AM
+  Time: 12:48 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Administration</title>
+    <title>ERROR - 404</title>
 </head>
 <body>
-    This page will hold the administration tools page.
-
-    <a href="../">Link to the home page</a>
+That resource does not seem to exist.
+<a href="../">Return to the home page</a>
 </body>
 </html>

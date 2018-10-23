@@ -17,6 +17,8 @@ User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
 
 <% session.invalidate(); %>
 
+<a href="index.jsp">return</a>
+
 <br/><br/>
 </body>
 </html>
