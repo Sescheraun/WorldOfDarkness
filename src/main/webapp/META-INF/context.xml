@@ -2,7 +2,7 @@
     <Realm className="org.apache.catalina.realm.JDBCRealm"
            driverName="com.mysql.jdbc.Driver"
            connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=tomcat"
-           userTable="user" userNameCol="user_name" userCredCol="authenticator"
+           userTable="user" userNameCol="userName" userCredCol="authenticator"
            userRoleTable="role" roleNameCol="roleName" >
     </Realm>
 </Context>
