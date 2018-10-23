@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Player</title>
-</head>
+<%@ include file="../head.jsp"%>
 <body>
     the launching off point for the player tools
 

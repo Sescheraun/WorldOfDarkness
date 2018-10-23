@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Manage-Content</title>
-</head>
+<%@ include file="../head.jsp"%>
 <body>
     This page will allow for the adding or deleting of content
 </body>

@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>dafuq?</title>
-</head>
+<%@ include file="head.jsp"%>
 <body>
     Login phailled.
 </body>

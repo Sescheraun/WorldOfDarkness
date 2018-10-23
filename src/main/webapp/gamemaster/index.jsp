@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Game Master</title>
-</head>
+<%@ include file="../head.jsp"%>
 <body>
     The launching off point for the game master tools
 

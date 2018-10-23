@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Administration</title>
-</head>
+<%@ include file="../head.jsp"%>
 <body>
     This page will hold the administration tools page.
 

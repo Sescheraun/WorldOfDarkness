@@ -6,10 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ include file="head.jsp"%>
 <html>
-<head>
-    <title>A World of Future Darkness</title>
-</head>
 <body>
     This is the launching off point for the page.
     <br />    <a href="admin/index.jsp">Link to the admin pages</a>

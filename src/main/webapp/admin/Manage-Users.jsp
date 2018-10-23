@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>User Manager</title>
-</head>
+<%@ include file="../head.jsp"%>
 <body>
 This will be the user manager page.
 </body>

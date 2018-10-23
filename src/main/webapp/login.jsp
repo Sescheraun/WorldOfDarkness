@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Llogin</title>
-</head>
+<%@ include file="head.jsp"%>
 <body>
     <FORM ACTION="j_security_check" METHOD="POST">
         <TABLE>
