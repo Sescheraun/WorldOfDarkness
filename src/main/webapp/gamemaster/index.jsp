@@ -11,6 +11,6 @@
 <body>
     The launching off point for the game master tools
 
-    <a href="../">Link to the home page</a>
+    <a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

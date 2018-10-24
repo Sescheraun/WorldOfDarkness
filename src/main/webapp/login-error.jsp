@@ -10,5 +10,6 @@
 <%@ include file="head.jsp"%>
 <body>
     Login phailled.
+    <a href="login.jsp">Try again?</a>
 </body>
 </html>

@@ -12,6 +12,6 @@
 </head>
 <body>
 That resource does not seem to exist.
-<a href="../">Return to the home page</a>
+<a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

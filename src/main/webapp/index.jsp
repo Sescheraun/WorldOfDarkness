@@ -9,6 +9,7 @@
 <%@ include file="head.jsp"%>
 <html>
 <body>
+<script>backgroundShift();</script>
     This is the launching off point for the page.
     <br />    <a href="admin/index.jsp">Link to the admin pages</a>
     <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>

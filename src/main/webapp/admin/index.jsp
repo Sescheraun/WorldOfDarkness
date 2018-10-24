@@ -9,8 +9,9 @@
 <html>
 <%@ include file="../head.jsp"%>
 <body>
+<script>backgroundShift();</script>
     This page will hold the administration tools page.
 
-    <a href="../">Link to the home page</a>
+    <a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

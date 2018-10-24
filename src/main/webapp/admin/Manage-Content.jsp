@@ -10,5 +10,7 @@
 <%@ include file="../head.jsp"%>
 <body>
     This page will allow for the adding or deleting of content
+
+    <a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

@@ -12,6 +12,6 @@
 </head>
 <body>
 You do not seem to have access to this resource.
-<a href="../">Return to the home page</a>
+<a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

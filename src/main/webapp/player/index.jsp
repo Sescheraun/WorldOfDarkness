@@ -11,6 +11,6 @@
 <body>
     the launching off point for the player tools
 
-    <a href="../">Link to the home page</a>
+    <a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>

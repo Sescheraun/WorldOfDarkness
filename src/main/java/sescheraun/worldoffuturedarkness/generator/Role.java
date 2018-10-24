@@ -62,7 +62,6 @@ public class Role {
      *
      * @param user     the user
      * @param roleName the role name
-     * @param userName the user name
      */
     public Role(User user, String roleName) {
         this.user = user;

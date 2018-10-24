@@ -7,8 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@ include file="head.jsp"%>
-<body>
-This is the page that people will use to signup.
-</body>
+    <%@ include file="head.jsp"%>
+    <body>
+        This is the page that people will use to sing up.
+    </body>
 </html>

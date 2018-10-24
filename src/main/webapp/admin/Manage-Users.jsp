@@ -10,5 +10,7 @@
 <%@ include file="../head.jsp"%>
 <body>
 This will be the user manager page.
+
+<a href="/WorldOfFutureDarkness">Link to the home page</a>
 </body>
 </html>
