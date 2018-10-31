@@ -7,16 +7,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@ include file="head.jsp"%>
-<body>
-<%@ page session="true"%>
+    <%@ include file="head.jsp"%>
+    <body>
+            <script>backgroundShift();</script>
+            <%@ page session="true"%>
 
-User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
+            <div id = "content">
+                User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
+            </div>
 
-<% session.invalidate(); %>
+            <% session.invalidate(); %>
 
-<a href="index.jsp">return</a>
+            <a href="index.jsp">return</a>
 
-<br/><br/>
-</body>
+            <br/><br/>
+            <%@ include file="foot.jsp"%>
+    </body>
 </html>

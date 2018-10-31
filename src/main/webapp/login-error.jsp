@@ -9,7 +9,11 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
-    Login phailled.
-    <a href="login.jsp">Try again?</a>
+        <script>backgroundShift();</script>
+        <div id = "content">
+            Login phailled.
+            <a href="login.jsp">Try again?</a>
+        </div>
+        <%@ include file="foot.jsp"%>
 </body>
 </html>

@@ -9,12 +9,17 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
-    <FORM ACTION="j_security_check" METHOD="POST">
-        <TABLE>
-            <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
-            <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
-            <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
-        </TABLE>
-    </FORM>
+    <div id = "content">
+        <script>backgroundShift();</script>
+        <FORM ACTION="j_security_check" METHOD="POST">
+            <TABLE>
+                <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
+                <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
+                <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+            </TABLE>
+        </FORM>
+        <%@ include file="foot.jsp"%>
+    </div>
+
 </body>
 </html>

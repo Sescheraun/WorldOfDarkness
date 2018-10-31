@@ -1,10 +1,26 @@
+html, body{
+    height: 100%;
+
+}
+
 body {
     background-repeat: no-repeat;
-    background-zize: 100% 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
-    background-position: center top;
-    color: pink;
+    background-position: center botto,;
+    /*color: pink;*/
     margin: 0;
     padding: 0;
+}
 
+#content {
+    border-style: double;
+    border-color: lightgreen;
+
+    width: 50%;
+
+    background-color: rgba(0,255,0,.2);
+    /*opacity: .3;*/
+    color: lightgreen;
+    link: color gold;
 }
