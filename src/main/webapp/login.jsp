@@ -21,7 +21,7 @@
             </FORM>
         </div>
         <%@ include file="foot.jsp"%>
-        <a href="newUser.jsp">Create an Account</a>
+        <a href="createNewUser.jsp">Create an Account</a>
     </div>
 </body>
 </html>
