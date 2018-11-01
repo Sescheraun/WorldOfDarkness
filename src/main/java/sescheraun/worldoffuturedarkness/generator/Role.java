@@ -55,7 +55,9 @@ public class Role {
     /**
      * Instantiates a new Role.
      */
-    public Role() {}
+    public Role() {
+        this.isDeleted = false;
+    }
 
     /**
      * Instantiates a new Role.
@@ -64,10 +66,11 @@ public class Role {
      * @param roleName the role name
      */
     public Role(User user, String roleName) {
+        this();
         this.user = user;
         this.roleName = roleName;
         this.userName = user.getUserName();
-        this.isDeleted = false;
+//        this.isDeleted = false;
     }
 
 

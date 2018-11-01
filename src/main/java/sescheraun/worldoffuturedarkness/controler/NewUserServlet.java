@@ -58,7 +58,7 @@ public class NewUserServlet extends HttpServlet {
             credentialHandler.setEncoding("UTF-8");
             String hashedPassword = credentialHandler.mutate(req.getParameter("password"));
 
-            Role player = new Role();
+            Role player;
             User user = new User();
 
             user.setLastName(req.getParameter("lastName"));
@@ -67,8 +67,8 @@ public class NewUserServlet extends HttpServlet {
             user.setAuthenticator(hashedPassword);
             user.setEmailAddress(req.getParameter("EMAIL"));
 
-            player.setRoleName("player");
-            player.setUser(user);
+            player = new Role(user, "player");
+
             user.addRole(player);
 
             System.out.println(user);

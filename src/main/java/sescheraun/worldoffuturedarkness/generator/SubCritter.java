@@ -63,6 +63,7 @@ public class SubCritter {
         this.firstAdvantage = firstAdvantage;
         this.secondAdvantage = secondAdvantage;
         this.flaw = flaw;
+
         this.isDeleted = false;
     }
 
