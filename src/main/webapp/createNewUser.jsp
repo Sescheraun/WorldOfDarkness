@@ -14,7 +14,7 @@
 
             <div id = "content">
                 Greetings, welcome to the World of Darkness.
-                <FORM ACTION="/WorldOfFutureDarkness/newUser" METHOD="POST">
+                <FORM ACTION="addUser" METHOD="POST">
                     <TABLE>
                         <TR><TD>First Name: </TD><TD><INPUT TYPE="TEXT" NAME="firstName"></TD></TR>
                         <TR><TD>Last Name: </TD><TD><INPUT TYPE="TEXT" NAME="lastName"></TD></TR>
@@ -25,9 +25,9 @@
 
                         <TR><TD>Password: </TD><TD><INPUT TYPE="PASSWORD" id="password" NAME="password"></TD></TR>
 
-                        <TR><TD>Verify Password: </TD><TD><INPUT TYPE="PASSWORD" id="password2" NAME="password"></TD></TR>
+                        <TR><TD>Verify Password: </TD><TD><INPUT TYPE="PASSWORD" id="password2" NAME="password2"></TD></TR>
 
-                        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+                        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Sign up">
                     </TABLE>
                 </FORM>
                 <%@ include file="foot.jsp"%>

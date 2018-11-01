@@ -127,6 +127,34 @@ public class GenericDAO<T> {
     }
 
     /**
+     * Gets entity by.
+     *
+     * @param field the field
+     * @param value the value
+     * @return the entity by
+     */
+    public List<T> getEntityByEqual(String field, String value) {
+
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+
+        Root<T> root = query.from(type);
+
+
+        Expression<Boolean> isDeleted = root.get("isDeleted");
+
+        Expression<String> propertyPath = root.get(field);
+        query.select(root).where(builder.equal(propertyPath, value), builder.isFalse(isDeleted));
+
+        List<T> entities = session.createQuery(query).getResultList();
+        session.close();
+
+        return entities;
+    }
+
+    /**
      * Gets a list of entities.
      *
      * @return the list

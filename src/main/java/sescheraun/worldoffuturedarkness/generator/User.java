@@ -144,6 +144,21 @@ public class User {
     }
 
     /**
+     * Instantiates a new User.
+     *
+     * Trying this because for some reason isDeleted keeps going to null.
+     */
+    public User(String firstName, String lastName, String password, String userName, String eMail) {
+        isDeleted = false;
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.authenticator = password;
+        this.userName = userName;
+        this.emailAddress = eMail;
+    }
+
+    /**
      * Gets first name.
      *
      * @return the first name
