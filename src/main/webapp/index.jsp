@@ -17,6 +17,7 @@
             <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
             <br />    <a href="player/index.jsp">link tot he player pages</a>
             <br />    <a href="logout.jsp">logout</a>
+            <br />    <a href="newUser.jsp">Create an Account</a>
         </div>
         <%@ include file="foot.jsp"%>
     </div>

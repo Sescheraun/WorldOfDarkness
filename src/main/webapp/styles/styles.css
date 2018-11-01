@@ -13,14 +13,17 @@ body {
     padding: 0;
 }
 
-#content {
+div#content {
     border-style: double;
     border-color: lightgreen;
 
     width: 50%;
 
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: rgba(0,255,0,.2);
-    /*opacity: .3;*/
     color: lightgreen;
     link: color gold;
 }
