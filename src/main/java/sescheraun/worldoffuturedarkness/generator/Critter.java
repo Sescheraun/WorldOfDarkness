@@ -64,15 +64,6 @@ public class Critter {
     }
 
     /**
-     * Sets critter id.
-     *
-     * @param critterId the critter id
-     */
-    public void setCritterId(int critterId) {
-        this.critterId = critterId;
-    }
-
-    /**
      * Gets critter name.
      *
      * @return the critter name
