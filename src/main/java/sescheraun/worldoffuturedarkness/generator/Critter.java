@@ -42,6 +42,16 @@ public class Critter {
      * Instantiates a new Critter.
      */
     public Critter() {
+        this.isDeleted = false;
+        this.implemented = false;
+    }
+
+    /**
+     * Instantiates a new Critter.
+     */
+    public Critter(String critterName) {
+        this();
+        this.critterName = critterName;
     }
 
     /**

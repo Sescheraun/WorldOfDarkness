@@ -44,6 +44,7 @@ public class SubCritter {
      * Instantiates a new Sub critter.
      */
     public SubCritter() {
+        this.isDeleted = false;
     }
 
     /**
@@ -57,6 +58,7 @@ public class SubCritter {
      * @param flaw            the flaw
      */
     public SubCritter(Critter critter, String subCritterLabel, String critterSubName, String firstAdvantage, String secondAdvantage, String flaw) {
+        this();
         this.subCritterLabel = subCritterLabel;
         this.critter = critter;
         this.critterSubName = critterSubName;
