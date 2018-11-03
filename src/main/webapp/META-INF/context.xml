@@ -4,5 +4,10 @@
            connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=tomcat"
            userTable="user" userNameCol="userName" userCredCol="authenticator"
            userRoleTable="role" roleNameCol="roleName" >
+
+        <CredentialHandler
+                className="org.apache.catalina.realm.MessageDigestCredentialHandler"
+                algorithm="sha-512"
+                encoding="UTF-8" />
     </Realm>
 </Context>

@@ -9,8 +9,15 @@
 <html>
 <%@ include file="../head.jsp"%>
 <body>
-    the launching off point for the player tools
-
+<body>
+<div id = "content">
+    <script>backgroundShift();</script>
+    This page will hold the Players Tools tools page.
+    <br />
     <a href="/WorldOfFutureDarkness">Link to the home page</a>
+
+    <%@ include file="../foot.jsp"%>
+</div>
+</body>
 </body>
 </html>

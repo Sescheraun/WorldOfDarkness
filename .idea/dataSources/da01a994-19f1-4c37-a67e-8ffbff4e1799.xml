@@ -2,7 +2,7 @@
 <dataSource name="WorldOfDarkness@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
     <root id="1">
-      <ServerVersion>5.7.23</ServerVersion>
+      <ServerVersion>5.7.24</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>exact</DefaultCasing>
@@ -971,7 +971,6 @@
     <column id="246" parent="232" name="isDeleted">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1117,7 +1116,6 @@ traitID</ColNames>
     <column id="271" parent="235" name="isDeleted">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1130,6 +1128,7 @@ traitID</ColNames>
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="274" parent="236" name="userID">
@@ -1214,14 +1213,13 @@ traitID</ColNames>
     </column>
     <column id="287" parent="237" name="flaw">
       <Position>7</Position>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>blob|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="237" name="isDeleted">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1337,7 +1335,6 @@ traitID</ColNames>
     <column id="306" parent="238" name="isDeleted">
       <Position>15</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1394,7 +1391,7 @@ traitID</ColNames>
     </column>
     <column id="316" parent="239" name="authenticator">
       <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1412,7 +1409,6 @@ traitID</ColNames>
     <column id="319" parent="239" name="isDeleted">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>

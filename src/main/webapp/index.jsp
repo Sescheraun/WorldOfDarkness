@@ -10,7 +10,7 @@
 <html>
     <body>
     <div class="container">
-        <div id = "content">
+        <div id = "content" class = "card content">
             <script>backgroundShift();</script>
             This is the launching off point for the page.
             <br />    <a href="admin/index.jsp">Link to the admin pages</a>
@@ -18,8 +18,9 @@
             <br />    <a href="player/index.jsp">link tot he player pages</a>
             <br />    <a href="logout.jsp">logout</a>
             <br />    <a href="createNewUser.jsp">Create an Account</a>
+            <%@ include file="foot.jsp"%>
         </div>
-        <%@ include file="foot.jsp"%>
+
     </div>
     </body>
 </html>

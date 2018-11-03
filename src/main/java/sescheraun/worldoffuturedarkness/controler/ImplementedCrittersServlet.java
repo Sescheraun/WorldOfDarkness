@@ -22,8 +22,14 @@ import java.util.List;
 )
 
 public class ImplementedCrittersServlet extends HttpServlet {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        logger.info("Greets from ImplementedCrittersServlet");
+
         GenericDAO critterDAO = new GenericDAO(Critter.class);
 
         List<Critter> critters = (List<Critter>)critterDAO.getAll();
