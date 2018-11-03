@@ -34,5 +34,8 @@ public class ImplementedCrittersServlet extends HttpServlet {
 
         List<Critter> critters = (List<Critter>)critterDAO.getAll();
 
+
+        resp.sendRedirect("/WorldOfFutureDarkness");
+
     }
 }

@@ -9,16 +9,22 @@
 <%@ include file="head.jsp"%>
 <html>
     <body>
+    <script>backgroundShift();</script>
     <div class="container">
         <div id = "content" class = "card content">
-            <script>backgroundShift();</script>
-            This is the launching off point for the page.
-            <br />    <a href="admin/index.jsp">Link to the admin pages</a>
-            <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
-            <br />    <a href="player/index.jsp">link tot he player pages</a>
-            <br />    <a href="logout.jsp">logout</a>
-            <br />    <a href="createNewUser.jsp">Create an Account</a>
-            <%@ include file="foot.jsp"%>
+            <div class = "card-header">
+                This is the launching off point for the page.
+            </div>
+            <div class = "card-body">
+                <br />    <a href="admin/index.jsp">Link to the admin pages</a>
+                <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
+                <br />    <a href="player/index.jsp">Link to the player pages</a>
+                <br />    <a href="logout.jsp">logout</a>
+                <br />    <a href="createNewUser.jsp">Create an Account</a>
+            </div>
+            <div class = "card-footer">
+                <%@ include file="foot.jsp"%>
+            </div>
         </div>
 
     </div>
