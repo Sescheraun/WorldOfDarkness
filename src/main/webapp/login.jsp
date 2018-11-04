@@ -9,19 +9,28 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
+    <script>backgroundShift();</script>
     <div class = "container">
         <div id = "content">
-            <script>backgroundShift();</script>
-            <FORM ACTION="j_security_check" METHOD="POST">
+
+            <FORM ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
                 <TABLE>
-                    <TR><TD>User name:  </TD><TD><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
-                    <TR><TD>Password:  </TD><TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD></TR>
-                    <TR><TH colspan="2"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH></TR>
+                    <TR>
+                        <TD>User name:  </TD>
+                        <TD><INPUT TYPE="TEXT" NAME="j_username"></TD>
+                    </TR>
+                    <TR>
+                        <TD>Password:  </TD>
+                        <TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD>
+                    </TR>
+                    <TR>
+                        <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
+                    </TR>
                 </TABLE>
             </FORM>
         </div>
         <%@ include file="foot.jsp"%>
-        <a href="createNewUser.jsp">Create an Account</a>
+        <a href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
     </div>
 </body>
 </html>

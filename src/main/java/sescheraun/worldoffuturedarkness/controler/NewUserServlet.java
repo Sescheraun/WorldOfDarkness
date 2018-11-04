@@ -77,6 +77,7 @@ public class NewUserServlet extends HttpServlet {
             resp.sendRedirect("/WorldOfFutureDarkness");
         } else {
             logger.info(userNameError);
+            resp.addHeader("error", userNameError);
             resp.sendRedirect("/WorldOfFutureDarkness/createNewUser.jsp");
         }
     }
