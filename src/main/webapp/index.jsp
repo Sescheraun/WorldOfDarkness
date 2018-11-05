@@ -16,11 +16,11 @@
                 This is the launching off point for the page.
             </div>
             <div class = "card-body">
-                <br />    <a href="admin/index.jsp">Link to the admin pages</a>
-                <br />    <a href="gamemaster/index.jsp">Link to the Game Master pages</a>
-                <br />    <a href="player/index.jsp">Link to the player pages</a>
-                <br />    <a href="logout.jsp">logout</a>
-                <br />    <a href="createNewUser.jsp">Create an Account</a>
+                <br />    <a href="/WorldOfFutureDarkness/admin/index.jsp">Link to the admin pages</a>
+                <br />    <a href="/WorldOfFutureDarkness/gamemaster/index.jsp">Link to the Game Master pages</a>
+                <br />    <a href="/WorldOfFutureDarkness/player/index.jsp">Link to the player pages</a>
+                <br />    <a href="/WorldOfFutureDarkness/logout.jsp">logout</a>
+                <br />    <a href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
             </div>
             <div class = "card-footer">
                 <%@ include file="foot.jsp"%>

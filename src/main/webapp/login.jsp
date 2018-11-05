@@ -11,26 +11,36 @@
 <body>
     <script>backgroundShift();</script>
     <div class = "container">
-        <div id = "content">
 
-            <FORM ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
-                <TABLE>
-                    <TR>
-                        <TD>User name:  </TD>
-                        <TD><INPUT TYPE="TEXT" NAME="j_username"></TD>
-                    </TR>
-                    <TR>
-                        <TD>Password:  </TD>
-                        <TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD>
-                    </TR>
-                    <TR>
-                        <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
-                    </TR>
-                </TABLE>
-            </FORM>
+        <div id = "content" class = "card content">
+
+            <div class = "card-header">
+                Authorize
+            </div>
+
+            <div class = "card-body">
+                <FORM ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
+                    <TABLE>
+                        <TR>
+                            <TD>User name:  </TD>
+                            <TD><INPUT TYPE="TEXT" NAME="j_username"></TD>
+                        </TR>
+                        <TR>
+                            <TD>Password:  </TD>
+                            <TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD>
+                        </TR>
+                        <TR>
+                            <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
+                        </TR>
+                    </TABLE>
+                </FORM>
+            </div>
+
+            <div class = "card-footer">
+                <%@ include file="foot.jsp"%>
+                <a href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
+            </div>
         </div>
-        <%@ include file="foot.jsp"%>
-        <a href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
     </div>
 </body>
 </html>

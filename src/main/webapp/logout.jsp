@@ -18,7 +18,7 @@
 
             <% session.invalidate(); %>
 
-            <a href="index.jsp">return</a>
+            <a href="/WorldOfFutureDarkness/index.jsp">return</a>
 
             <br/><br/>
             <%@ include file="foot.jsp"%>

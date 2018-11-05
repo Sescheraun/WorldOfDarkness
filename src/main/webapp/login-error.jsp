@@ -12,8 +12,9 @@
         <script>backgroundShift();</script>
         <div id = "content">
             Login phailled.
-            <a href="login.jsp">Try again?</a>
+            <a href="/WorldOfFutureDarkness/login.jsp">Try again?</a>
+            <%@ include file="foot.jsp"%>
         </div>
-        <%@ include file="foot.jsp"%>
+
 </body>
 </html>

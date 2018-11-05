@@ -3,6 +3,7 @@ package sescheraun.worldoffuturedarkness.controler;
 import sescheraun.worldoffuturedarkness.generator.*;
 import sescheraun.worldoffuturedarkness.persistance.GenericDAO;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,8 +35,13 @@ public class ImplementedCrittersServlet extends HttpServlet {
 
         List<Critter> critters = (List<Critter>)critterDAO.getAll();
 
+        req.setAttribute("critters", critters);
 
-        resp.sendRedirect("/WorldOfFutureDarkness");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/player/characterCreation.jsp");
+        dispatcher.forward(req, resp);
+
+//        resp.sendRedirect("/WorldOfFutureDarkness/player/characterCreation.jsp");
 
     }
 }
