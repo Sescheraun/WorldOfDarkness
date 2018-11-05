@@ -10,7 +10,7 @@
   <name>indieproject Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <build>
-    <finalName>indieproject</finalName>
+    <finalName>WorldOfFutureDarkness</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
