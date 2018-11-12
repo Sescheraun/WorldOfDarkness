@@ -79,7 +79,6 @@ public class GenericDAO<T> {
 
         List<T> entities = session.createQuery(query).getResultList();
         session.close();
-
         return entities;
     }
 
