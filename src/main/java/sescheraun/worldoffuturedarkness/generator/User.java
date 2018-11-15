@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * @author Robert Collier
  */
-@Entity(name="sescheraun.worldoffuturedarkness.generator.User")
+@Entity(name="User")
 @Table(name="user")
 public class User {
 

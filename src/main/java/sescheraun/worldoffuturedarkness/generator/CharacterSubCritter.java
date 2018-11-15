@@ -6,9 +6,9 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-@Entity(name = "CharacterTraits")
-@Table(name = "characterTraits")
-public class CharacterTraits {
+@Entity(name = "CharacterSubCritter")
+@Table(name = "characterSubCritter")
+public class CharacterSubCritter {
     @Transient
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -16,6 +16,4 @@ public class CharacterTraits {
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
-
-
 }
