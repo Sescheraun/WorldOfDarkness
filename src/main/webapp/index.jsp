@@ -26,7 +26,7 @@
                 <%@ include file="foot.jsp"%>
             </div>
         </div>
-
+        <script>center()</script>
     </div>
     </body>
 </html>

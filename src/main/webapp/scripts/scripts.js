@@ -1,7 +1,5 @@
 
-backgroundShift = () => {
-
-
+let backgroundShift = () => {
 
     var backgrounds = [
         "midnightMeeting.png"
@@ -26,3 +24,14 @@ backgroundShift = () => {
 
 }
 
+ center = () => {
+
+    var element = document.getElementById("content");
+    element.style.position = "absolute";
+
+    var indent = (window.innerWidth / 2) - (element.offsetWidth / 2);
+    element.style.left = indent + 'px';
+
+    var vertical = (window.innerHeight / 2) - (element.offsetHeight / 2);
+    element.style.top = vertical + 'px';
+}
