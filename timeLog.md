@@ -23,3 +23,5 @@
 | 10.17.2018 | Caught up my logs and started to add the generic DAO | 3 hours | Will also add the security this weekend. |
 | 10.20.2018 | More adventures in genericDAO creation. | 6 hours | I get the idea.  Should be all finished Sunday |
 | 10.21.2018 | Got the generic DAO finished and added to the the tests.  Started working on the authentication, getting a few errors there. |5.5 hours| At the open lab, helping a few students. |
+| 10.22.2018 | Worked more on the getting the authentication to work. | 5 hours | This should have some sort of password hashing, need to look into that. |
+  

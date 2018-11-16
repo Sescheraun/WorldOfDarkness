@@ -118,6 +118,8 @@ public class SubCritterDAOTest {
         assertEquals(subCritter, newSubCritter);
         assertNotNull(newSubCritter.getCritter());
         assertEquals(critter, newSubCritter.getCritter());
+
+        System.out.println(newSubCritter.getCritter());
     }
 
     /**

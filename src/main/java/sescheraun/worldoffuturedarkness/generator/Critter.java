@@ -1,6 +1,6 @@
 package sescheraun.worldoffuturedarkness.generator;
 
-
+//import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.HashSet;

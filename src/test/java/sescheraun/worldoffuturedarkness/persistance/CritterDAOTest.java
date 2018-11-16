@@ -54,6 +54,8 @@ public class CritterDAOTest {
         Critter critter = (Critter)genericDAO.getByID(5);
         logger.debug(critters.get(4));
         assertEquals(critter, critters.get(4));
+
+
     }
 
     /**
