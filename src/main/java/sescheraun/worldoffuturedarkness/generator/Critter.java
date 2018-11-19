@@ -37,6 +37,8 @@ public class Critter {
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<SubCritter> subCritters = new HashSet<>();
 
+    @OneToMany(mappedBy = "openTo", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Trait> traits = new HashSet<>();
 
     /**
      * Instantiates a new Critter.
@@ -111,10 +113,10 @@ public class Critter {
     /**
      * Sets is deleted.
      *
-     * @param deeleted the deeleted
+     * @param deleted the deeleted
      */
-    public void setIsDeleted(boolean deeleted) {
-        isDeleted = deeleted;
+    public void setIsDeleted(boolean deleted) {
+        isDeleted = deleted;
     }
 
     /**
@@ -179,9 +181,10 @@ public class Critter {
         return "Critter{" +
                 "critterId=" + critterId +
                 ", critterName='" + critterName + '\'' +
-                ", implemented=" + implemented +
-                ", isDeleted=" + isDeleted +
+                ", implemented= " + implemented +
+                ", isDeleted=   " + isDeleted +
                 ",     subCritters=" + subCritters +
+                ",     traits=     " + traits +
                 '}';
     }
 }

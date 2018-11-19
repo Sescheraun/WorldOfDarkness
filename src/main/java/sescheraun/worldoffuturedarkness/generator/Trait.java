@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * The type Trait.
@@ -22,13 +22,13 @@ public class Trait {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @OneToMany
-    @JoinColumn(name = "critterId")
-    private int openToCritterID;
+    @ManyToOne
+    @JoinColumn(name = "openTo")
+    private Critter openTo;
 
-    @OneToMany
-    @JoinColumn(name = "subCritterId")
-    private int goodAtSubCritterID;
+    @ManyToOne
+    @JoinColumn(name = "goodAt")
+    private SubCritter goodAt;
 
     private String traitName;
     private boolean specialtyAllowed;
@@ -82,17 +82,17 @@ public class Trait {
      *
      * @return the open to critter id
      */
-    public int getOpenToCritterID() {
-        return openToCritterID;
+    public Critter getOpenTo() {
+        return openTo;
     }
 
     /**
      * Sets open to critter id.
      *
-     * @param openToCritterID the open to critter id
+     * @param openTo the open to critter id
      */
-    public void setOpenToCritterID(int openToCritterID) {
-        this.openToCritterID = openToCritterID;
+    public void setOpenTo(Critter openTo) {
+        this.openTo = openTo;
     }
 
     /**
@@ -100,17 +100,17 @@ public class Trait {
      *
      * @return the good at sub critter id
      */
-    public int getGoodAtSubCritterID() {
-        return goodAtSubCritterID;
+    public SubCritter getGoodAt() {
+        return goodAt;
     }
 
     /**
      * Sets good at sub critter id.
      *
-     * @param goodAtSubCritterID the good at sub critter id
+     * @param goodAt the good at sub critter id
      */
-    public void setGoodAtSubCritterID(int goodAtSubCritterID) {
-        this.goodAtSubCritterID = goodAtSubCritterID;
+    public void setGoodAt(SubCritter goodAt) {
+        this.goodAt = goodAt;
     }
 
     /**
@@ -334,8 +334,8 @@ public class Trait {
         return "Trait{"
                 + "logger=" + logger
                 + ", id=" + id
-                + ", openToCritterID=" + openToCritterID
-                + ", goodAtSubCritterID=" + goodAtSubCritterID
+                + ", openToCritterID=" + openTo
+                + ", goodAtSubCritterID=" + goodAt
                 + ", traitName='" + traitName + '\''
                 + ", specialtyAllowed=" + specialtyAllowed
                 + ", minimumScore=" + minimumScore
@@ -357,8 +357,8 @@ public class Trait {
         if (o == null || getClass() != o.getClass()) return false;
         Trait trait = (Trait) o;
         return id == trait.id &&
-                openToCritterID == trait.openToCritterID &&
-                goodAtSubCritterID == trait.goodAtSubCritterID &&
+                openTo == trait.openTo &&
+                goodAt == trait.goodAt &&
                 specialtyAllowed == trait.specialtyAllowed &&
                 minimumScore == trait.minimumScore &&
                 maximumScore == trait.maximumScore &&
@@ -375,7 +375,7 @@ public class Trait {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, openToCritterID, goodAtSubCritterID, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, descriptionFile, isDeleted);
+        return Objects.hash(id, openTo, goodAt, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, descriptionFile, isDeleted);
     }
 
 }

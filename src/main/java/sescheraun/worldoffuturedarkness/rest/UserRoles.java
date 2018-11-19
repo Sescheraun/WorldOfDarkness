@@ -1,6 +1,7 @@
 package sescheraun.worldoffuturedarkness.rest;
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.*;
 import sescheraun.worldoffuturedarkness.generator.Role;
 import sescheraun.worldoffuturedarkness.persistance.GenericDAO;
@@ -8,7 +9,8 @@ import javax.persistence.*;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 import java.util.*;
-import com.fasterxml.jackson.databind.*;
+
+
 
 @Path("/role")
 public class UserRoles {
@@ -18,9 +20,6 @@ public class UserRoles {
 
     private GenericDAO roleDAO = new GenericDAO(Role.class);
 
-    private List<Role> roles = (List<Role>)roleDAO.getAll();
-
-    private String jsonInString = "";
 
     //Create
 
@@ -32,28 +31,30 @@ public class UserRoles {
     @Produces("application/json")
     public Response getMessage() throws Exception {
 
+        List<Object> roles = (List<Object>)roleDAO.getAll();
+
+        String jsonInString;
+
         logger.info(roles);
 
-        String reply = jsonInString(roles);
+        jsonInString = toJson(roles);
 
-        return Response.status(200).entity(reply).build();
+        return Response.status(200).entity(jsonInString).build();
 
     }
-
-
 
     //Update
 
     //Delete
 
-
     //Utilities
-    private String jsonInString(List<Role> roles ) throws Exception {
+    private String toJson(List<Object> roles ) throws Exception {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        jsonInString = mapper.writeValueAsString(roles);
+        String jsonInString = mapper.writeValueAsString(roles);
 
+        logger.info(jsonInString);
 
         return jsonInString;
 
