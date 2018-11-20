@@ -1,5 +1,6 @@
 package sescheraun.worldoffuturedarkness.generator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,6 +40,7 @@ public class User {
 
     private boolean isDeleted;
 
+    @JsonIgnore
     private String authenticator;
 
     private String emailAddress;
@@ -227,7 +229,7 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName, id, userName, isDeleted, authenticator, emailAddress, phoneNumber);
+        return Objects.hash(firstName, lastName, id, userName, isDeleted, emailAddress, phoneNumber);
     }
 
     @Override

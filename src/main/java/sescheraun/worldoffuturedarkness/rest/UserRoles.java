@@ -1,6 +1,7 @@
 package sescheraun.worldoffuturedarkness.rest;
 
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.*;
 import sescheraun.worldoffuturedarkness.generator.Role;
@@ -48,7 +49,7 @@ public class UserRoles {
     //Delete
 
     //Utilities
-    private String toJson(List<Object> roles ) throws Exception {
+    private String toJson(List<Object> roles) throws Exception {
 
         ObjectMapper mapper = new ObjectMapper();
 
@@ -57,6 +58,11 @@ public class UserRoles {
         logger.info(jsonInString);
 
         return jsonInString;
+
+
+
+
+
 
     }
 }

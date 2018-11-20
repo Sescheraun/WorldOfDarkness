@@ -16,4 +16,9 @@ public class Character {
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User player;
+
 }
