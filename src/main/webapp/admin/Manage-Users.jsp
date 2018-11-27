@@ -1,16 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 10/23/18
-  Time: 11:16 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
 <%@ include file="../head.jsp"%>
+<html>
 <body>
-This will be the user manager page.
+<script>backgroundShift();</script>
+<div class="container">
+    <div id = "content" class = "card content">
+        <div class = "card-header text-center">
+            Put the users in their place
+        </div>
+        <div class = "card-body text-center">
+            Future home of an abuse users button.
+            <br /><br />
+            <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
+            <br />
 
-<a href="/WorldOfFutureDarkness">Link to the home page</a>
+            <%@ include file="../foot.jsp"%>
+        </div>
 </body>
 </html>

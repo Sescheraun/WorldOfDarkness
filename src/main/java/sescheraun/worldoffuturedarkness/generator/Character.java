@@ -38,6 +38,12 @@ public class Character {
     )
     Set<SubCritter> subCritters = new HashSet<>();
 
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(
+            name = "characterTraits",
+            joinColumns = {@JoinColumn(name = "characterId")},
+            inverseJoinColumns = {@JoinColumn(name = "traitID")}
+    )
     
     private Critter critter;
     private String firstName;

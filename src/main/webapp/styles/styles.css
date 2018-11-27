@@ -1,13 +1,36 @@
+a:link, a:visited {
+    background-color:rgba(0,255,0,.4);
+    width: 50%;
+    margin: .1%;
+    color: rgba(0, 53, 208, 0.8);
+    padding: 1% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-color: gold;
+}
+
+a:hover, a:active {
+    background-color:rgba(0,255,0,.8);
+    color: rgba(0, 53, 208, 0.8);
+
+}
+
+a.copyright {
+    display: inline-block;
+    width: 49%;
+    border-color: gold;
+}
+
 html, body{
     height: 100%;
-
 }
 
 body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    background-position: center botto,;
+    background-position: center bottom;
     margin: 0;
     padding: 0;
 }
@@ -18,11 +41,19 @@ div#content, div.content {
 
     width: 50%;
 
-    padding: 1%;
+    /*padding: 1%;*/
     margin-left: auto;
     margin-right: auto;
 
     background-color: rgba(0,255,0,.3);
     color: lightgreen;
     link: color gold;
+}
+
+.card {
+    max: 80%;
+}
+
+.card-body {
+    overflow-scrolling: auto;
 }

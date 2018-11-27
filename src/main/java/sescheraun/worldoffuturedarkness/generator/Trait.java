@@ -23,12 +23,12 @@ public class Trait {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "openTo")
-    private Critter openTo;
+    @JoinColumn(name = "openToCritterID")
+    private Critter openToCritterID;
 
     @ManyToOne
-    @JoinColumn(name = "goodAt")
-    private SubCritter goodAt;
+    @JoinColumn(name = "goodAtSubCritterID")
+    private SubCritter goodAtSubCritterID;
 
     private String traitName;
     private boolean specialtyAllowed;
@@ -40,7 +40,6 @@ public class Trait {
     private int normalCost;
     private int expensiveCost;
     private int freebieCost;
-    private String descriptionFile;
     private boolean isDeleted;
 
     /**
@@ -83,7 +82,7 @@ public class Trait {
      * @return the open to critter id
      */
     public Critter getOpenTo() {
-        return openTo;
+        return openToCritterID;
     }
 
     /**
@@ -92,7 +91,7 @@ public class Trait {
      * @param openTo the open to critter id
      */
     public void setOpenTo(Critter openTo) {
-        this.openTo = openTo;
+        this.openToCritterID = openTo;
     }
 
     /**
@@ -101,7 +100,7 @@ public class Trait {
      * @return the good at sub critter id
      */
     public SubCritter getGoodAt() {
-        return goodAt;
+        return goodAtSubCritterID;
     }
 
     /**
@@ -110,7 +109,7 @@ public class Trait {
      * @param goodAt the good at sub critter id
      */
     public void setGoodAt(SubCritter goodAt) {
-        this.goodAt = goodAt;
+        this.goodAtSubCritterID = goodAt;
     }
 
     /**
@@ -294,24 +293,6 @@ public class Trait {
     }
 
     /**
-     * Gets description file.
-     *
-     * @return the description file
-     */
-    public String getDescriptionFile() {
-        return descriptionFile;
-    }
-
-    /**
-     * Sets description file.
-     *
-     * @param descriptionFile the description file
-     */
-    public void setDescriptionFile(String descriptionFile) {
-        this.descriptionFile = descriptionFile;
-    }
-
-    /**
      * Gets is deleted.
      *
      * @return the is deleted
@@ -334,8 +315,8 @@ public class Trait {
         return "Trait{"
                 + "logger=" + logger
                 + ", id=" + id
-                + ", openToCritterID=" + openTo
-                + ", goodAtSubCritterID=" + goodAt
+                + ", openToCritterID=" + openToCritterID.getCritterName()
+                + ", goodAtSubCritterID=" + goodAtSubCritterID.getSubCritterLabel()
                 + ", traitName='" + traitName + '\''
                 + ", specialtyAllowed=" + specialtyAllowed
                 + ", minimumScore=" + minimumScore
@@ -346,7 +327,6 @@ public class Trait {
                 + ", normalCost=" + normalCost
                 + ", expensiveCost=" + expensiveCost
                 + ", freebieCost=" + freebieCost
-                + ", descriptionFile='" + descriptionFile + '\''
                 + ", isDeleted=" + isDeleted
                 + '}';
     }
@@ -357,8 +337,8 @@ public class Trait {
         if (o == null || getClass() != o.getClass()) return false;
         Trait trait = (Trait) o;
         return id == trait.id &&
-                openTo == trait.openTo &&
-                goodAt == trait.goodAt &&
+                openToCritterID == trait.openToCritterID &&
+                goodAtSubCritterID == trait.goodAtSubCritterID &&
                 specialtyAllowed == trait.specialtyAllowed &&
                 minimumScore == trait.minimumScore &&
                 maximumScore == trait.maximumScore &&
@@ -369,13 +349,12 @@ public class Trait {
                 isDeleted == trait.isDeleted &&
                 Objects.equals(traitName, trait.traitName) &&
                 Objects.equals(traitType, trait.traitType) &&
-                Objects.equals(newCost, trait.newCost) &&
-                Objects.equals(descriptionFile, trait.descriptionFile);
+                Objects.equals(newCost, trait.newCost);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, openTo, goodAt, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, descriptionFile, isDeleted);
+        return Objects.hash(id, openToCritterID, goodAtSubCritterID, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, isDeleted);
     }
 
 }

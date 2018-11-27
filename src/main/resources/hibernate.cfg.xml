@@ -23,7 +23,7 @@
         <mapping class="sescheraun.worldoffuturedarkness.generator.SubCritter"/>
         <mapping class="sescheraun.worldoffuturedarkness.generator.Trait"/>
         <mapping class="sescheraun.worldoffuturedarkness.generator.User"/>
-        <mapping class="sescheraun.worldoffuturedarkness.generator.CharacterSubCritter"/>
+
         <mapping class="sescheraun.worldoffuturedarkness.rest.UserRoles"/>
     </session-factory>
 

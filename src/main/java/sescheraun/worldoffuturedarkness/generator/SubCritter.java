@@ -6,7 +6,9 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * The type Sub critter.
@@ -24,6 +26,21 @@ public class SubCritter {
     private int subCritterId;
 
     private String subCritterLabel;
+
+    /**
+     * The Sub critters.
+     */
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(
+            name = "characterSubCritter",
+            joinColumns = { @JoinColumn(name = "subCritterId") },
+            inverseJoinColumns = { @JoinColumn(name = "characterId") }
+    )
+    Set<Character> characters = new HashSet<>();
+
+    @OneToMany
+    @JoinColumn(name = "goodAtSubCritterID")
+    private Set<Trait> trait = new HashSet<>();
 
     @ManyToOne
     @JoinColumn(name = "critterID")
@@ -67,6 +84,24 @@ public class SubCritter {
         this.flaw = flaw;
 
         this.isDeleted = false;
+    }
+
+    /**
+     * Add trait.
+     *
+     * @param trait the trait
+     */
+    public void addTrait(Trait trait) {
+        this.trait.add(trait);
+    }
+
+    /**
+     * Get traits set.
+     *
+     * @return the set of traits
+     */
+    public Set<Trait> getTraits(){
+        return this.trait;
     }
 
     /**

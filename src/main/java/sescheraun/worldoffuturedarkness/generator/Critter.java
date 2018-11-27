@@ -37,7 +37,7 @@ public class Critter {
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<SubCritter> subCritters = new HashSet<>();
 
-    @OneToMany(mappedBy = "openTo", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "openToCritterID", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Trait> traits = new HashSet<>();
 
     /**
@@ -147,7 +147,23 @@ public class Critter {
         subCritters.add(subCritter);
     }
 
+    /**
+     * Add trait.
+     *
+     * @param trait the trait
+     */
+    public void addTrait(Trait trait) {
+        this.traits.add(trait);
+    }
 
+    /**
+     * Get traits set.
+     *
+     * @return the set of traits
+     */
+    public Set<Trait> getTraits(){
+        return this.traits;
+    }
 
 
     /**

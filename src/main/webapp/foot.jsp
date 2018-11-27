@@ -1,6 +1,6 @@
 <div class = "footer">
-    <span class="copyright"> <a href="http://theonyxpath.com/"> The World of Darkness is copyright of Onyx Path Publishing</a></span>
-    <br />
-    <span class="copyright"> <a href="https://talsorianstore.com/"> Cyberpunk is copyright of R. Talsorian games</a></span>
+    <a class = "copyright float-left btn" href="http://theonyxpath.com/"> The World of Darkness<br />is copyright of Onyx Path Publishing</a>
+
+    <a class = "copyright float-right btn" href="https://talsorianstore.com/"> Cyberpunk<br />is copyright of R. Talsorian games</a>
     <script>center()</script>
 </div>
