@@ -5,9 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 /**
  * The type Character.
@@ -39,19 +37,37 @@ public class Character {
     Set<SubCritter> subCritters = new HashSet<>();
 
     @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(
-            name = "characterTraits",
-            joinColumns = {@JoinColumn(name = "characterId")},
-            inverseJoinColumns = {@JoinColumn(name = "traitID")}
-    )
-    
+    private Set<Trait> traits = new HashSet<>();
+
+    @ManyToOne
+    @JoinColumn(name = "critter_id")
     private Critter critter;
+
     private String firstName;
     private String middleName;
     private String lastName;
     private int unspentExperience;
     private boolean approved;
     private boolean isDeleted;
+
+
+    /**
+     * Gets traits.
+     *
+     * @return the traits
+     */
+    public Set<Trait> getTraits() {
+        return traits;
+    }
+
+    /**
+     * Sets traits.
+     *
+     * @param trait the trait
+     */
+    public void setTraits(Trait trait) {
+        this.traits.add(trait);
+    }
 
     /**
      * Instantiates a new Character.
