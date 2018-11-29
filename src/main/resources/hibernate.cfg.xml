@@ -24,6 +24,7 @@
         <mapping class="sescheraun.worldoffuturedarkness.generator.Trait"/>
         <mapping class="sescheraun.worldoffuturedarkness.generator.User"/>
 
+        <mapping class="sescheraun.worldoffuturedarkness.generator.CharacterSheet"/>
         <mapping class="sescheraun.worldoffuturedarkness.rest.UserRoles"/>
     </session-factory>
 

@@ -36,11 +36,11 @@ public class Character {
     )
     Set<SubCritter> subCritters = new HashSet<>();
 
-    @ManyToMany(cascade = {CascadeType.ALL})
-    private Set<Trait> traits = new HashSet<>();
+    @OneToMany(mappedBy = "primaryKey.characterID", cascade = CascadeType.ALL)
+    private Set<CharacterTraits> characterTraits = new HashSet<>();
 
     @ManyToOne
-    @JoinColumn(name = "critter_id")
+    @JoinColumn(name = "critterId")
     private Critter critter;
 
     private String firstName;
@@ -56,17 +56,26 @@ public class Character {
      *
      * @return the traits
      */
-    public Set<Trait> getTraits() {
-        return traits;
+    public Set<CharacterTraits> getTraits() {
+        return characterTraits;
+    }
+
+    /**
+     * Sets character traits.
+     *
+     * @param characterTraits the character traits
+     */
+    public void setCharacterTraits(Set<CharacterTraits> characterTraits) {
+        this.characterTraits = characterTraits;
     }
 
     /**
      * Sets traits.
      *
-     * @param trait the trait
+     * @param characterTrait the character trait
      */
-    public void setTraits(Trait trait) {
-        this.traits.add(trait);
+    public void addCharacterTraits(CharacterTraits characterTrait) {
+        this.characterTraits.add(characterTrait);
     }
 
     /**

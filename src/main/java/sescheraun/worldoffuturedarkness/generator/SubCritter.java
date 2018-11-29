@@ -30,16 +30,10 @@ public class SubCritter {
     /**
      * The Sub critters.
      */
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "characterSubCritter",
-            joinColumns = { @JoinColumn(name = "subCritterId") },
-            inverseJoinColumns = { @JoinColumn(name = "characterId") }
-    )
+    @ManyToMany(mappedBy = "subCritters")
     Set<Character> characters = new HashSet<>();
 
-    @OneToMany
-    @JoinColumn(name = "goodAtSubCritterID")
+    @OneToMany(mappedBy = "goodAtSubCritterID")
     private Set<Trait> trait = new HashSet<>();
 
     @ManyToOne

@@ -30,6 +30,9 @@ public class Trait {
     @JoinColumn(name = "goodAtSubCritterID")
     private SubCritter goodAtSubCritterID;
 
+    @OneToMany(mappedBy = "primaryKey.traitID", cascade = CascadeType.ALL)
+    private Set<CharacterTraits> characterTraits = new HashSet<>();
+
     private String traitName;
     private boolean specialtyAllowed;
     private int minimumScore;
@@ -49,6 +52,32 @@ public class Trait {
         this.isDeleted = false;
     }
 
+    /**
+     * Gets traits.
+     *
+     * @return the traits
+     */
+    public Set<CharacterTraits> getTraits() {
+        return characterTraits;
+    }
+
+    /**
+     * Sets character traits.
+     *
+     * @param characterTraits the character traits
+     */
+    public void setCharacterTraits(Set<CharacterTraits> characterTraits) {
+        this.characterTraits = characterTraits;
+    }
+
+    /**
+     * Sets traits.
+     *
+     * @param characterTrait the character trait
+     */
+    public void addCharacterTraits(CharacterTraits characterTrait) {
+        this.characterTraits.add(characterTrait);
+    }
     /**
      * Gets logger.
      *
