@@ -22,7 +22,7 @@ public class Character {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "userID")
     private User player;
 
     /**

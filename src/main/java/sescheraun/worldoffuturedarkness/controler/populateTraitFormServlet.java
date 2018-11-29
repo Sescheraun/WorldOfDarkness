@@ -29,7 +29,7 @@ public class populateTraitFormServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        logger.info("Greets from ImplementedCrittersServlet");
+        logger.info("Greets from populateTraitsServlet");
 
         GenericDAO critterDAO = new GenericDAO(Critter.class);
         GenericDAO subCritterDAO = new GenericDAO(SubCritter.class);

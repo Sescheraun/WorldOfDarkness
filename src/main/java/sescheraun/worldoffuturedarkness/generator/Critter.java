@@ -41,7 +41,7 @@ public class Critter {
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<SubCritter> subCritters = new HashSet<>();
 
-    @OneToMany(mappedBy = "openToCritterID", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Trait> traits = new HashSet<>();
 
     /**

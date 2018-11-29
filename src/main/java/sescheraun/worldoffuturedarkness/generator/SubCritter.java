@@ -33,7 +33,7 @@ public class SubCritter {
     @ManyToMany(mappedBy = "subCritters")
     Set<Character> characters = new HashSet<>();
 
-    @OneToMany(mappedBy = "goodAtSubCritterID")
+    @OneToMany(mappedBy = "subCritter")
     private Set<Trait> trait = new HashSet<>();
 
     @ManyToOne
