@@ -26,28 +26,31 @@
                     </select>
                 </label>
                 <br />
+
                 <div class = "row">
-                    <label for = "subCritterName" class = "col-sm-3">Sub Type Name</label>
-                    <input name = "subCritterName" id = "subCritterName" class = "input" type = "text" />
+                    <label for = "subCritterName" class = "col-sm-3 text-right">Sub Type Name</label>
+                    <input name = "subCritterName" id = "subCritterName" class = "col-sm-8 input" type = "text" />
                 </div>
 
                 <div class = "row">
-                <label for = "category" class = "col-sm-3"> Sub Type Label</label>
-                    <input name="category" id = "category" class = "input" type = "text" />
-
+                    <label for = "category" class = "col-sm-3 text-right"> Sub Type Label</label>
+                    <input name="category" id = "category" class = "col-sm-8 input" type = "text" />
                 </div>
-                    <div class = "row">
-                <label for = "firstAdvantage" class = "col-sm-3"> Advantage One</label>
-                    <textarea  name="firstAdvantage" id = "firstAdvantage" class = "input" type = "textArea"></textarea>
-                    </div>
-                        <div class = "row">
-                <label for = "secondAdvantage" class = "col-sm-3"> Advantage Two</label>
-                    <textarea  name="secondAdvantage" id = "secondAdvantage" class = "input" type = "textArea"></textarea>
-                        </div>
-                            <div class = "row">
-                <label for = "flaw" class = "col-sm-3"> Flaw</label>
-                    <textarea name="flaw" id = "flaw" class = "input" type = "textArea"></textarea>
-                            </div>
+
+                <div class = "row">
+                    <label for = "firstAdvantage" class = "col-sm-3 text-right"> Advantage One</label>
+                    <textarea  name="firstAdvantage" id = "firstAdvantage" class = "col-sm-8 input" type = "textArea"></textarea>
+                </div>
+
+                <div class = "row">
+                    <label for = "secondAdvantage" class = "col-sm-3 text-right"> Advantage Two</label>
+                    <textarea  name="secondAdvantage" id = "secondAdvantage" class = "col-sm-8 input" type = "textArea"></textarea>
+                </div>
+
+                <div class = "row">
+                    <label for = "flaw" class = "col-sm-3 text-right"> Flaw</label>
+                    <textarea name="flaw" id = "flaw" class = "col-sm-8 input" type = "textArea"></textarea>
+                </div>
 
                 <button class = "btn" id = "subCritterSubmit">Add Sub Type</button>
             </form>
