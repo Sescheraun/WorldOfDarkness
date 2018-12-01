@@ -35,6 +35,11 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 
+    /**
+     * The Characters.
+     */
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    Set<Character> characters = new HashSet<>();
 
     private String userName;
 
@@ -46,6 +51,34 @@ public class User {
     private String emailAddress;
 
     private String phoneNumber;
+
+    /**
+     * Get characters set.
+     *
+     * @return the set
+     */
+    public Set<Character> getCharacters(){
+        return characters;
+    }
+
+    /**
+     * Set characters.
+     *
+     * @param characters the characters
+     */
+    public void setCharacters(Set<Character> characters){
+        this.characters = characters;
+    }
+
+    /**
+     * Add character.
+     *
+     * @param character the character
+     */
+    public void addCharacter(Character character){
+        this.characters.add(character);
+    }
+
 
     /**
      * Gets email address.
@@ -147,8 +180,14 @@ public class User {
 
     /**
      * Instantiates a new User.
-     *
+     * <p>
      * Trying this because for some reason isDeleted keeps going to null.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param password  the password
+     * @param userName  the user name
+     * @param eMail     the e mail
      */
     public User(String firstName, String lastName, String password, String userName, String eMail) {
         this();
@@ -205,6 +244,11 @@ public class User {
         return id;
     }
 
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
     public void addRole (Role role) {
         role.setUser(this);
         roles.add(role);

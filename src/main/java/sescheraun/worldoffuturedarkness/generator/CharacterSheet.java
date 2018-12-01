@@ -10,12 +10,10 @@ import java.util.Objects;
  */
 @Embeddable
 public class CharacterSheet implements Serializable {
-    @Id
-    @Column(name = "characterID")
+    @ManyToOne(cascade = CascadeType.ALL)
     private Character characterID;
 
-    @Id
-    @Column(name = "traitID")
+    @ManyToOne(cascade = CascadeType.ALL)
     private Trait traitID;
 
     /**

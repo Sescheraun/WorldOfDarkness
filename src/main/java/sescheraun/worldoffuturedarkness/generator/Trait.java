@@ -24,11 +24,14 @@ public class Trait {
 
     @ManyToOne
     @JoinColumn(name = "openToCritterID")
-    private Critter openToCritterID;
+    private Critter critter;
 
     @ManyToOne
     @JoinColumn(name = "goodAtSubCritterID")
-    private SubCritter goodAtSubCritterID;
+    private SubCritter subCritter;
+
+    @OneToMany(mappedBy = "primaryKey.traitID", cascade = CascadeType.ALL)
+    private Set<CharacterTraits> characterTraits = new HashSet<>();
 
     private String traitName;
     private boolean specialtyAllowed;
@@ -49,6 +52,32 @@ public class Trait {
         this.isDeleted = false;
     }
 
+    /**
+     * Gets traits.
+     *
+     * @return the traits
+     */
+    public Set<CharacterTraits> getTraits() {
+        return characterTraits;
+    }
+
+    /**
+     * Sets character traits.
+     *
+     * @param characterTraits the character traits
+     */
+    public void setCharacterTraits(Set<CharacterTraits> characterTraits) {
+        this.characterTraits = characterTraits;
+    }
+
+    /**
+     * Sets traits.
+     *
+     * @param characterTrait the character trait
+     */
+    public void addCharacterTraits(CharacterTraits characterTrait) {
+        this.characterTraits.add(characterTrait);
+    }
     /**
      * Gets logger.
      *
@@ -82,7 +111,7 @@ public class Trait {
      * @return the open to critter id
      */
     public Critter getOpenTo() {
-        return openToCritterID;
+        return critter;
     }
 
     /**
@@ -91,7 +120,7 @@ public class Trait {
      * @param openTo the open to critter id
      */
     public void setOpenTo(Critter openTo) {
-        this.openToCritterID = openTo;
+        this.critter = openTo;
     }
 
     /**
@@ -100,7 +129,7 @@ public class Trait {
      * @return the good at sub critter id
      */
     public SubCritter getGoodAt() {
-        return goodAtSubCritterID;
+        return subCritter;
     }
 
     /**
@@ -109,7 +138,7 @@ public class Trait {
      * @param goodAt the good at sub critter id
      */
     public void setGoodAt(SubCritter goodAt) {
-        this.goodAtSubCritterID = goodAt;
+        this.subCritter = goodAt;
     }
 
     /**
@@ -315,8 +344,8 @@ public class Trait {
         return "Trait{"
                 + "logger=" + logger
                 + ", id=" + id
-                + ", openToCritterID=" + openToCritterID.getCritterName()
-                + ", goodAtSubCritterID=" + goodAtSubCritterID.getSubCritterLabel()
+                + ", critter=" + critter.getCritterName()
+                + ", subCritter=" + subCritter.getSubCritterLabel()
                 + ", traitName='" + traitName + '\''
                 + ", specialtyAllowed=" + specialtyAllowed
                 + ", minimumScore=" + minimumScore
@@ -337,8 +366,8 @@ public class Trait {
         if (o == null || getClass() != o.getClass()) return false;
         Trait trait = (Trait) o;
         return id == trait.id &&
-                openToCritterID == trait.openToCritterID &&
-                goodAtSubCritterID == trait.goodAtSubCritterID &&
+                critter == trait.critter &&
+                subCritter == trait.subCritter &&
                 specialtyAllowed == trait.specialtyAllowed &&
                 minimumScore == trait.minimumScore &&
                 maximumScore == trait.maximumScore &&
@@ -354,7 +383,7 @@ public class Trait {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, openToCritterID, goodAtSubCritterID, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, isDeleted);
+        return Objects.hash(id, critter, subCritter, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, isDeleted);
     }
 
 }

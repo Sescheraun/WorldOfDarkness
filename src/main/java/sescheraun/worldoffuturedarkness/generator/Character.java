@@ -5,9 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 /**
  * The type Character.
@@ -24,7 +22,7 @@ public class Character {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "userID")
     private User player;
 
     /**
@@ -38,20 +36,47 @@ public class Character {
     )
     Set<SubCritter> subCritters = new HashSet<>();
 
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(
-            name = "characterTraits",
-            joinColumns = {@JoinColumn(name = "characterId")},
-            inverseJoinColumns = {@JoinColumn(name = "traitID")}
-    )
-    
+    @OneToMany(mappedBy = "primaryKey.characterID", cascade = CascadeType.ALL)
+    private Set<CharacterTraits> characterTraits = new HashSet<>();
+
+    @ManyToOne
+    @JoinColumn(name = "critterId")
     private Critter critter;
+
     private String firstName;
     private String middleName;
     private String lastName;
     private int unspentExperience;
     private boolean approved;
     private boolean isDeleted;
+
+
+    /**
+     * Gets traits.
+     *
+     * @return the traits
+     */
+    public Set<CharacterTraits> getTraits() {
+        return characterTraits;
+    }
+
+    /**
+     * Sets character traits.
+     *
+     * @param characterTraits the character traits
+     */
+    public void setCharacterTraits(Set<CharacterTraits> characterTraits) {
+        this.characterTraits = characterTraits;
+    }
+
+    /**
+     * Sets traits.
+     *
+     * @param characterTrait the character trait
+     */
+    public void addCharacterTraits(CharacterTraits characterTrait) {
+        this.characterTraits.add(characterTrait);
+    }
 
     /**
      * Instantiates a new Character.

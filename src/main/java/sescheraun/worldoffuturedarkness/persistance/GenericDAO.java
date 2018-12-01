@@ -68,17 +68,29 @@ public class GenericDAO<T> {
      */
     public List<T> getAll(){
         Session session = getSession();
+        logger.debug("1");
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
+        logger.debug("2");
+
         CriteriaQuery<T> query = builder.createQuery(type);
+        logger.debug("3");
 
         Root<T> root = query.from(type);
+        logger.debug("4");
 
         Expression<Boolean> isDeleted = root.get("isDeleted");
+        logger.debug("5");
+
         query.select(root).where(builder.isFalse(isDeleted));
+        logger.debug("6");
 
         List<T> entities = session.createQuery(query).getResultList();
+        logger.debug("7");
+
         session.close();
+        logger.debug("8");
+
         return entities;
     }
 
