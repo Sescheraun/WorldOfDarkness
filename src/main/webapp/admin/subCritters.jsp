@@ -26,24 +26,30 @@
                     </select>
                 </label>
                 <br />
-                <label for = "subCritterName">Sub Type Name<input name = "subCritterName" id = "subCritterName" class = "input" type = "text" /></label>
+                <div class = "row">
+                    <label for = "subCritterName" class = "col-sm-3">Sub Type Name</label>
+                    <input name = "subCritterName" id = "subCritterName" class = "input" type = "text" />
+                </div>
 
-                <label for = "category"> Sub Type Label
+                <div class = "row">
+                <label for = "category" class = "col-sm-3"> Sub Type Label</label>
                     <input name="category" id = "category" class = "input" type = "text" />
-                </label>
 
-                <label for = "firstAdvantage"> Advantage One
+                </div>
+                    <div class = "row">
+                <label for = "firstAdvantage" class = "col-sm-3"> Advantage One</label>
                     <textarea  name="firstAdvantage" id = "firstAdvantage" class = "input" type = "textArea"></textarea>
-                </label>
-
-                <label for = "secondAdvantage"> Advantage Two
+                    </div>
+                        <div class = "row">
+                <label for = "secondAdvantage" class = "col-sm-3"> Advantage Two</label>
                     <textarea  name="secondAdvantage" id = "secondAdvantage" class = "input" type = "textArea"></textarea>
-                </label>
-
-                <label for = "flaw"> Flaw
+                        </div>
+                            <div class = "row">
+                <label for = "flaw" class = "col-sm-3"> Flaw</label>
                     <textarea name="flaw" id = "flaw" class = "input" type = "textArea"></textarea>
-                </label>
+                            </div>
 
+                <button class = "btn" id = "subCritterSubmit">Add Sub Type</button>
             </form>
         </div>
         <%@ include file="../foot.jsp"%>
