@@ -270,7 +270,7 @@ public class Character {
                 "id=" + id +
                 ", player=" + player +
                 ", subCritters=" + subCritters +
-                ", critter=" + critter +
+                ", critter=" + critter.getCritterName() +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +

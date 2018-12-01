@@ -18,26 +18,35 @@
         </div>
         <div class = "card-body text-center">
             <form>
-                <label for = "traitName">Trait Name<input name = "traitName" id = "traitName" class = "input" type = "text" /></label>
-                <label for = "speciality"><input type = "checkbox" name = "speciality" id = "speciality"/>Speciality Allowed</label>
-                <label for = "allowed"> Allowed for
+                <label for = "allowed"> Base Creature
                     <select id = "allowed">
                         <c:forEach var = "critter"  items = "${critters}">
                             <option>${critter.critterName}</option>
                         </c:forEach>
                     </select>
                 </label>
-                <label for = "goodAt">
-                    <select id = "goodAt">
-                        <c:forEach var = "subCritter"  items = "${subCritters}">
-                            <option>${subCritter.subCritterName}</option>
-                        </c:forEach>
-                    </select>
+                <br />
+                <label for = "subCritterName">Sub Type Name<input name = "subCritterName" id = "subCritterName" class = "input" type = "text" /></label>
+
+                <label for = "category"> Sub Type Label
+                    <input name="category" id = "category" class = "input" type = "text" />
                 </label>
 
+                <label for = "firstAdvantage"> Advantage One
+                    <textarea  name="firstAdvantage" id = "firstAdvantage" class = "input" type = "textArea"></textarea>
+                </label>
+
+                <label for = "secondAdvantage"> Advantage Two
+                    <textarea  name="secondAdvantage" id = "secondAdvantage" class = "input" type = "textArea"></textarea>
+                </label>
+
+                <label for = "flaw"> Flaw
+                    <textarea name="flaw" id = "flaw" class = "input" type = "textArea"></textarea>
+                </label>
 
             </form>
         </div>
         <%@ include file="../foot.jsp"%>
+    </div>
 </body>
 </html>
