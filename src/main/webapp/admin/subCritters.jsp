@@ -10,18 +10,18 @@
 <%@ include file="../head.jsp"%>
 <html>
 <body>
-<script>backgroundShift();</script>
+
 <div class="container">
     <div id = "content" class = "card content">
         <div class = "card-header text-center">
             Creating new Traits
         </div>
         <div class = "card-body text-center">
-            <form>
+
                 <label for = "allowed"> Base Creature
                     <select id = "allowed">
                         <c:forEach var = "critter"  items = "${critters}">
-                            <option>${critter.critterName}</option>
+                            <option id = "${critter.critterId}">${critter.critterName}</option>
                         </c:forEach>
                     </select>
                 </label>
@@ -53,7 +53,7 @@
                 </div>
 
                 <button class = "btn" id = "subCritterSubmit">Add Sub Type</button>
-            </form>
+
         </div>
         <%@ include file="../foot.jsp"%>
     </div>

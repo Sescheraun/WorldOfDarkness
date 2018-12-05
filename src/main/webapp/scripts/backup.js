@@ -1,4 +1,5 @@
-$(document).ready( () => {
+
+let backgroundShift = () => {
 
     var backgrounds = [
         "midnightMeeting.png"
@@ -21,7 +22,9 @@ $(document).ready( () => {
     container.backgroundRepeat = "noRepeat";
 
 
+}
 
+center = () => {
 
     var element = document.getElementById("content");
     element.style.position = "absolute";
@@ -31,15 +34,8 @@ $(document).ready( () => {
 
     var vertical = (window.innerHeight / 2) - (element.offsetHeight / 2);
     element.style.top = vertical + 'px';
+}
 
-
-    $("#subCritterSubmit").on("click", () => {
-
-        let critter = $("#allowed :selected").prop("id");
-        let subCritter = $("#subCritterName").val();
-
-        subCritter = {"critter": critter, "subCritter": subCritter}
-        console.log(subCritter);
-    });
-
+$("#subCritterSubmit").on("click", () => {
+    console.log("The button, she be clicked!")
 })
