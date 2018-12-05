@@ -16,11 +16,12 @@ public class Preprocessor extends Application {
     //The method returns a non-empty collection with classes, that must be included in the published JAX-RS application
     @Override
     public Set<Class<?>> getClasses() {
-        logger.info("Preprocessor 1");
+
         HashSet h = new HashSet<Class<?>>();
-        logger.info("Preprocessor 2");
+
         h.add(UserRoles.class );
-        logger.info("Preprocessor 3");
+        h.add(setSubCritters.class);
+        h.add(getSubCritters.class);
 
         logger.info(h);
         return h;

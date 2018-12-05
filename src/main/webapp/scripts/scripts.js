@@ -35,10 +35,20 @@ $(document).ready( () => {
 
     $("#subCritterSubmit").on("click", () => {
 
-        let critter = $("#allowed :selected").prop("id");
-        let subCritter = $("#subCritterName").val();
+        let critter         = $("#allowed :selected").prop("id");
+        let subCritter      = $("#subCritterName").val();
+        let category        = $("#category").val();
+        let firstAdvantage  = $("#firstAdvantage").val();
+        let secondAdvantage = $("#secondAdvantage").val();
+        let flaw            = $("#flaw").val();
 
-        subCritter = {"critter": critter, "subCritter": subCritter}
+        subCritter = {"critter": critter
+                 , "subCritter": subCritter
+                   , "category": category
+             , "firstAdvantage": firstAdvantage
+            , "secondAdvantahe": secondAdvantage
+                       , "flaw": flaw
+        }
         console.log(subCritter);
     });
 
