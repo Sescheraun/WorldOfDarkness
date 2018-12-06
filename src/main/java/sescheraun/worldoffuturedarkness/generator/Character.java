@@ -268,7 +268,7 @@ public class Character {
     public String toString() {
         return "Character{" +
                 "id=" + id +
-                ", player=" + player +
+                ", player=" + player.getUserName() +
                 ", subCritters=" + subCritters +
                 ", critter=" + critter.getCritterName() +
                 ", firstName='" + firstName + '\'' +

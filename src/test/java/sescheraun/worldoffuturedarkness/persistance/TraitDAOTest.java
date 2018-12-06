@@ -44,10 +44,6 @@ public class TraitDAOTest {
      */
     @BeforeEach
     void setUp() {
-//        dao = new SubCritterDAO();
-        genericDAO = new GenericDAO(SubCritter.class);
-        critterDao = new GenericDAO(Critter.class);
-
 
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");

@@ -37,8 +37,10 @@ public class NewUserServlet extends HttpServlet {
         //TODO:  put some of this error checking in javascript as well.
         if (req.getParameter("userName").length() <= 1) {
             userNameError = "User Name is a required field";
+
         } else if (users.size() >= 1) {
             userNameError = "The user name '" + req.getParameter("userName") + "' is already in use.";
+
         } else if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 5) {
             userNameError = "The passwords must match and be at least 5 characters long.";
         }

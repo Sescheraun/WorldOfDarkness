@@ -38,8 +38,8 @@ public class User {
     /**
      * The Characters.
      */
-    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    Set<Character> characters = new HashSet<>();
+//    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    Set<Character> characters = new HashSet<>();
 
     private String userName;
 
@@ -57,27 +57,27 @@ public class User {
      *
      * @return the set
      */
-    public Set<Character> getCharacters(){
-        return characters;
-    }
+//    public Set<Character> getCharacters(){
+//        return characters;
+//    }
 
     /**
      * Set characters.
      *
      * @param characters the characters
      */
-    public void setCharacters(Set<Character> characters){
-        this.characters = characters;
-    }
+//    public void setCharacters(Set<Character> characters){
+//        this.characters = characters;
+//    }
 
     /**
      * Add character.
      *
      * @param character the character
      */
-    public void addCharacter(Character character){
-        this.characters.add(character);
-    }
+//    public void addCharacter(Character character){
+//        this.characters.add(character);
+//    }
 
 
     /**

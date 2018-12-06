@@ -20,8 +20,8 @@ public class Preprocessor extends Application {
         HashSet h = new HashSet<Class<?>>();
 
         h.add(UserRoles.class );
-        h.add(setSubCritters.class);
-        h.add(getSubCritters.class);
+        h.add(SetSubCritters.class);
+        h.add(GetSubCritters.class);
 
         logger.info(h);
         return h;

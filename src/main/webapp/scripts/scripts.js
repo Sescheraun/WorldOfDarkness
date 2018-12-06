@@ -20,9 +20,6 @@ $(document).ready( () => {
     container.backgroundImage = image;
     container.backgroundRepeat = "noRepeat";
 
-
-
-
     var element = document.getElementById("content");
     element.style.position = "absolute";
 
@@ -46,7 +43,7 @@ $(document).ready( () => {
                  , "subCritter": subCritter
                    , "category": category
              , "firstAdvantage": firstAdvantage
-            , "secondAdvantahe": secondAdvantage
+            , "secondAdvantage": secondAdvantage
                        , "flaw": flaw
         }
         console.log(subCritter);
