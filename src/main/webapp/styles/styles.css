@@ -57,3 +57,7 @@ div#content, div.content {
 .card-body {
     overflow-scrolling: auto;
 }
+
+textarea {
+    resize: unset;
+}

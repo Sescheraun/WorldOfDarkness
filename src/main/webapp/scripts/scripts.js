@@ -47,6 +47,8 @@ $(document).ready( () => {
                        , "flaw": flaw
         }
         console.log(subCritter);
+
+        // lookup @formdata
     });
 
 })
