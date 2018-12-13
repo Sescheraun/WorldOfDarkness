@@ -33,16 +33,28 @@ public class SubCritterCRUD extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String response = "You have reached the doPost method";
+
+
+        int critterID = Integer.parseInt(req.getParameter("critter"));
+        String subCritterName  = (req.getParameter("subCritterName"));
+        String category        = (req.getParameter("category"));
+        String firstAdvantage  = (req.getParameter("firstAdvantage"));
+        String secondAdvantage = (req.getParameter("secondAdvantage"));
+        String flaw            = (req.getParameter("flaw"));
+
+        Critter critter = (Critter)critterDAO.getByID(critterID);
+        logger.info(critter);
+        SubCritter subCritter = new SubCritter(critter, category, subCritterName, firstAdvantage, secondAdvantage, flaw );
+        logger.info(subCritter);
+
+        critter.addSubCritter(subCritter);
+        int id = subCritterDAO.create(subCritter);
+
+
+        String response = "Subtype " + subCritter.getCritterSubName()
+                + " under type " + critter.getCritterName()
+                + " has been created and assigned ID " + id + ".";
         logger.info(response);
-
-
-        logger.info(req.getParameter("critter"));
-        logger.info(req.getParameter("subCritterName"));
-        logger.info(req.getParameter("category"));
-        logger.info(req.getParameter("firstAdvantage"));
-        logger.info(req.getParameter("secondAdvantage"));
-        logger.info(req.getParameter("flaw"));
 
         resp.setContentType("text/plain");
         resp.getWriter().write(response);

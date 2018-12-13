@@ -25,7 +25,7 @@ $(document).ready( () => {
         let flaw            = $("#flaw").val();
 
         subCritter = {"critter": critter
-                 , "subCritterName": subCritterName
+             , "subCritterName": subCritterName
                    , "category": category
              , "firstAdvantage": firstAdvantage
             , "secondAdvantage": secondAdvantage

@@ -11,7 +11,7 @@
         <div class = "card-body text-center">
             <a class = "btn" href="/WorldOfFutureDarkness/prepTraitForm">Add or Remove Traits</a>
             <br />
-            <a class = "btn" href="/WorldOfFutureDarkness/prepSubCritterForm">Add or Remove Sub Types</a>
+            <a class = "btn" href="/WorldOfFutureDarkness/prepSubCritterForm">Manage Sub Types</a>
             <br /><br />
             <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
             <br />
