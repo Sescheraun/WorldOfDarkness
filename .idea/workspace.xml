@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -229,8 +226,8 @@
           <entry key="css" value="300" />
           <entry key="dummy" value="12" />
           <entry key="gitignore" value="15" />
-          <entry key="java" value="19338" />
-          <entry key="js" value="2071" />
+          <entry key="java" value="19349" />
+          <entry key="js" value="2699" />
           <entry key="jsp" value="3060" />
           <entry key="log" value="63" />
           <entry key="md" value="3048" />
@@ -243,9 +240,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="300" />
-          <entry key="JAVA" value="19338" />
+          <entry key="JAVA" value="19349" />
           <entry key="JSP" value="3060" />
-          <entry key="JavaScript" value="2071" />
+          <entry key="JavaScript" value="2699" />
           <entry key="Markdown" value="3048" />
           <entry key="PLAIN_TEXT" value="169" />
           <entry key="Properties" value="144" />
@@ -294,31 +291,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="3744">
+              <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="542">
+              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-953">
-              <caret line="153" column="69" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -419,8 +412,8 @@
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/head.jsp" />
         <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
       </list>
     </option>
   </component>
@@ -579,7 +572,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544722197948" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544723616479" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1110,7 +1103,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342257000" />
+    <option name="totallyTimeSpent" value="343721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1135,11 +1128,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32464713" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38324022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38324022" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.18659218" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" visible="true" weight="0.18659218" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.3273743" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
@@ -1561,24 +1554,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
-          <caret line="153" column="69" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        <state relative-caret-position="542">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3744">
+          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
         </state>
       </provider>
     </entry>

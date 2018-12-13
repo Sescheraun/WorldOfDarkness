@@ -27,6 +27,8 @@ public class SubCritterCRUD extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String response = "You have reached the doGet method";
         logger.info(response);
+        resp.setContentType("text/plain");
+        resp.getWriter().write(response);
     }
 
     @Override
@@ -43,19 +45,23 @@ public class SubCritterCRUD extends HttpServlet {
         logger.info(req.getParameter("flaw"));
 
         resp.setContentType("text/plain");
-        resp.getWriter().write("Post Recieved.");
+        resp.getWriter().write(response);
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String response = "You have reached the doPut method";
         logger.info(response);
+        resp.setContentType("text/plain");
+        resp.getWriter().write(response);
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String response = "You have reached the doDelete method";
         logger.info(response);
+        resp.setContentType("text/plain");
+        resp.getWriter().write(response);
     }
 
 }
