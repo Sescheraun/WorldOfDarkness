@@ -9,7 +9,7 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
-        <script>backgroundShift();</script>
+
         <div id = "content">
             Login phailled.
             <a href="/WorldOfFutureDarkness/login.jsp">Try again?</a>

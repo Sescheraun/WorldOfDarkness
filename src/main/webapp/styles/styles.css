@@ -61,3 +61,7 @@ div#content, div.content {
 textarea {
     resize: unset;
 }
+.form-control, .form-control:focus {
+    background-color: rgba(0,100,0,.8);
+    color: lightgreen;
+}

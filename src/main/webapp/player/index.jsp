@@ -12,7 +12,7 @@
 <%@ include file="../head.jsp"%>
 <body>
 <div id = "content">
-    <script>backgroundShift();</script>
+
     <a href="/WorldOfFutureDarkness/getCritters">Select Supernatural Creature</a>
     <br />
     <a href="/WorldOfFutureDarkness">Link to the home page</a>

@@ -31,20 +31,16 @@ public class Emailer {
         logger.debug("Password is :" + password);
 
 
-        Session session = Session.getDefaultInstance(properties);
-        MimeMessage message = new MimeMessage(session);
-
-//        , new Authenticator() {
-//
-//            protected PasswordAuthentication getPasswordAuthentication() {
-//                return new PasswordAuthentication(userName, password);
-//            }
-//        });
+        Session session = Session.getInstance(properties, new Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(userName, password);
+            }
+        });
 
         logger.debug("The session is set up");
 
         try {
-
+            Message message = new MimeMessage(session);
             logger.debug("in the try");
             logger.debug("new message(session)");
             message.setFrom(new InternetAddress(from));
@@ -55,8 +51,6 @@ public class Emailer {
             logger.debug("setSubject(subject)");
             message.setText(messageBody);
             logger.debug("setText(messageBody)");
-            Transport transport = session.getTransport("smtp");
-            transport.connect(host, from, password);
             Transport.send(message);
 
             logger.debug("Sent");

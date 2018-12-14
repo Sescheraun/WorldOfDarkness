@@ -9,18 +9,18 @@
 <html>
     <%@ include file="head.jsp"%>
     <body>
-            <script>backgroundShift();</script>
-            <%@ page session="true"%>
 
-            <div id = "content">
-                User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
-            </div>
+        <%@ page session="true"%>
 
-            <% session.invalidate(); %>
+        <div id = "content">
+            User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
+        </div>
 
-            <a href="/WorldOfFutureDarkness/index.jsp">return</a>
+        <% session.invalidate(); %>
 
-            <br/><br/>
-            <%@ include file="foot.jsp"%>
+        <a href="/WorldOfFutureDarkness/index.jsp">return</a>
+
+        <br/><br/>
+        <%@ include file="foot.jsp"%>
     </body>
 </html>

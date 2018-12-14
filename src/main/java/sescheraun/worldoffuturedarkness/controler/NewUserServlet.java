@@ -72,9 +72,6 @@ public class NewUserServlet extends HttpServlet {
 
             user.addRole(player);
 
-            System.out.println(user);
-            System.out.println(player);
-
             userDao.create(user);
             resp.sendRedirect("/WorldOfFutureDarkness");
         } else {

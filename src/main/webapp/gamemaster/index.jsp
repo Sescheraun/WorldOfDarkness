@@ -11,7 +11,7 @@
 <body>
 
 <div id = "content">
-    <script>backgroundShift();</script>
+
     This page will hold the Game Master's tools page.
     <br />
     <a href="/WorldOfFutureDarkness">Link to the home page</a>

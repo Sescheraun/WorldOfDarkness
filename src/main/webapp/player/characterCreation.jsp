@@ -5,7 +5,6 @@
 <%@ include file="../head.jsp"%>
 <body>
 <div id = "content">
-    <script>backgroundShift();</script>
     <table>
     <c:forEach var = "critter"  items = "${critters}">
         <tr>

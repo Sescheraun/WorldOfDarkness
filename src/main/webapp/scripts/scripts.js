@@ -1,10 +1,12 @@
+var CORE_LOCATION = "http://localhost:8080/WorldOfFutureDarkness/";
+
 $(document).ready( () => {
-    var CORE_LOCATION = "http://localhost:8080/WorldOfFutureDarkness/";
 
     backgroundFlip();
 
-
     centerTheThing();
+    let title = $(document).find("title").text();
+    // if ($("#ManageSubCritter").getAttribute('onPage').value="1"){readAllSubCritters()}
 
     /*********************************************************************
      **                        Create Subcritter                        **
@@ -73,10 +75,10 @@ $(document).ready( () => {
      **                                                                 **
      **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
      *********************************************************************/
-    $("#subCritterSubmit").on("click", () => {
+    $("#subCritterUpdate").on("click", () => {
 
         let critter         = $("#allowed :selected").prop("id");
-        let subCritterID    = $("#subCritterID").val();
+        let subCritterID    = $("#subCritterUpdateID").innerHTML;
         let subCritterName  = $("#subCritterName").val();
         let category        = $("#category").val();
         let firstAdvantage  = $("#firstAdvantage").val();
@@ -112,46 +114,6 @@ $(document).ready( () => {
     });
 
     /*********************************************************************
-     **                        Read Subcritters                         **
-     ** This function is called from admin/subCritter.jsp and gets all  **
-     ** the subcritters from the subCritterCrud servelet to be added to **
-     ** displayed on the page for browsing by critter.  It require a    **
-     ** critter ID to be used.                                          **
-     **                                                                 **
-     ** When i have more time, and the rest of the application is done, **
-     ** I would like to refactor this to user observables.              **
-     **                                                                 **
-     **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
-     *********************************************************************/    $("#subCritterSubmit").on("click", () => {
-
-        let critter         = $("#allowed :selected").prop("id");
-
-        //Make it standard postData for now.
-        postData = `critter=${critter}`;
-
-        console.log(subCritter);
-
-        $.ajax({
-            url:CORE_LOCATION + "subCritterCRUD"
-            , method: "GET"
-            , data: postData
-            , dataType: "TEXT"
-            , success: function(responseText) {
-                // let data = JSON.parse(responseText);
-                console.log(responseText);
-            }
-            , error:function(xhr, status, error) {
-                console.log("ERROR:");
-                console.log(xhr.responseText);
-                console.log(postData);
-                console.log(status);
-                console.log(error);
-
-            }
-        })
-    });
-
-    /*********************************************************************
      **                        Delete Subcritter                        **
      ** This function is called from admin/subCritter.jsp and sends a   **
      ** subcritterID to the subCritterCrud servelet to be removed from  **
@@ -161,12 +123,13 @@ $(document).ready( () => {
      ** I would like to refactor this to user observables.              **
      **                                                                 **
      **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
-     *********************************************************************/    $("#subCritterSubmit").on("click", () => {
+     *********************************************************************/
+    $("#subCritterDelete").on("click", () => {
 
-        let subCritterID    = $("#subCritterID").val();
+        let subCritterID    = $("#subCritterDeleteID").innerHTML;
 
         //Make it standard postData for now.
-        postData = `subCritterID=${subCritterID}`;
+        let postData = `subCritterID=${subCritterID}`;
 
         console.log(subCritter);
 
@@ -192,6 +155,44 @@ $(document).ready( () => {
 
 })
 
+/*********************************************************************
+ **                        Read Subcritters                         **
+ ** This function is called from admin/subCritter.jsp and gets all  **
+ ** the subcritters from the subCritterCrud servelet to be added to **
+ ** displayed on the page for browsing by critter.  It require a    **
+ ** critter ID to be used.                                          **
+ **                                                                 **
+ ** When i have more time, and the rest of the application is done, **
+ ** I would like to refactor this to user observables.              **
+ **                                                                 **
+ **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
+ *********************************************************************/
+readAllSubCritters = () => {
+
+    let critter = $("#allowed :selected").prop("id");
+
+    //Make it standard postData for now.
+    let postData = `critter=${critter}`;
+
+    $.ajax({
+        url:CORE_LOCATION + "subCritterCRUD"
+        , method: "GET"
+        , data: postData
+        , dataType: "TEXT"
+        , success: function(responseText) {
+            // let data = JSON.parse(responseText);
+            console.log(responseText);
+        }
+        , error:function(xhr, status, error) {
+            console.log("ERROR:");
+            console.log(xhr.responseText);
+            console.log(postData);
+            console.log(status);
+            console.log(error);
+
+        }
+    })
+};
 
 /*********************************************************************
  **                         Background flip                         **

@@ -13,7 +13,7 @@ import java.util.*;
 
 
 
-@Path("/role")
+@Path("/roles")
 public class UserRoles {
 
     @Transient
