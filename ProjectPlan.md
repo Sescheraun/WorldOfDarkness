@@ -60,7 +60,7 @@
 
 ### Week 9
 - [X] Weekly journal entry
-- {x] Review and incorporate feedback from Checkpoint 3.
+- [x] Review and incorporate feedback from Checkpoint 3.
 - [ ] Carefully review code for standards and best practices - use a code quality tool? 
 
 ### Week 8
