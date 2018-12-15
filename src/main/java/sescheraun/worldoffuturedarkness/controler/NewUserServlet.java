@@ -55,10 +55,8 @@ public class NewUserServlet extends HttpServlet {
         } else {
             logger.info(userNameError);
 
-            req.setAttribute("error", userNameError);
-
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpError.jsp");
-            dispatcher.forward(req, resp);
+            Error error = new Error();
+            error.report(req, resp, userNameError, "Your account could not be created");
         }
     }
 
@@ -91,14 +89,30 @@ public class NewUserServlet extends HttpServlet {
         List<User> users = (List<User>)userDao.getEntityByEqual("userName", req.getParameter("userName"));
 
         //TODO:  put some of this error checking in javascript as well.
+        if (req.getParameter("firstName").length() <= 1) {
+            userNameError += "First Name is a required field<br />";
+
+        }
+
+        if (req.getParameter("lastName").length() <= 1) {
+            userNameError += "Last Name is a required field<br />";
+
+        }
+
         if (req.getParameter("userName").length() <= 1) {
-            userNameError = "User Name is a required field<br />";
+            userNameError += "User Name is a required field<br />";
 
-        } else if (users.size() >= 1) {
-            userNameError = "The user name '" + req.getParameter("userName") + "' is already in use.<br />";
+        }
+        if (users.size() >= 1) {
+            userNameError += "The user name '" + req.getParameter("userName") + "' is already in use.<br />";
 
-        } else if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 10) {
-            userNameError = "The passwords must match and be at least 10 characters long.<br />";
+        }
+        if (req.getParameter("EMAIL").length() <= 1) {
+            userNameError += "Email Address is a required field<br />";
+
+        }
+        if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 10) {
+            userNameError += "The passwords must match and be at least 10 characters long.<br />";
         }
 
         return userNameError;

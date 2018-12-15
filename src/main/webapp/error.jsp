@@ -10,9 +10,9 @@
                 </div>
 
                 <div class = "card-body text-center">
-                    <h1>Your Email Was Not Sent</h1>
+                    <h1>${warning}</h1>
                     <div class = "col-sm-4 text-right float-left">Reason:</div>
-                    <div class = "col-sm-8 text-left float-right">${emailError}</div>
+                    <div class = "col-sm-8 text-left float-right">${error}</div>
 
                     <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
                 </div>

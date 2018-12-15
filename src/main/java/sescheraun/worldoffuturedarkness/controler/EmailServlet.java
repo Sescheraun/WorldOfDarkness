@@ -92,10 +92,9 @@ public class EmailServlet extends HttpServlet {
 
         } else {
             logger.info(emailError);
-            req.setAttribute("emailError", emailError);
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/emailError.jsp");
-            dispatcher.forward(req, resp);
+            Error error = new Error();
+            error.report(req, resp, emailError, "Your email was not sent!");
 
         }
 
