@@ -78,7 +78,7 @@ public class EmailServlet extends HttpServlet {
         messageBody = prepMessageBody(messageBody, senderName, email);
 
 
-        if (emailError == null) {
+        if (emailError == "") {
 
             Emailer emailHandler = new Emailer();
 

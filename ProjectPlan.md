@@ -5,12 +5,12 @@
 - [x] Create project structure in intellij and push
 - [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used.  Not sure I really understand this.
+- [x] Determine possible Web Services or APIs to use
+- [x] List technologies, versions and how they will be used.  Not sure I really understand this.
 - [x] Weekly journal entry  - kinda forgot this at all.
-- [ ] Write project plan  - can I really check this off while I'm doing it?
+- [x] Write project plan  - can I really check this off while I'm doing it?
 - [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
 - [x] Complete database design
@@ -30,16 +30,16 @@
 - [ ] Create the template for all jsps using bootstrap or materialize
 - [ ] Weekly journal entry
 - [x] Add the role table
-- [ ] Add the role entity
-- [ ] Create the role dao
+- [x] Add the role entity
+- [x] Create the role dao
 - [ ] Create the role dao unit tests
-- [ ] Add a jsp to display user and role
-- [ ] Add jsp to add a user
+- [x] Add a jsp to display user and role
+- [x] Add jsp to add a user
 
 ### Week 6
 
-- [ ] Create db on AWS
-- [ ] Deploy to AWS for first time
+- [x] Create db on AWS
+- [x] Deploy to AWS for first time
 - [ ] Weekly journal entry
 - [ ] Add update and delete functionality in jsp for user and role
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
@@ -48,8 +48,8 @@
 ### Week 7
 
 - [ ] Weekly journal entry
-- [ ] Set up authentication locally
-- [ ] Set up authentication on AWS
+- [x] Set up authentication locally
+- [x] Set up authentication on AWS
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 

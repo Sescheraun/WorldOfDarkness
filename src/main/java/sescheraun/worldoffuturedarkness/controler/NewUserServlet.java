@@ -3,6 +3,7 @@ package sescheraun.worldoffuturedarkness.controler;
 import sescheraun.worldoffuturedarkness.generator.*;
 import sescheraun.worldoffuturedarkness.persistance.GenericDAO;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +18,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
+/**
+ * The type New user servlet.
+ */
 @WebServlet(
         urlPatterns = {"/addUser"}
 )
@@ -24,60 +28,126 @@ public class NewUserServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * doGet Handles the post request for the users.
+     *
+     * @param req the htp request that triggered the function
+     * @param resp the http response that likely be sent back
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         GenericDAO userDao = new GenericDAO(User.class);
-        GenericDAO roleDao = new GenericDAO(Role.class);
+
+        String userNameError = inspectDetails(req, userDao);
+
+        if (userNameError.equals("")) {
+
+            User user = buildUser(req);
+
+            int id = writeUser(user, userDao);
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/WorldOfFutureDarkness");
+            dispatcher.forward(req, resp);
+
+        } else {
+            logger.info(userNameError);
+
+            req.setAttribute("error", userNameError);
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpError.jsp");
+            dispatcher.forward(req, resp);
+        }
+    }
+
+    /**
+     * Adds the created user object to the database
+     * @param user the new user
+     * @param userDao a generic Dao to handle the database access
+     * @return the id of the new user.
+     */
+
+    private int writeUser(User user, GenericDAO userDao) {
+
+        Role player = new Role(user, "player");
+
+        user.addRole(player);
+
+        return userDao.create(user);
+    }
 
 
-        // Make sure the user isn't being a smart ass and trying to use a bad user name.
-        String userNameError = null;
+    /**
+     * Validate the data the user entered
+     *
+     * @param req the current httpRequest
+     * @param userDao a generic Dao to handle the database access
+     * @return a string that contains the error code.
+     */
+    private String inspectDetails(HttpServletRequest req, GenericDAO userDao) {
+        String userNameError = "";
         List<User> users = (List<User>)userDao.getEntityByEqual("userName", req.getParameter("userName"));
 
         //TODO:  put some of this error checking in javascript as well.
         if (req.getParameter("userName").length() <= 1) {
-            userNameError = "User Name is a required field";
+            userNameError = "User Name is a required field<br />";
 
         } else if (users.size() >= 1) {
-            userNameError = "The user name '" + req.getParameter("userName") + "' is already in use.";
+            userNameError = "The user name '" + req.getParameter("userName") + "' is already in use.<br />";
 
-        } else if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 5) {
-            userNameError = "The passwords must match and be at least 5 characters long.";
+        } else if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 10) {
+            userNameError = "The passwords must match and be at least 10 characters long.<br />";
         }
 
-        if (userNameError == null) {
+        return userNameError;
 
-            //todo figure out how to implement a better algorithm
+    }
 
-            MessageDigestCredentialHandler credentialHandler = new MessageDigestCredentialHandler();
-            try {
-                credentialHandler.setAlgorithm("sha-512");
-            } catch (NoSuchAlgorithmException e) {
-                logger.error("Bad hash", e);
-            }
 
-            credentialHandler.setEncoding("UTF-8");
-            String hashedPassword = credentialHandler.mutate(req.getParameter("password"));
+    /**
+     * Take the user details out of the request and use
+     * them to build the user object
+     *
+     * @param req the current httpRequest
+     * @return the user object
+     */
+    private User buildUser(HttpServletRequest req) {
 
-            Role player;
-            User user = new User();
+        String hashedPassword = mutilatePassword(req);
 
-            user.setLastName(req.getParameter("lastName"));
-            user.setFirstName(req.getParameter("firstName"));
-            user.setUserName(req.getParameter("userName"));
-            user.setAuthenticator(hashedPassword);
-            user.setEmailAddress(req.getParameter("EMAIL"));
+        User user = new User();
 
-            player = new Role(user, "player");
+        user.setLastName(req.getParameter("lastName"));
+        user.setFirstName(req.getParameter("firstName"));
+        user.setUserName(req.getParameter("userName"));
+        user.setAuthenticator(hashedPassword);
+        user.setEmailAddress(req.getParameter("EMAIL"));
 
-            user.addRole(player);
+        return user;
+    }
 
-            userDao.create(user);
-            resp.sendRedirect("/WorldOfFutureDarkness");
-        } else {
-            logger.info(userNameError);
-            resp.addHeader("error", userNameError);
-            resp.sendRedirect("/WorldOfFutureDarkness/createNewUser.jsp");
+
+    /**
+     * Turn the password the user entered into a hashed up mess
+     *
+     * @param req the current httpRequest
+     * @return the hashed password
+     */
+    private String mutilatePassword (HttpServletRequest req) {
+        //todo figure out how to implement a better algorithm
+
+        MessageDigestCredentialHandler credentialHandler = new MessageDigestCredentialHandler();
+        try {
+            credentialHandler.setAlgorithm("sha-512");
+        } catch (NoSuchAlgorithmException e) {
+            logger.error("Bad hash", e);
         }
+
+        credentialHandler.setEncoding("UTF-8");
+        String hashedPassword = credentialHandler.mutate(req.getParameter("password"));
+
+        return hashedPassword;
     }
 }

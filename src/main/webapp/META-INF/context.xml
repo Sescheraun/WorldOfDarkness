@@ -4,7 +4,6 @@
 
            connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=newoldstuffonthedeck"
 
-
            userTable="user" userNameCol="userName" userCredCol="authenticator"
            userRoleTable="role" roleNameCol="roleName" >
 
@@ -17,5 +16,3 @@
 
 
 
-        <!-- connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=bluebottlecap" -->
-        <!-- connectionURL="jdbc:mysql://localhost:3306/WorldOfDarkness?user=tomcat&amp;password=newoldstuffonthedeck"-->

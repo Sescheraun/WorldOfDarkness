@@ -12,33 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/IndexServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/emailError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/emailSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/errors/500.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectPlan.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/traits.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/traits.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/gamemaster/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/gamemaster/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login-error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/player/characterCreation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/player/characterCreation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/player/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/player/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -149,10 +128,12 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="65" />
+          <entry key="project.closed" value="67" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.116" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
@@ -185,14 +166,14 @@
           <entry key="project.open.time.72" value="2" />
           <entry key="project.open.time.74" value="3" />
           <entry key="project.open.time.78" value="1" />
-          <entry key="project.open.time.79" value="2" />
+          <entry key="project.open.time.79" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.83" value="2" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.open.time.90" value="2" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="73" />
+          <entry key="project.opened" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -203,23 +184,23 @@
           <entry key="critter" value="2" />
           <entry key="css" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="258" />
+          <entry key="java" value="260" />
           <entry key="jpeg" value="1" />
           <entry key="jpg" value="3" />
           <entry key="js" value="5" />
           <entry key="jsp" value="83" />
           <entry key="log" value="50" />
-          <entry key="md" value="9" />
+          <entry key="md" value="10" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="5" />
           <entry key="properties" value="16" />
           <entry key="role" value="4" />
-          <entry key="sql" value="23" />
+          <entry key="sql" value="24" />
           <entry key="subCritter" value="2" />
           <entry key="trait" value="2" />
           <entry key="txt" value="6" />
           <entry key="user" value="1" />
-          <entry key="xml" value="51" />
+          <entry key="xml" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -228,16 +209,16 @@
           <entry key="CSS" value="7" />
           <entry key="Database Element" value="11" />
           <entry key="Image" value="9" />
-          <entry key="JAVA" value="258" />
+          <entry key="JAVA" value="260" />
           <entry key="JSP" value="83" />
           <entry key="JavaScript" value="5" />
-          <entry key="Markdown" value="9" />
+          <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="58" />
           <entry key="Properties" value="16" />
-          <entry key="SQL" value="17" />
+          <entry key="SQL" value="18" />
           <entry key="Scratch" value="6" />
           <entry key="UML" value="2" />
-          <entry key="XML" value="51" />
+          <entry key="XML" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -246,29 +227,29 @@
           <entry key="css" value="385" />
           <entry key="dummy" value="12" />
           <entry key="gitignore" value="15" />
-          <entry key="java" value="20653" />
+          <entry key="java" value="21765" />
           <entry key="js" value="2913" />
           <entry key="jsp" value="4926" />
           <entry key="log" value="63" />
-          <entry key="md" value="3048" />
+          <entry key="md" value="3061" />
           <entry key="properties" value="156" />
           <entry key="sql" value="867" />
           <entry key="txt" value="79" />
-          <entry key="xml" value="925" />
+          <entry key="xml" value="937" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="385" />
-          <entry key="JAVA" value="20653" />
+          <entry key="JAVA" value="21765" />
           <entry key="JSP" value="4926" />
           <entry key="JavaScript" value="2913" />
-          <entry key="Markdown" value="3048" />
+          <entry key="Markdown" value="3061" />
           <entry key="PLAIN_TEXT" value="169" />
           <entry key="Properties" value="156" />
           <entry key="SQL" value="866" />
           <entry key="Scratch" value="8" />
-          <entry key="XML" value="925" />
+          <entry key="XML" value="937" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -277,72 +258,38 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="indieproject" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="87" column="56" selection-start-line="86" selection-start-column="12" selection-end-line="87" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/populateSubCrittersFromServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-710">
-              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+            <state relative-caret-position="590">
+              <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="202">
+              <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144" />
           </provider>
         </entry>
       </file>
@@ -350,7 +297,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+              <caret line="4" column="116" selection-start-line="4" selection-start-column="116" selection-end-line="4" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -358,8 +305,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="528">
+              <caret line="22" selection-start-line="22" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectPlan.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1224">
+                <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -401,8 +378,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java" />
         <option value="$USER_HOME$/dump.sql" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/populateTraitFormServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Critter.java" />
@@ -438,20 +413,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login-error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/logout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/emailSuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/errors/500.jsp" />
         <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/emailError.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/styles/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/contact.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java" />
+        <option value="$PROJECT_DIR$/ProjectPlan.md" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" />
       </list>
     </option>
   </component>
@@ -498,10 +475,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1955" />
-    <option name="y" value="379" />
-    <option name="width" value="1167" />
-    <option name="height" value="910" />
+    <option name="x" value="45" />
+    <option name="y" value="25" />
+    <option name="width" value="1635" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -526,7 +503,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -691,8 +667,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -701,7 +678,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544824369588" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544908525951" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -712,7 +689,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="sql.rename.search.for.storage.occurrences" value="true" />
   </component>
   <component name="RecentsManager">
@@ -1116,6 +1093,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1199,7 +1179,10 @@
       <workItem from="1544727553172" duration="6941000" />
       <workItem from="1544734698645" duration="30000" />
       <workItem from="1544736592613" duration="3592000" />
-      <workItem from="1544800063319" duration="19637000" />
+      <workItem from="1544800063319" duration="20510000" />
+      <workItem from="1544847152220" duration="3731000" />
+      <workItem from="1544883188760" duration="3797000" />
+      <workItem from="1544904250796" duration="3088000" />
     </task>
     <servers />
   </component>
@@ -1236,7 +1219,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375868000" />
+    <option name="totallyTimeSpent" value="387357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1248,26 +1231,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977064" visible="true" weight="0.101387404" />
-      <window_info id="Structure" order="1" sideWeight="0.5022936" side_tool="true" visible="true" weight="0.101387404" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" weight="0.17809944" />
+      <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.5048544" side_tool="true" weight="0.32976714" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5048544" side_tool="true" weight="0.32976714" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32464713" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5420168" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.18659218" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.18547486" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.32563025" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.499056" visible="true" weight="0.32513967" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39675677" />
@@ -1276,17 +1259,17 @@
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32849163" />
       <window_info anchor="bottom" id="Analysis" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24958678" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24921334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.0" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="JSF" order="5" weight="0.3294766" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.11953042" />
+      <window_info anchor="right" id="JSF" order="5" weight="0.32913783" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.11894273" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Database" order="9" sideWeight="0.49921995" weight="0.11792956" />
-      <window_info anchor="right" id="CDI" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" weight="0.3294766" />
+      <window_info anchor="right" id="Database" order="9" sideWeight="0.49921995" weight="0.11768408" />
+      <window_info anchor="right" id="CDI" order="10" weight="0.32976714" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32913783" />
       <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50078005" side_tool="true" visible="true" weight="0.4385675" />
     </layout>
     <layout-to-restore>
@@ -1363,13 +1346,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/UserDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/TraitDAOTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/Preprocessor.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1552,27 +1528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/populateSubCrittersFromServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1640,20 +1599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/emailError.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1663,8 +1608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/EmailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="87" column="56" selection-start-line="86" selection-start-column="12" selection-end-line="87" selection-end-column="56" />
+        <state relative-caret-position="552">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="97" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1673,32 +1618,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="1200">
           <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" selection-start-line="10" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        <state relative-caret-position="317">
+          <caret line="22" selection-start-line="22" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -1711,13 +1646,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144" />
+        <state relative-caret-position="240">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="116" selection-start-line="4" selection-start-column="116" selection-end-line="4" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectPlan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1224">
+            <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/populateSubCrittersFromServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1744,7 +1729,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.61920905" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
