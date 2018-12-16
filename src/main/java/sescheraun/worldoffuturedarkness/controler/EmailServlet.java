@@ -22,10 +22,6 @@ import sescheraun.worldoffuturedarkness.utilities.PropertiesLoader;
 )
 public class EmailServlet extends HttpServlet implements PropertiesLoader{
 
-//    private static final String EMAIL_ACCESS = "_pinE8inie2_W";
-//    private static final String EMAIL_USER = "cpworldofdarkness@gmail.com";
-//    private String admin = "sescheraun@gmail.com";
-
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
@@ -37,12 +33,7 @@ public class EmailServlet extends HttpServlet implements PropertiesLoader{
 
         logger.debug("In email servlet");
 
-        // Make sure the user isn't being a smart ass and trying to use a bad user name.
         String emailError = "";
-        String senderEmail = "";
-        String subject = "";
-        String senderName = "";
-        String messageBody = "";
 
         emailError = validateData(req);
 

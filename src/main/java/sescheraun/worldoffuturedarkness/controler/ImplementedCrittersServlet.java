@@ -41,7 +41,5 @@ public class ImplementedCrittersServlet extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/player/characterCreation.jsp");
         dispatcher.forward(req, resp);
 
-//        resp.sendRedirect("/WorldOfFutureDarkness/player/characterCreation.jsp");
-
     }
 }

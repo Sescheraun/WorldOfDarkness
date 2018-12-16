@@ -34,25 +34,12 @@ public class SubCritterCRUD extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        int id = buildSubCritter(req);
 
-        int critterID = Integer.parseInt(req.getParameter("critter"));
-        String subCritterName  = (req.getParameter("subCritterName"));
-        String category        = (req.getParameter("category"));
-        String firstAdvantage  = (req.getParameter("firstAdvantage"));
-        String secondAdvantage = (req.getParameter("secondAdvantage"));
-        String flaw            = (req.getParameter("flaw"));
-
-        Critter critter = (Critter)critterDAO.getByID(critterID);
-        logger.info(critter);
-        SubCritter subCritter = new SubCritter(critter, category, subCritterName, firstAdvantage, secondAdvantage, flaw );
-        logger.info(subCritter);
-
-        critter.addSubCritter(subCritter);
-        int id = subCritterDAO.create(subCritter);
-
+        SubCritter subCritter = (SubCritter)subCritterDAO.getByID(id);
 
         String response = "Subtype " + subCritter.getCritterSubName()
-                + " under type " + critter.getCritterName()
+                + " under type " + subCritter.getCritter().getCritterName()
                 + " has been created and assigned ID " + id + ".";
         logger.info(response);
 
@@ -76,4 +63,23 @@ public class SubCritterCRUD extends HttpServlet {
         resp.getWriter().write(response);
     }
 
+
+    private int buildSubCritter (HttpServletRequest req) {
+        int critterID = Integer.parseInt(req.getParameter("critter"));
+        String subCritterName  = (req.getParameter("subCritterName"));
+        String category        = (req.getParameter("category"));
+        String firstAdvantage  = (req.getParameter("firstAdvantage"));
+        String secondAdvantage = (req.getParameter("secondAdvantage"));
+        String flaw            = (req.getParameter("flaw"));
+
+        Critter critter = (Critter)critterDAO.getByID(critterID);
+        logger.info(critter);
+
+        SubCritter subCritter = new SubCritter(critter, category, subCritterName, firstAdvantage, secondAdvantage, flaw );
+        logger.info(subCritter);
+
+        return subCritterDAO.create(subCritter);
+
+
+    }
 }
