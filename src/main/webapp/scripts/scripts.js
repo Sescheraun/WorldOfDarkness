@@ -1,11 +1,15 @@
-var CORE_LOCATION = "http://localhost:8080/WorldOfFutureDarkness/";
+var localHost = "http://localhost:8080/WorldOfFutureDarkness/";
+var aws = "http://18.224.147.146:8080/WorldOfFutureDarkness/";
+
+var CORE_LOCATION = aws;
 
 $(document).ready( () => {
 
     backgroundFlip();
 
     centerTheThing();
-    let title = $(document).find("title").text();
+
+    //let title = $(document).find("title").text();
     // if ($("#ManageSubCritter").getAttribute('onPage').value="1"){readAllSubCritters()}
 
     /*********************************************************************
@@ -19,12 +23,14 @@ $(document).ready( () => {
      *********************************************************************/
     $("#subCritterSubmit").on("click", () => {
 
+        console.log("Submitting new subcritter");
+
         let critter         = $("#allowed :selected").prop("id");
-        let subCritterName  = $("#subCritterName").val();
-        let category        = $("#category").val();
-        let firstAdvantage  = $("#firstAdvantage").val();
-        let secondAdvantage = $("#secondAdvantage").val();
-        let flaw            = $("#flaw").val();
+        let subCritterName  = $("#subCritterNameNew").val();
+        let category        = $("#categoryNew").val();
+        let firstAdvantage  = $("#firstAdvantageNew").val();
+        let secondAdvantage = $("#secondAdvantageNew").val();
+        let flaw            = $("#flawNew").val();
 
         subCritter = {"critter": critter
              , "subCritterName": subCritterName
@@ -45,7 +51,7 @@ $(document).ready( () => {
         console.log(subCritter);
 
         $.ajax({
-            url:CORE_LOCATION + "subCritterCRUD"
+            url: CORE_LOCATION + "subCritterCRUD"
             , method: "POST"
             , data: postData
             , dataType: "TEXT"
