@@ -63,6 +63,12 @@ public class SubCritterCRUD extends HttpServlet {
         resp.getWriter().write(response);
     }
 
+    /**
+     * Takes the request and pulls the data out to build the new subcritter.
+     *
+     * @param req the current HttpServletRequest
+     * @return the id of the newly created subCritter
+     */
 
     private int buildSubCritter (HttpServletRequest req) {
         int critterID = Integer.parseInt(req.getParameter("critter"));

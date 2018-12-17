@@ -8,7 +8,8 @@ $(document).ready( () => {
     backgroundFlip();
 
     centerTheThing();
-
+    var x = document.getElementsByTagName("title")[0];
+    console.log(x.innerHTML)
     //let title = $(document).find("title").text();
     // if ($("#ManageSubCritter").getAttribute('onPage').value="1"){readAllSubCritters()}
 
