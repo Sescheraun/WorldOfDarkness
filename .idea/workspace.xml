@@ -11,9 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/timeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/backup.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -185,8 +186,8 @@
           <entry key="java" value="276" />
           <entry key="jpeg" value="1" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="8" />
-          <entry key="jsp" value="91" />
+          <entry key="js" value="9" />
+          <entry key="jsp" value="92" />
           <entry key="log" value="50" />
           <entry key="md" value="10" />
           <entry key="placeholder" value="1" />
@@ -208,8 +209,8 @@
           <entry key="Database Element" value="11" />
           <entry key="Image" value="9" />
           <entry key="JAVA" value="276" />
-          <entry key="JSP" value="91" />
-          <entry key="JavaScript" value="8" />
+          <entry key="JSP" value="92" />
+          <entry key="JavaScript" value="9" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="59" />
           <entry key="Properties" value="18" />
@@ -226,8 +227,8 @@
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="15" />
           <entry key="java" value="23791" />
-          <entry key="js" value="3159" />
-          <entry key="jsp" value="4938" />
+          <entry key="js" value="3809" />
+          <entry key="jsp" value="5112" />
           <entry key="log" value="63" />
           <entry key="md" value="3487" />
           <entry key="properties" value="195" />
@@ -240,8 +241,8 @@
         <counts>
           <entry key="CSS" value="385" />
           <entry key="JAVA" value="23791" />
-          <entry key="JSP" value="4938" />
-          <entry key="JavaScript" value="3159" />
+          <entry key="JSP" value="5112" />
+          <entry key="JavaScript" value="3809" />
           <entry key="Markdown" value="3487" />
           <entry key="PLAIN_TEXT" value="179" />
           <entry key="Properties" value="195" />
@@ -264,20 +265,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/createNewUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="188">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/timeLog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="438">
-                <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -319,7 +317,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/getSubCritters.java" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/worldoffuturedarkness/persistance/TraitDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/setSubCritters.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/Preprocessor.java" />
@@ -340,7 +337,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/gamemaster/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/player/characterCreation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/player/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login-error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/logout.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/utilities/Emailer.java" />
@@ -370,6 +366,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/timeLog.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js" />
       </list>
     </option>
   </component>
@@ -583,7 +581,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545001463744" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545059566005" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1090,7 +1088,7 @@
       <workItem from="1544904250796" duration="7004000" />
       <workItem from="1544976140990" duration="15240000" />
       <workItem from="1545012120825" duration="398000" />
-      <workItem from="1545057797386" duration="306000" />
+      <workItem from="1545057797386" duration="1687000" />
     </task>
     <servers />
   </component>
@@ -1127,7 +1125,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407217000" />
+    <option name="totallyTimeSpent" value="408598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1142,7 +1140,7 @@
     <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" weight="0.30899936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.30837005" />
       <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1254,13 +1252,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://da01a994-19f1-4c37-a67e-8ffbff4e1799/schema/WorldOfDarkness/table/critter">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/UserRoles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1532,13 +1523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1595,13 +1579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/createNewUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timeLog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1609,6 +1586,27 @@
             <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="16" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/createNewUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
