@@ -116,7 +116,32 @@
                             <textarea name="flawUpdate" id = "flawUpdate" class = "flawDisplay col-sm-8 input" type = "textArea"></textarea>
                         </div>
 
-                        <button class = "btn" id = "subCritterUpdate">Commit Changes to Sub Type</button>
+                        <div class = "row text-center">
+
+                            <div class = "col-sm-4 float-left">
+
+                                <button id = "updatePostLeft"
+                                        class = "btn PostLeft">
+                                    <<
+                                </button>
+                            </div>
+
+                            <div class = "col-sm-4 text-center">
+
+                                <button id = "updatePost"
+                                        class = "btn">
+                                    Update Post
+                                </button>
+                            </div>
+
+                            <div class="col-sm-4 float-right">
+
+                                <button id="updatePostRight"
+                                        class="btn PostRight">
+                                    >>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- *********************************************************************************************** -->
@@ -157,6 +182,24 @@
                             <div id = "flawRead" class = "flawDisplay col-sm-8"></div>
                         </div>
 
+                        <div class = "row text-center">
+
+                            <div class = "col-sm-6 float-left">
+
+                                <button id = "readPostLeft"
+                                        class = "btn PostLeft">
+                                    <<
+                                </button>
+                            </div>
+
+                            <div class = "col-sm-6 float-right">
+
+                                <button id = "readPostRight"
+                                        class = "btn PostRight">
+                                    >>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- *********************************************************************************************** -->
@@ -197,7 +240,29 @@
                             <div id = "flawNewDelete" class = "flawDisplay col-sm-8"></div>
                         </div>
 
-                        <button class = "btn" id = "subCritterDelete">Delete Sub Type</button>
+                        <div class = "row text-center">
+                            <div class = "col-sm-4 float-left">
+
+                                <button id = "deletePostLeft" class = "btn PostLeft">
+                                    <<
+                                </button>
+                            </div>
+
+                            <div class = "col-sm-4 text-center">
+
+                                <button id = "subCritterDelete" class = "btn">
+                                    Delete
+                                </button>
+                            </div>
+
+                            <div class = "col-sm-4 float-right">
+
+                                <button id = "deletePostRight"
+                                        class = "btn PostRight">
+                                    >>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

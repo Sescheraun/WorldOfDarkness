@@ -1,5 +1,6 @@
 package sescheraun.worldoffuturedarkness.generator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
@@ -23,10 +24,12 @@ public class Trait {
     private int id;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "openToCritterID")
     private Critter critter;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "goodAtSubCritterID")
     private SubCritter subCritter;
 
@@ -344,8 +347,8 @@ public class Trait {
         return "Trait{"
                 + "logger=" + logger
                 + ", id=" + id
-                + ", critter=" + critter.getCritterName()
-                + ", subCritter=" + subCritter.getSubCritterLabel()
+                //+ ", critter=" + critter.getCritterName()
+                //+ ", subCritter=" + subCritter.getSubCritterLabel()
                 + ", traitName='" + traitName + '\''
                 + ", specialtyAllowed=" + specialtyAllowed
                 + ", minimumScore=" + minimumScore
@@ -383,7 +386,7 @@ public class Trait {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, critter, subCritter, traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, isDeleted);
+        return Objects.hash(id, /*critter, subCritter,*/ traitName, specialtyAllowed, minimumScore, maximumScore, traitType, newCost, cheapCost, normalCost, expensiveCost, freebieCost, isDeleted);
     }
 
 }

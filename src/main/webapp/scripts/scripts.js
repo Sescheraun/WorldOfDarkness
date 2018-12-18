@@ -1,7 +1,10 @@
 var localHost = "http://localhost:8080/WorldOfFutureDarkness/";
 var aws = "http://18.224.147.146:8080/WorldOfFutureDarkness/";
 
-var CORE_LOCATION = aws;
+var subCritterIndex = 0;
+var subCritters = {};
+
+var CORE_LOCATION = localHost;
 
 $(document).ready( () => {
 
@@ -10,7 +13,12 @@ $(document).ready( () => {
     centerTheThing();
     var title = document.getElementsByTagName("title")[0];
 
-    if (title = "Manage Sub Types") {
+    title = title.innerHTML
+    
+
+
+    if (title == "Manage Sub Types") {
+        console.log("Going to get all the subCritters")
         readAllSubCritters();
     }
 
@@ -60,6 +68,12 @@ $(document).ready( () => {
             , success: function(responseText) {
                 // let data = JSON.parse(responseText);
                 console.log(responseText);
+
+                $("#subCritterNameNew").val("");
+                $("#categoryNew").val("");
+                $("#firstAdvantageNew").val("");
+                $("#secondAdvantageNew").val("");
+                $("#flawNew").val("");
             }
             , error:function(xhr, status, error) {
                 console.log("ERROR:");
@@ -134,12 +148,12 @@ $(document).ready( () => {
      *********************************************************************/
     $("#subCritterDelete").on("click", () => {
 
-        let subCritterID    = $("#subCritterDeleteID").innerHTML;
+        let target = subCritters[subCritterIndex].subCritterId;
 
         //Make it standard postData for now.
-        let postData = `subCritterID=${subCritterID}`;
+        let postData = "subCritterID=" + target;
 
-        console.log(subCritter);
+        console.log(postData);
 
         $.ajax({
             url:CORE_LOCATION + "subCritterCRUD"
@@ -173,34 +187,98 @@ $(document).ready( () => {
  ** When i have more time, and the rest of the application is done, **
  ** I would like to refactor this to user observables.              **
  **                                                                 **
- **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
  *********************************************************************/
 readAllSubCritters = () => {
 
     let critter = $("#allowed :selected").prop("id");
 
-    //Make it standard postData for now.
-    let postData = `critter=${critter}`;
+    console.log("Getting all SubCritters");
+    //Should not need
+    //let postData = `critter=${critter}`;
 
     $.ajax({
         url:CORE_LOCATION + "subCritterCRUD"
         , method: "GET"
-        , data: postData
-        , dataType: "TEXT"
+        //, data: postData
+        , dataType: "text"
         , success: function(responseText) {
             // let data = JSON.parse(responseText);
+            console.log("Success");
             console.log(responseText);
+            subCritters = JSON.parse(responseText);
+            console.log(subCritters[0].critter);
+            loadSubCritters();
+
         }
         , error:function(xhr, status, error) {
             console.log("ERROR:");
             console.log(xhr.responseText);
-            console.log(postData);
+            //console.log(postData);
             console.log(status);
             console.log(error);
 
         }
     })
+
+    /*********************************************************************
+     **                        Shift SubCritters                        **
+     *********************************************************************/
+    $(".PostLeft").on("click", function() {
+        shiftSubCritters(-1);
+    })
+
+
+    $(".PostRight").on("click", function() {
+        shiftSubCritters(1);
+    })
+
 };
+/********************************************************************************
+ **                         Changes the index of the journal                    **
+ **                               based on user input                           **
+ *********************************************************************************/
+
+
+shiftSubCritters = (direction) => {
+    subCritterIndex += direction;
+    if (subCritterIndex >= subCritters.length) subCritterIndex = 0;
+    if (subCritterIndex < 0) subCritterIndex = subCritters.length - 1;
+    loadSubCritters();
+}
+
+/****************************************************************************
+ **  Load the elements of the subCritter into the page as the user browses **
+ **  them                                                                  **
+ ****************************************************************************/
+loadSubCritters = () => {
+    //Delima, how do I replace the content when I don't know what it will be?
+    //There is probably a better way to do this.
+
+    console.log("Loading the Subcritters");
+
+
+    $(".idDisplay").empty(subCritters[subCritterIndex].subCritterId);
+    $(".idDisplay").append(subCritters[subCritterIndex].subCritterId);
+
+    $("#subCritterNameUpdate").val(subCritters[subCritterIndex].subCritterLabel);
+    $("#categoryUpdate").val(subCritters[subCritterIndex].critterSubName);
+
+    $(".subCritterNameDisplay").empty(subCritters[subCritterIndex].subCritterLabel);
+    $(".subCritterNameDisplay").append(subCritters[subCritterIndex].subCritterLabel);
+
+    $(".categoryDisplay").empty(subCritters[subCritterIndex].secondAdvantage);
+    $(".categoryDisplay").append(subCritters[subCritterIndex].secondAdvantage);
+
+    $(".firstAdvantageDisplay").empty(subCritters[subCritterIndex].firstAdvantage);
+    $(".firstAdvantageDisplay").append(subCritters[subCritterIndex].firstAdvantage);
+
+    $(".secondAdvantageDisplay").empty(subCritters[subCritterIndex].secondAdvantage);
+    $(".secondAdvantageDisplay").append(subCritters[subCritterIndex].secondAdvantage);
+
+    $(".flawDisplay").empty(subCritters[subCritterIndex].flaw);
+    $(".flawDisplay").append(subCritters[subCritterIndex].flaw);
+}
+
 
 /*********************************************************************
  **                         Background flip                         **

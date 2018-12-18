@@ -6,6 +6,8 @@ import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,13 +36,15 @@ public class Critter {
 
     private boolean isDeleted;
 
-
+//    @JsonIgnore
 //    @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 //    private Set<Character> characters = new HashSet<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<SubCritter> subCritters = new HashSet<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Trait> traits = new HashSet<>();
 
@@ -203,8 +207,8 @@ public class Critter {
                 ", critterName='" + critterName + '\'' +
                 ", implemented= " + implemented +
                 ", isDeleted=   " + isDeleted +
-                ",     subCritters=" + subCritters +
-                ",     traits=     " + traits +
+//                ",     subCritters=" + subCritters +
+//                ",     traits=     " + traits +
                 '}';
     }
 }

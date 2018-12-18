@@ -14,7 +14,9 @@
                 <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
                 <br />
 
-                <%@ include file="../foot.jsp"%>
+                <div class = "card-footer text-center">
+                    <%@ include file="../foot.jsp"%>
+                </div>
             </div>
         </div>
     </div>

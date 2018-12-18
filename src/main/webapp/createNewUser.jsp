@@ -8,17 +8,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <%@ include file="head.jsp"%>
-    <script src="/WorldOfFutureDarkness/scripts/validateNewUser.js" type="application/javascript"></script>
 
     <body>
-        <div id = "content">
-            Greetings, welcome to the World of Darkness.
+    <div class="container">
+        <div id = "content" class = "card content">
+            <div class = "card-header text-center">
+                Greetings, welcome to the World of Darkness.
+            </div>
+            <div class = "card-body text-center">
+
             <FORM ACTION="addUser"
-                  METHOD="POST"
-                onsubmit="return validateForm()">
-                <TABLE>
+                  METHOD="POST">
+                <%--onsubmit="return validateForm()">--%>
+
+                <TABLE class = "col-md-12">
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             First Name:
                         </TD>
                         <TD>
@@ -29,7 +34,7 @@
                     </TR>
 
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             Last Name:
                         </TD>
 
@@ -41,7 +46,7 @@
                     </TR>
 
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             User Name:
                         </TD>
 
@@ -53,7 +58,7 @@
                     </TR>
 
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             Email Address:
                         </TD>
 
@@ -66,7 +71,7 @@
                     <%--<TR><TD>Cell Phone (optional):</TD><TD><INPUT TYPE="TEXT" NAME="cell"></TD></TR>--%>
 
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             Password:
                         </TD>
 
@@ -78,7 +83,7 @@
                     </TR>
 
                     <TR>
-                        <TD>
+                        <TD class = "text-right">
                             Verify Password:
                         </TD>
 
@@ -90,14 +95,25 @@
                     </TR>
 
                     <TR>
-                        <TH>
+                        <th></th>
+                        <TH class = "text-center">
                             <INPUT TYPE="SUBMIT"
                                   VALUE="Sign up" />
                         </TH>
                     </TR>
                 </TABLE>
             </FORM>
-            <%@ include file="foot.jsp"%>
+
+            <div id = "errorDisplay" class = "col-med-6 float-right">
+
+            </div>
+
+            </div>
+
+            <div class = "card-footer text-center">
+                <%@ include file="foot.jsp"%>
+            </div>
         </div>
+    </div>
     </body>
 </html>

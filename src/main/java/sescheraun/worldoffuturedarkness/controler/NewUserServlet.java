@@ -49,7 +49,7 @@ public class NewUserServlet extends HttpServlet {
 
             int id = writeUser(user, userDao);
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/WorldOfFutureDarkness");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
             dispatcher.forward(req, resp);
 
         } else {
@@ -59,6 +59,10 @@ public class NewUserServlet extends HttpServlet {
             error.report(req, resp, userNameError, "Your account could not be created");
         }
     }
+
+
+
+
 
     /**
      * Adds the created user object to the database
@@ -75,6 +79,10 @@ public class NewUserServlet extends HttpServlet {
 
         return userDao.create(user);
     }
+
+
+
+
 
 
     /**
@@ -120,6 +128,9 @@ public class NewUserServlet extends HttpServlet {
     }
 
 
+
+
+
     /**
      * Take the user details out of the request and use
      * them to build the user object
@@ -141,6 +152,9 @@ public class NewUserServlet extends HttpServlet {
 
         return user;
     }
+
+
+
 
 
     /**

@@ -65,3 +65,6 @@ textarea {
     background-color: rgba(0,100,0,.8);
     color: lightgreen;
 }
+.card-footer {
+    clear: both;
+}

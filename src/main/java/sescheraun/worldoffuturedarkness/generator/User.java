@@ -38,8 +38,9 @@ public class User {
     /**
      * The Characters.
      */
-//    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//    Set<Character> characters = new HashSet<>();
+    @JsonIgnore
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    Set<Character> characters = new HashSet<>();
 
     private String userName;
 

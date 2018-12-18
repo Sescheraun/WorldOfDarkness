@@ -1,5 +1,6 @@
 package sescheraun.worldoffuturedarkness.generator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
@@ -21,6 +22,7 @@ public class Character {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "userID")
     private User player;
@@ -28,10 +30,11 @@ public class Character {
     /**
      * The Sub critters.
      */
+    @JsonIgnore
     @ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
-            name = "characterSubCritter",
-            joinColumns = { @JoinColumn(name = "characterId") },
+                          name = "characterSubCritter",
+                   joinColumns = { @JoinColumn(name = "characterId") },
             inverseJoinColumns = { @JoinColumn(name = "subCritterId") }
     )
     Set<SubCritter> subCritters = new HashSet<>();
@@ -39,6 +42,7 @@ public class Character {
     @OneToMany(mappedBy = "primaryKey.characterID", cascade = CascadeType.ALL)
     private Set<CharacterTraits> characterTraits = new HashSet<>();
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "critterId")
     private Critter critter;
@@ -287,7 +291,7 @@ public class Character {
         return id == character.id &&
                 unspentExperience == character.unspentExperience &&
                 approved == character.approved &&
-                Objects.equals(player, character.player) &&
+                //Objects.equals(player, character.player) &&
                 Objects.equals(subCritters, character.subCritters) &&
                 Objects.equals(critter, character.critter) &&
                 Objects.equals(firstName, character.firstName) &&
@@ -297,6 +301,6 @@ public class Character {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, player, subCritters, critter, firstName, middleName, lastName, unspentExperience, approved);
+        return Objects.hash(id, /*player,*/ subCritters, critter, firstName, middleName, lastName, unspentExperience, approved);
     }
 }

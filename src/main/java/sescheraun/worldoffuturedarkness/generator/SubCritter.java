@@ -1,5 +1,6 @@
 package sescheraun.worldoffuturedarkness.generator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,9 +31,11 @@ public class SubCritter {
     /**
      * The Sub critters.
      */
+    @JsonIgnore
     @ManyToMany(mappedBy = "subCritters")
     Set<Character> characters = new HashSet<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "subCritter")
     private Set<Trait> trait = new HashSet<>();
 
@@ -80,23 +83,23 @@ public class SubCritter {
         this.isDeleted = false;
     }
 
-    /**
-     * Add trait.
-     *
-     * @param trait the trait
-     */
-    public void addTrait(Trait trait) {
-        this.trait.add(trait);
-    }
-
-    /**
-     * Get traits set.
-     *
-     * @return the set of traits
-     */
-    public Set<Trait> getTraits(){
-        return this.trait;
-    }
+//    /**
+//     * Add trait.
+//     *
+//     * @param trait the trait
+//     */
+//    public void addTrait(Trait trait) {
+//        this.trait.add(trait);
+//    }
+//
+//    /**
+//     * Get traits set.
+//     *
+//     * @return the set of traits
+//     */
+//    public Set<Trait> getTraits(){
+//        return this.trait;
+//    }
 
     /**
      * Gets sub critter id.
