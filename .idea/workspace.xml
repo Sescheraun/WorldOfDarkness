@@ -12,21 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Critter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Critter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createNewUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/timeLog.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -204,7 +190,7 @@
           <entry key="js" value="12" />
           <entry key="jsp" value="102" />
           <entry key="log" value="65" />
-          <entry key="md" value="10" />
+          <entry key="md" value="11" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="5" />
           <entry key="properties" value="19" />
@@ -226,7 +212,7 @@
           <entry key="JAVA" value="293" />
           <entry key="JSP" value="102" />
           <entry key="JavaScript" value="12" />
-          <entry key="Markdown" value="10" />
+          <entry key="Markdown" value="11" />
           <entry key="PLAIN_TEXT" value="74" />
           <entry key="Properties" value="19" />
           <entry key="SQL" value="19" />
@@ -245,7 +231,7 @@
           <entry key="js" value="5746" />
           <entry key="jsp" value="5292" />
           <entry key="log" value="65" />
-          <entry key="md" value="3487" />
+          <entry key="md" value="3632" />
           <entry key="properties" value="195" />
           <entry key="sql" value="867" />
           <entry key="txt" value="79" />
@@ -258,7 +244,7 @@
           <entry key="JAVA" value="25649" />
           <entry key="JSP" value="5292" />
           <entry key="JavaScript" value="5746" />
-          <entry key="Markdown" value="3487" />
+          <entry key="Markdown" value="3632" />
           <entry key="PLAIN_TEXT" value="181" />
           <entry key="Properties" value="195" />
           <entry key="SQL" value="866" />
@@ -304,7 +290,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
@@ -312,6 +298,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timeLog.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="438">
+                <caret line="55" column="135" selection-start-line="55" selection-start-column="135" selection-end-line="55" selection-end-column="135" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -416,7 +414,6 @@
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/manageSubCritterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/ManageSubCrittersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/populateSubCrittersFromServlet.java" />
-        <option value="$PROJECT_DIR$/timeLog.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/styles/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/NewUserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/validateNewUser.js" />
@@ -434,6 +431,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" />
+        <option value="$PROJECT_DIR$/timeLog.md" />
       </list>
     </option>
   </component>
@@ -479,7 +477,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="45" />
     <option name="y" value="25" />
     <option name="width" value="1635" />
@@ -597,42 +595,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indieproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indieproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -648,7 +610,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545173523938" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545173603665" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1162,7 +1124,7 @@
       <workItem from="1545084177072" duration="3554000" />
       <workItem from="1545096492623" duration="6584000" />
       <workItem from="1545142119164" duration="5608000" />
-      <workItem from="1545148508638" duration="22920000" />
+      <workItem from="1545148508638" duration="23437000" />
     </task>
     <servers />
   </component>
@@ -1199,7 +1161,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451420000" />
+    <option name="totallyTimeSpent" value="451937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1214,7 +1176,7 @@
     <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" weight="0.25613594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1224,11 +1186,11 @@
       <window_info id="Web" order="7" sideWeight="0.5048544" side_tool="true" weight="0.32976714" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32402235" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15083799" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15083799" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.23575419" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
@@ -1448,16 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timeLog.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="438">
-            <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
@@ -1669,6 +1621,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeLog.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="438">
+            <caret line="55" column="135" selection-start-line="55" selection-start-column="135" selection-end-line="55" selection-end-column="135" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -53,4 +53,4 @@
 | 12.14.2018 | Today was fun.  I believe I may have murdered  the database on my AWS.  Even purging and reinstalling didn't work But, my emails now recovered from yesterday's crash and I have taken several checkpoint off my issues. | 16 hours | 1 am coding...  ahh.  thats been a while.  Still not connecting to the AWS data base.  Guess I know what tomorrow will encompase. |
 | 12.15.2018 | Spent most of the time catching up on logs and docs and things.  Some kind of bug is preventing the program from working on aws. | 10 hours | All caught up with the journal and time logs now. |
 | 12.16.2018 | Sunday, my last day at the lab. I did a lot of work and a lot of refactoring to make the flow of the program better. | 9 hours | while working in the lab on a rather busy day. |
-
+| 12.17.2018 | Presentation could have gone a little better. but I got some more stuff working. | 7 hours | one more real day of work |
