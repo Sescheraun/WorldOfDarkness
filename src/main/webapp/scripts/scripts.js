@@ -56,7 +56,8 @@ $(document).ready( () => {
             + `&category=${category}`
             + `&firstAdvantage=${firstAdvantage}`
             + `&secondAdvantage=${secondAdvantage}`
-            + `&flaw=${flaw}`;
+            + `&flaw=${flaw}`
+            + `&method=create`;
 
         console.log(subCritter);
 
@@ -74,6 +75,14 @@ $(document).ready( () => {
                 $("#firstAdvantageNew").val("");
                 $("#secondAdvantageNew").val("");
                 $("#flawNew").val("");
+
+                $("#subCritterNameNew").val("");
+                $("#categoryNew").val("");
+                $("#firstAdvantageNew").val("");
+                $("#secondAdvantageNew").val("");
+                $("#flawNew").val("");
+
+                readAllSubCritters();
             }
             , error:function(xhr, status, error) {
                 console.log("ERROR:");
@@ -100,29 +109,35 @@ $(document).ready( () => {
     $("#subCritterUpdate").on("click", () => {
 
         let critter         = $("#allowed :selected").prop("id");
-        let subCritterID    = $("#subCritterUpdateID").innerHTML;
-        let subCritterName  = $("#subCritterName").val();
-        let category        = $("#category").val();
-        let firstAdvantage  = $("#firstAdvantage").val();
-        let secondAdvantage = $("#secondAdvantage").val();
-        let flaw            = $("#flaw").val();
+        let subCritterID    = subCritters[subCritterIndex].subCritterId;
+        let subCritterName  = $("#subCritterNameUpdate").val();
+        let category        = $("#categoryUpdate").val();
+        let firstAdvantage  = $("#firstAdvantageUpdate").val();
+        let secondAdvantage = $("#secondAdvantageUpdate").val();
+        let flaw            = $("#flawUpdate").val();
+
+        console.log(subCritters[subCritterIndex]);
 
         //Make it standard postData for now.
         postData = `critter=${critter}`
+            + `&subCritterID=${subCritterID}`
             + `&subCritterName=${subCritterName}`
             + `&category=${category}`
             + `&firstAdvantage=${firstAdvantage}`
             + `&secondAdvantage=${secondAdvantage}`
-            + `&flaw=${flaw}`;
+            + `&flaw=${flaw}`
+            + `&method=update`;
+        console.log(postData);
 
         $.ajax({
             url:CORE_LOCATION + "subCritterCRUD"
-            , method: "PUT"
+            , method: "POST"
             , data: postData
             , dataType: "TEXT"
             , success: function(responseText) {
                 // let data = JSON.parse(responseText);
                 console.log(responseText);
+                readAllSubCritters();
             }
             , error:function(xhr, status, error) {
                 console.log("ERROR:");
@@ -144,7 +159,6 @@ $(document).ready( () => {
      ** When i have more time, and the rest of the application is done, **
      ** I would like to refactor this to user observables.              **
      **                                                                 **
-     **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
      *********************************************************************/
     $("#subCritterDelete").on("click", () => {
 
@@ -257,18 +271,33 @@ loadSubCritters = () => {
 
     console.log("Loading the Subcritters");
 
-
+    //Handle the label at the top of the page
     $(".idDisplay").empty(subCritters[subCritterIndex].subCritterId);
     $(".idDisplay").append(subCritters[subCritterIndex].subCritterId);
 
+    //Handle the textareas
+    $("#subCritterNameUpdate").val("");
     $("#subCritterNameUpdate").val(subCritters[subCritterIndex].subCritterLabel);
+
+    $("#categoryUpdate").val("");
     $("#categoryUpdate").val(subCritters[subCritterIndex].critterSubName);
 
+    $("#firstAdvantageUpdate").val("");
+    $("#firstAdvantageUpdate").val(subCritters[subCritterIndex].firstAdvantage);
+
+    $("#secondAdvantageUpdate").val("");
+    $("#secondAdvantageUpdate").val(subCritters[subCritterIndex].secondAdvantage);
+
+    $("#flawUpdate").val("");
+    $("#flawUpdate").val(subCritters[subCritterIndex].flaw);
+
+
+    //handle the generic divs
     $(".subCritterNameDisplay").empty(subCritters[subCritterIndex].subCritterLabel);
     $(".subCritterNameDisplay").append(subCritters[subCritterIndex].subCritterLabel);
 
-    $(".categoryDisplay").empty(subCritters[subCritterIndex].secondAdvantage);
-    $(".categoryDisplay").append(subCritters[subCritterIndex].secondAdvantage);
+    $(".categoryDisplay").empty(subCritters[subCritterIndex].critterSubName);
+    $(".categoryDisplay").append(subCritters[subCritterIndex].critterSubName);
 
     $(".firstAdvantageDisplay").empty(subCritters[subCritterIndex].firstAdvantage);
     $(".firstAdvantageDisplay").append(subCritters[subCritterIndex].firstAdvantage);

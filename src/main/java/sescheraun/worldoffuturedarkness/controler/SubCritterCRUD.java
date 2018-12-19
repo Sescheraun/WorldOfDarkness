@@ -57,6 +57,7 @@ public class SubCritterCRUD extends HttpServlet {
         if (method.equals("delete")) {
             delete(req, resp);
         } else if (method.equals("update")){
+            logger.debug("Update");
             update(req, resp);
         } else {
 
@@ -75,6 +76,42 @@ public class SubCritterCRUD extends HttpServlet {
     }
 
     private void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("Inside Update");
+
+        Enumeration params = req.getParameterNames();
+
+        while (params.hasMoreElements()) {
+            String paramater = (String) params.nextElement();
+            logger.info(paramater);
+        }
+
+        String subCritterID = req.getParameter("subCritterID");
+        int id = Integer.parseInt(subCritterID);
+
+        logger.debug(id);
+        SubCritter subCritter = (SubCritter)subCritterDAO.getByID(id);
+
+        String newName = req.getParameter("subCritterName");
+        logger.debug(newName);
+        String newCategory = req.getParameter("category");
+        logger.debug(newCategory);
+        String newFirstAdvantage = req.getParameter("firstAdvantage");
+        logger.debug(newFirstAdvantage);
+        String newSecondAdvantage = req.getParameter("secondAdvantage");
+        logger.debug(newSecondAdvantage);
+        String newFlaw = req.getParameter("flaw");
+        logger.debug(newFlaw);
+
+        subCritter.setCritter((Critter)critterDAO.getByID(Integer.parseInt(req.getParameter("critter"))));
+        subCritter.setCritterSubName(newName);
+        subCritter.setSubCritterLabel(newCategory);
+        subCritter.setFirstAdvantage(newFirstAdvantage);
+        subCritter.setSecondAdvantage(newSecondAdvantage);
+        subCritter.setFlaw(newFlaw);
+
+        logger.debug(subCritter);
+        subCritterDAO.update(subCritter);
+
         String response = "You have reached the doPut method";
         logger.info(response);
         resp.setContentType("text/plain");
@@ -116,7 +153,7 @@ public class SubCritterCRUD extends HttpServlet {
         Critter critter = (Critter)critterDAO.getByID(critterID);
         logger.info(critter);
 
-        SubCritter subCritter = new SubCritter(critter, category, subCritterName, firstAdvantage, secondAdvantage, flaw );
+        SubCritter subCritter = new SubCritter(critter, subCritterName, category, firstAdvantage, secondAdvantage, flaw );
         logger.info(subCritter);
 
         return subCritterDAO.create(subCritter);

@@ -52,12 +52,12 @@
                         <h4>Add new Sub Type</h4>
                         <div class = "row">
                             <label for = "subCritterNameNew" class = "col-sm-3 text-right">Sub Type Name</label>
-                            <input name = "subCritterNameNew" id = "subCritterNameNew" class = "col-sm-8 input" type = "text" />
+                            <input name = "subCritterNameNew" maxlength="20" id = "subCritterNameNew" class = "col-sm-8 input" type = "text" />
                         </div>
 
                         <div class = "row">
                             <label for = "categoryNew" class = "col-sm-3 text-right"> Sub Type Label</label>
-                            <input name="categoryNew" id = "categoryNew" class = "col-sm-8 input" type = "text" />
+                            <input name="categoryNew" maxlength="20" id = "categoryNew" class = "col-sm-8 input" type = "text" />
                         </div>
 
                         <div class = "row">
@@ -93,12 +93,12 @@
 
                         <div class = "row">
                             <label for = "subCritterNameUpdate" class = "col-sm-3 text-right">Sub Type Name</label>
-                            <input name = "subCritterNameUpdate" id = "subCritterNameUpdate" class = "subCritterNameDisplay col-sm-8 input" type = "text" />
+                            <input name = "subCritterNameUpdate" maxlength="20" id = "subCritterNameUpdate" class = "subCritterNameDisplay col-sm-8 input" type = "text" />
                         </div>
 
                         <div class = "row">
                             <label for = "categoryUpdate" class = "col-sm-3 text-right"> Sub Type Label</label>
-                            <input name="categoryUpdate" id = "categoryUpdate" class = "categoryDisplay col-sm-8 input" type = "text" />
+                            <input name="categoryUpdate" maxlength="20" id = "categoryUpdate" class = "categoryDisplay col-sm-8 input" type = "text" />
                         </div>
 
                         <div class = "row">
@@ -128,7 +128,7 @@
 
                             <div class = "col-sm-4 text-center">
 
-                                <button id = "updatePost"
+                                <button id = "subCritterUpdate"
                                         class = "btn">
                                     Update Post
                                 </button>

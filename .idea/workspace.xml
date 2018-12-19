@@ -14,7 +14,7 @@
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -126,7 +126,7 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="74" />
+          <entry key="project.closed" value="76" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.103" value="1" />
@@ -152,7 +152,7 @@
           <entry key="project.open.time.55" value="2" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.59" value="2" />
+          <entry key="project.open.time.59" value="3" />
           <entry key="project.open.time.60" value="3" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="2" />
@@ -166,7 +166,7 @@
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.72" value="2" />
           <entry key="project.open.time.74" value="3" />
-          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.78" value="2" />
           <entry key="project.open.time.79" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.80" value="1" />
@@ -176,7 +176,7 @@
           <entry key="project.open.time.90" value="2" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="84" />
+          <entry key="project.opened" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -190,9 +190,9 @@
           <entry key="java" value="294" />
           <entry key="jpeg" value="1" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="12" />
+          <entry key="js" value="13" />
           <entry key="jsp" value="103" />
-          <entry key="log" value="65" />
+          <entry key="log" value="71" />
           <entry key="md" value="11" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="5" />
@@ -214,9 +214,9 @@
           <entry key="Image" value="9" />
           <entry key="JAVA" value="294" />
           <entry key="JSP" value="103" />
-          <entry key="JavaScript" value="12" />
+          <entry key="JavaScript" value="13" />
           <entry key="Markdown" value="11" />
-          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="PLAIN_TEXT" value="80" />
           <entry key="Properties" value="19" />
           <entry key="SQL" value="19" />
           <entry key="Scratch" value="6" />
@@ -230,10 +230,10 @@
           <entry key="css" value="395" />
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="15" />
-          <entry key="java" value="26053" />
-          <entry key="js" value="5782" />
-          <entry key="jsp" value="5297" />
-          <entry key="log" value="65" />
+          <entry key="java" value="26829" />
+          <entry key="js" value="6287" />
+          <entry key="jsp" value="5313" />
+          <entry key="log" value="66" />
           <entry key="md" value="3632" />
           <entry key="properties" value="195" />
           <entry key="sql" value="867" />
@@ -244,11 +244,11 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="395" />
-          <entry key="JAVA" value="26053" />
-          <entry key="JSP" value="5297" />
-          <entry key="JavaScript" value="5782" />
+          <entry key="JAVA" value="26829" />
+          <entry key="JSP" value="5313" />
+          <entry key="JavaScript" value="6287" />
           <entry key="Markdown" value="3632" />
-          <entry key="PLAIN_TEXT" value="181" />
+          <entry key="PLAIN_TEXT" value="182" />
           <entry key="Properties" value="195" />
           <entry key="SQL" value="866" />
           <entry key="Scratch" value="8" />
@@ -265,104 +265,98 @@
     <favorites_list name="indieproject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="222" selection-start-line="222" selection-end-line="231" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="211" column="51" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timeLog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="438">
-                <caret line="55" column="135" selection-start-line="55" selection-start-column="135" selection-end-line="55" selection-end-column="135" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="1395" column="58" selection-start-line="1395" selection-start-column="58" selection-end-line="1395" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5244">
-              <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="219">
+                  <caret line="61" selection-start-line="61" selection-end-line="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="369">
+                  <caret line="155" column="72" selection-start-line="155" selection-start-column="72" selection-end-line="155" selection-end-column="72" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="6648">
+                  <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="537">
+                  <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-8188" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="6215">
+                  <caret line="292" selection-start-line="292" selection-end-line="292" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -446,13 +440,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" />
-        <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
         <option value="$PROJECT_DIR$/timeLog.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" />
+        <option value="$PROJECT_DIR$/logs/WorldOfDarkness.log" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
+        <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java" />
       </list>
     </option>
   </component>
@@ -498,11 +492,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="45" />
-    <option name="y" value="25" />
-    <option name="width" value="1635" />
-    <option name="height" value="1025" />
+    <option name="y" value="27" />
+    <option name="width" value="3782" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -527,6 +521,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -628,9 +623,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -639,7 +633,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545177576349" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545239650247" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1153,7 +1147,9 @@
       <workItem from="1545084177072" duration="3554000" />
       <workItem from="1545096492623" duration="6584000" />
       <workItem from="1545142119164" duration="5608000" />
-      <workItem from="1545148508638" duration="27014000" />
+      <workItem from="1545148508638" duration="27414000" />
+      <workItem from="1545198952264" duration="8571000" />
+      <workItem from="1545233100817" duration="6208000" />
     </task>
     <servers />
   </component>
@@ -1190,7 +1186,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455514000" />
+    <option name="totallyTimeSpent" value="470693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1202,10 +1198,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
+    <frame x="45" y="27" width="3782" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.32976714" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" weight="0.32976446" />
       <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1215,13 +1211,13 @@
       <window_info id="Web" order="7" sideWeight="0.5048544" side_tool="true" weight="0.32976714" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32402235" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27150837" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30985916" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.32849163" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.23575419" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.499056" visible="true" weight="0.23510292" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39664805" />
@@ -1564,12 +1560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="274" column="16" selection-start-line="274" selection-start-column="16" selection-end-line="274" selection-end-column="16" />
-          <folding>
-            <element signature="e#2913#2914#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#5724#5725#0" expanded="true" />
-            <element signature="e#5759#5760#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1587,31 +1577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5244">
-          <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="211" column="51" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="55" />
+        <state relative-caret-position="1131">
+          <caret line="222" selection-start-line="222" selection-end-line="231" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1625,13 +1594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="1395" column="58" selection-start-line="1395" selection-start-column="58" selection-end-line="1395" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Content.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1639,27 +1601,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/persistance/GenericDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/Manage-Users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="222" selection-start-line="222" selection-end-line="231" selection-end-column="7" />
+        <state relative-caret-position="432">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/Trait.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="6648">
+          <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/generator/SubCritter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+        <state relative-caret-position="6215">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/subCritters.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="155" column="72" selection-start-line="155" selection-start-column="72" selection-end-line="155" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
