@@ -104,7 +104,6 @@ $(document).ready( () => {
      ** When i have more time, and the rest of the application is done, **
      ** I would like to refactor this to user observables.              **
      **                                                                 **
-     **           THIS METHOD IS NOT READY FOR IMPLEMENTATION           **
      *********************************************************************/
     $("#subCritterUpdate").on("click", () => {
 
@@ -137,6 +136,7 @@ $(document).ready( () => {
             , success: function(responseText) {
                 // let data = JSON.parse(responseText);
                 console.log(responseText);
+
                 readAllSubCritters();
             }
             , error:function(xhr, status, error) {
@@ -206,7 +206,7 @@ $(document).ready( () => {
 readAllSubCritters = () => {
 
     //let critter = $("#allowed :selected").prop("id");
-
+    subCritterIndex = 0;
     console.log("Getting all SubCritters");
     //Should not need
     //let postData = `critter=${critter}`;
@@ -221,7 +221,7 @@ readAllSubCritters = () => {
             console.log("Success");
             console.log(responseText);
             subCritters = JSON.parse(responseText);
-            console.log(subCritters[0].critter);
+            console.log(subCritters);
             loadSubCritters();
 
         }
@@ -238,26 +238,31 @@ readAllSubCritters = () => {
     /*********************************************************************
      **                        Shift SubCritters                        **
      *********************************************************************/
+    $(".PostLeft").off("click")
+
     $(".PostLeft").on("click", function() {
+        console.log(this + " postLeft, shifting to the left");
         shiftSubCritters(-1);
     })
 
+    $(".PostRight").off("click")
 
     $(".PostRight").on("click", function() {
+        console.log(this + " postRight, shifting to the right");
         shiftSubCritters(1);
     })
 
 };
-/********************************************************************************
+/*********************************************************************************
  **                         Changes the index of the journal                    **
  **                               based on user input                           **
  *********************************************************************************/
-
 
 shiftSubCritters = (direction) => {
     subCritterIndex += direction;
     if (subCritterIndex >= subCritters.length) subCritterIndex = 0;
     if (subCritterIndex < 0) subCritterIndex = subCritters.length - 1;
+    console.log(subCritterIndex);
     loadSubCritters();
 }
 
@@ -270,6 +275,9 @@ loadSubCritters = () => {
     //There is probably a better way to do this.
 
     console.log("Loading the Subcritters");
+
+    //handle the dropdown
+    $("#allowed").val((subCritters[subCritterIndex].critter.critterName)).trigger("chosen:updated");
 
     //Handle the label at the top of the page
     $(".idDisplay").empty(subCritters[subCritterIndex].subCritterId);

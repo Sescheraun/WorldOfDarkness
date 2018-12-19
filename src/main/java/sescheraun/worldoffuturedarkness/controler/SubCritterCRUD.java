@@ -103,8 +103,8 @@ public class SubCritterCRUD extends HttpServlet {
         logger.debug(newFlaw);
 
         subCritter.setCritter((Critter)critterDAO.getByID(Integer.parseInt(req.getParameter("critter"))));
-        subCritter.setCritterSubName(newName);
-        subCritter.setSubCritterLabel(newCategory);
+        subCritter.setSubCritterLabel(newName);
+        subCritter.setCritterSubName(newCategory);
         subCritter.setFirstAdvantage(newFirstAdvantage);
         subCritter.setSecondAdvantage(newSecondAdvantage);
         subCritter.setFlaw(newFlaw);
