@@ -14,10 +14,10 @@
                 <br /><br />
                 <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
                 <br />
-
-                <div class = "card-footer text-center">
-                    <%@ include file="../foot.jsp"%>
-                </div>
+            </div>
+            
+            <div class = "card-footer text-center">
+                <%@ include file="../foot.jsp"%>
             </div>
         </div>
     </div>

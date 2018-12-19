@@ -151,18 +151,19 @@ $(document).ready( () => {
         let target = subCritters[subCritterIndex].subCritterId;
 
         //Make it standard postData for now.
-        let postData = "subCritterID=" + target;
+        let postData = "method=delete&subCritterID=" + target;
 
         console.log(postData);
 
         $.ajax({
             url:CORE_LOCATION + "subCritterCRUD"
-            , method: "DELETE"
+            , method: "POST"
             , data: postData
             , dataType: "TEXT"
             , success: function(responseText) {
                 // let data = JSON.parse(responseText);
                 console.log(responseText);
+                readAllSubCritters();
             }
             , error:function(xhr, status, error) {
                 console.log("ERROR:");
@@ -190,7 +191,7 @@ $(document).ready( () => {
  *********************************************************************/
 readAllSubCritters = () => {
 
-    let critter = $("#allowed :selected").prop("id");
+    //let critter = $("#allowed :selected").prop("id");
 
     console.log("Getting all SubCritters");
     //Should not need

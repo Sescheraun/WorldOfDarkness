@@ -52,36 +52,47 @@ public class SubCritterCRUD extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String method = req.getParameter("method");
 
-        int id = buildSubCritter(req);
+        if (method.equals("delete")) {
+            delete(req, resp);
+        } else if (method.equals("update")){
+            update(req, resp);
+        } else {
 
-        SubCritter subCritter = (SubCritter)subCritterDAO.getByID(id);
+            int id = buildSubCritter(req);
 
-        String response = "Subtype " + subCritter.getCritterSubName()
-                + " under type " + subCritter.getCritter().getCritterName()
-                + " has been created and assigned ID " + id + ".";
-        logger.info(response);
+            SubCritter subCritter = (SubCritter) subCritterDAO.getByID(id);
 
-        resp.setContentType("text/plain");
-        resp.getWriter().write(response);
+            String response = "Subtype " + subCritter.getCritterSubName()
+                    + " under type " + subCritter.getCritter().getCritterName()
+                    + " has been created and assigned ID " + id + ".";
+            logger.info(response);
+
+            resp.setContentType("text/plain");
+            resp.getWriter().write(response);
+        }
     }
 
-    @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    private void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String response = "You have reached the doPut method";
         logger.info(response);
         resp.setContentType("text/plain");
         resp.getWriter().write(response);
     }
 
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String subCritter = req.getParameter("subCritterID");
+    private void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String subCritterID = req.getParameter("subCritterID");
+        int id = Integer.parseInt(subCritterID);
 
-        logger.debug(subCritter);
+        String response = "You have reached the doDelete method, you have chosen to delete id# " + subCritterID;
 
-        String response = "You have reached the doDelete method, you have chosen to delete id# " + subCritter;
+        SubCritter subCritter = (SubCritter)subCritterDAO.getByID(id);
+        subCritter.setIsDeleted(true);
 
+        subCritterDAO.update(subCritter);
+
+        response = "The sub type " + subCritter.getCritterSubName() + " was deleted.";
 
         resp.setContentType("text/plain");
         resp.getWriter().write(response);
