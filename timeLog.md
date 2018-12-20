@@ -54,3 +54,5 @@
 | 12.15.2018 | Spent most of the time catching up on logs and docs and things.  Some kind of bug is preventing the program from working on aws. | 10 hours | All caught up with the journal and time logs now. |
 | 12.16.2018 | Sunday, my last day at the lab. I did a lot of work and a lot of refactoring to make the flow of the program better. | 9 hours | while working in the lab on a rather busy day. |
 | 12.17.2018 | Presentation could have gone a little better. but I got some more stuff working. | 7 hours | one more real day of work |
+| 12.18.2018 | More time squashing bugs that hibernate managed to obscure.  I finally got the read and delete working and started on the update. | 16 hours | Almost Done, not gonna be pretty but will have full crud |
+| 12.19.2018 | Last day, I really am not ready to leave.  Spent a lot of time squashing the last few bugs, and learned a quirk of AJAX.  It calls the document after a call for some reason.  Was loading my on click methods multiple times. | 5 hours | I miss school already. |

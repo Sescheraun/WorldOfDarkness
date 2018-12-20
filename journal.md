@@ -49,6 +49,7 @@ NOOOO...  Go back.  Too late in the semested and my job searches are kind of bei
 # Week 15:
 Here we are, game's almost over but I am not nearly ready for it to be.  this is the only class I have had here that has actually been a challange, and I could use a little more time of a couple of the subjects.  This needs to be divided into two classes, there is just too much to cover all at once.  Hell, hibernate alone should almost be a class. 
 
-As I sit here and ponder my AWS database, which is still not working, I feel a littl miffed at myself, this may be the only coding class here that I am not going to get an A in/  I am a little worried about passing in general.  Least I don't need it to graduate.
+As I sit here and ponder my AWS database, which is still not working, I feel a little miffed at myself, this may be the only coding class here that I am not going to get an A in/  I am a little worried about passing in general.  Least I don't need it to graduate.
 
 # Week 16: 
+The end of the program has arrived,  I kind of feel like it got here too soon.  There was so much left to do and so many things still to learn.  I feel a little intimidated by the lack of a job in the field but i will keep looking and try not to fall into complacency and get comfortable in the job I'm going to have to go back to.
