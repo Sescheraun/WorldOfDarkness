@@ -18,8 +18,8 @@
             <div class = "card-body text-center">
                 <a class = "btn" href="Manage-Content.jsp">Content Management</a>
                 <br />
-                <a class = "btn" href="Manage-Users.jsp">User Management</a>
-                <br /><br />
+                <%--<a class = "btn" href="Manage-Users.jsp">User Management</a>--%>
+                <%--<br /><br />--%>
                 <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
                 <br />
             </div>

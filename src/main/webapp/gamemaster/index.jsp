@@ -10,14 +10,24 @@
 <%@ include file="../head.jsp"%>
 <body>
 
-<div id = "content">
+    <div id = "container">
+        <div id = "content" class = "card content">
 
-    This page will hold the Game Master's tools page.
-    <br />
-    <a href="/WorldOfFutureDarkness">Link to the home page</a>
+            <div class = "card-header text-center">
+                We are the Game Masters.
+            </div>
 
-    <%@ include file="../foot.jsp"%>
-</div>
+            <div class = "card-body text-center">
+                This page will hold the Game Master's tools page.
+                <br />
+                <a href="/WorldOfFutureDarkness">Link to the home page</a>
+            </div>
+
+            <div class = "card-footer text-center">
+                <%@ include file="../foot.jsp"%>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
