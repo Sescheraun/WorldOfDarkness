@@ -36,8 +36,7 @@
 | 11.15.2018 | Adventured in Hibernate.  Started playing with Many to Many notations...  this is gonna take a while. | 9 hours | Along with adapting some of my javascript functions and making the page content center. |
 | 11.16.2018 | What the heck is an InvocationTargetException and why is it comming from my REST service?  | 8 hours | Got the lab early, but 5 hours of the 8 were spent helping students in the lab |
 | 11.18.2018 | Working in the lab, fixed one obscure exception only to seemingly cause another. | 7 hours | 5 hours spent in the lab |
-| 11.19.2018 | Still beating my head against  hibernate telling me class not found.  Did a commit to get help. | 10 hours | Includes time spent watching tutorial vidos |
-| 11.20.2018 | IT WORKS! The right war file certainly helps. | about 3 hours | I did a lot of stuff for other classes all day |
+| 11.19.2018 | Still beating my head against  hibernate telling me class not found.  Did a commit to get help. | 10 hours | Includes time spent watching tutorial vidos || 11.20.2018 | IT WORKS! The right war file certainly helps. | about 3 hours | I did a lot of stuff for other classes all day |
 | 11.27.2018 | Spet the last few days on AJAX stuff.  Back to the Team Project. | 5 to 10 hours | Did a lot of other stuff at the same time, not really sure how much time actually went to work |
 | 11.28.2018 | Did a lot of work to makie my POJOs work and play better with hibernate. | 8 | lots of video watching |
 | 11.29.2018 | Why to thee plague me oh annotation bugs?! | 7 hours |  I hope I eventually get good at hibernate. |
