@@ -20,7 +20,7 @@
             <div class = "card-body text-center">
                 This page will hold the Game Master's tools page.
                 <br />
-                <a href="/WorldOfFutureDarkness">Link to the home page</a>
+                <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
             </div>
 
             <div class = "card-footer text-center">

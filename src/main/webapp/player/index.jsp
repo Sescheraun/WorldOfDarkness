@@ -11,12 +11,22 @@
 <html>
 <%@ include file="../head.jsp"%>
 <body>
-<div id = "content">
+    <div id = "container">
+        <div id = "content" class = "card content">
 
-    <a href="/WorldOfFutureDarkness/getCritters">Select Supernatural Creature</a>
-    <br />
-    <a href="/WorldOfFutureDarkness">Link to the home page</a>
+            <div class = "card-header text-center">
+                The actors in untold stories.
+            </div>
 
-    <%@ include file="../foot.jsp"%>
-</div>
+            <div class = "card-body text-center">
+                Players will manage their characters here.
+                <br />
+                <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
+            </div>
+
+            <div class = "card-footer text-center">
+                <%@ include file="../foot.jsp"%>
+            </div>
+        </div>
+    </div>
 </body>
