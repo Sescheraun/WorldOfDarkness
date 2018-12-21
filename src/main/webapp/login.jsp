@@ -18,7 +18,7 @@
                 Enter Credentials:
             </div>
 
-            <div class = "card-body text-center"">
+            <div class = "card-body text-center">
                 <FORM  class = "text-center" ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
 
                     <div class = "row" id = "userNameRow">
@@ -52,7 +52,6 @@
 
             <div class = "card-footer">
                 <%@ include file="foot.jsp"%>
-
             </div>
         </div>
     </div>

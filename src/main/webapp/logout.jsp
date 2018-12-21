@@ -9,18 +9,27 @@
 <html>
     <%@ include file="head.jsp"%>
     <body>
+        <div class = "container">
+            <%@ page session="true"%>
 
-        <%@ page session="true"%>
+            <div id = "content" class = "card content">
 
-        <div id = "content">
-            User '<%=request.getRemoteUser()%>', you are the weakest link, goodbye.
+                <div class = "card-header text-center">
+                    User '<%=request.getRemoteUser()%>':
+                </div>
+
+                <div class = "card-body text-center">
+                    You are the weakest link, goodbye.
+                    <br />
+                    <br />
+                    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+                </div>
+
+                <div class = "card-footer">
+                    <%@ include file="foot.jsp"%>
+                </div>
+            </div>
         </div>
-
         <% session.invalidate(); %>
-
-        <a href="/WorldOfFutureDarkness/index.jsp">return</a>
-
-        <br/><br/>
-        <%@ include file="foot.jsp"%>
     </body>
 </html>
