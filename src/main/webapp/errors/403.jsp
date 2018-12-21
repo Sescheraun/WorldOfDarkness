@@ -24,7 +24,7 @@
             </div>
 
             <div class = "card-footer text-center">
-                <%@ include file="foot.jsp"%>
+                <%@ include file="../foot.jsp"%>
             </div>
         </div>
     </div>
