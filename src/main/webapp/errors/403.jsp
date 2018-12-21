@@ -11,7 +11,22 @@
     <title>ERROR - 403</title>
 </head>
 <body>
-You do not seem to have access to this resource.
-<a href="/WorldOfFutureDarkness">Link to the home page</a>
+    <div class = "container">
+        <div id = "content" class = "card content">
+            <div class = "card-header text-center">
+                403:
+            </div>
+
+            <div class = "card-body text-center">
+                You do not seem to have access to this resource.
+                <br />
+                <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+            </div>
+
+            <div class = "card-footer text-center">
+                <%@ include file="foot.jsp"%>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

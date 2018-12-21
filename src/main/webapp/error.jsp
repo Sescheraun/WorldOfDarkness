@@ -14,7 +14,7 @@
                     <div class = "col-sm-4 text-right float-left">Reason:</div>
                     <div class = "col-sm-8 text-left float-right">${error}</div>
 
-                    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
+                    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
                 </div>
 
                 <div class = "card-footer text-center">
