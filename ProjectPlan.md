@@ -124,11 +124,26 @@
 - [ ] Create final presentation
 
 ### Week 15
-- [ ] Final Presentation
-- [ ] Create video
+- [X] Final Presentation
+- [x] Create video
 - [X] Finalize all documentation
-- [ ] Code quality check
+- [X] Code quality check
 
 ### Week 16
-- [ ] Weekly journal entry
-- [ ] Final touches before code complete
+- [X] Weekly journal entry
+- [X] Final touches before code complete
+-----------------------------
+School is done and so the work above this line is no longer on such a high priority.  I did really well in the class after all was said and done, but the project is far from finished.  So I am now going to be continuing but at a slightly different pace and project order.
+
+Current tasks as I see them...
+
+- [ ] Work on the HTML/CSS to give the JSPs a more uniform look
+- [ ] Add java script to and modify CSS to make the project more responsive and mobile friendly. 
+- [ ] Get enough data into the subCritters section to start populating the traits object.
+- [ ] get some traits in so I can dump them and add them to the test database.
+- [ ] Unit test the traits stuff
+- [ ] Rework the properties files and change the credentials and NOT add the new ones to github 
+
+Nebulous tasks to maybe pursue....  
+- [ ] Trello board?
+- [ ] personal domain and https

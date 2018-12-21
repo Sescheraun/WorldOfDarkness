@@ -13,8 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Design/entJavaDemo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/timeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal.md" beforeDir="false" afterPath="$PROJECT_DIR$/journal.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -178,8 +178,9 @@
           <entry key="project.open.time.90" value="2" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
+          <entry key="project.open.time.93" value="1" />
           <entry key="project.open.time.97" value="1" />
-          <entry key="project.opened" value="91" />
+          <entry key="project.opened" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -196,7 +197,7 @@
           <entry key="js" value="14" />
           <entry key="jsp" value="103" />
           <entry key="log" value="71" />
-          <entry key="md" value="14" />
+          <entry key="md" value="15" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="5" />
           <entry key="properties" value="19" />
@@ -218,7 +219,7 @@
           <entry key="JAVA" value="294" />
           <entry key="JSP" value="103" />
           <entry key="JavaScript" value="14" />
-          <entry key="Markdown" value="14" />
+          <entry key="Markdown" value="15" />
           <entry key="PLAIN_TEXT" value="80" />
           <entry key="Properties" value="19" />
           <entry key="SQL" value="19" />
@@ -237,7 +238,7 @@
           <entry key="js" value="6576" />
           <entry key="jsp" value="5313" />
           <entry key="log" value="66" />
-          <entry key="md" value="4629" />
+          <entry key="md" value="5829" />
           <entry key="properties" value="195" />
           <entry key="sql" value="867" />
           <entry key="txt" value="79" />
@@ -250,7 +251,7 @@
           <entry key="JAVA" value="26829" />
           <entry key="JSP" value="5313" />
           <entry key="JavaScript" value="6576" />
-          <entry key="Markdown" value="4629" />
+          <entry key="Markdown" value="5829" />
           <entry key="PLAIN_TEXT" value="182" />
           <entry key="Properties" value="195" />
           <entry key="SQL" value="866" />
@@ -269,24 +270,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/journal.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1296">
-                <caret line="54" column="331" selection-start-line="54" selection-start-column="331" selection-end-line="54" selection-end-column="331" />
+              <first_editor relative-caret-position="457">
+                <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timeLog.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
+              <first_editor relative-caret-position="253">
                 <caret line="38" column="169" selection-start-line="38" selection-start-column="169" selection-end-line="38" selection-end-column="169" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectPlan.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="169">
+                <caret line="132" column="26" lean-forward="true" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -352,7 +365,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
-        <option value="$PROJECT_DIR$/ProjectPlan.md" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/emailError.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/ReportError.java" />
@@ -382,8 +394,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
-        <option value="$PROJECT_DIR$/journal.md" />
         <option value="$PROJECT_DIR$/timeLog.md" />
+        <option value="$PROJECT_DIR$/ProjectPlan.md" />
+        <option value="$PROJECT_DIR$/journal.md" />
       </list>
     </option>
   </component>
@@ -458,6 +471,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -474,9 +490,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,7 +498,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545248890327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545419710803" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1007,6 +1020,7 @@
       <workItem from="1545257375823" duration="412000" />
       <workItem from="1545276475084" duration="631000" />
       <workItem from="1545323706478" duration="177000" />
+      <workItem from="1545418501782" duration="1225000" />
     </task>
     <servers />
   </component>
@@ -1043,7 +1057,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="481079000" />
+    <option name="totallyTimeSpent" value="482304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1056,8 +1070,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.16236627" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.16425425" />
       <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1071,7 +1086,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" visible="true" weight="0.28268155" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" visible="true" weight="0.28156424" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.23510292" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
@@ -1177,16 +1192,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectPlan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="500">
-            <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1350,9 +1355,7 @@
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181217 21:15.log" />
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181217 21:18.log" />
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181217 21:08.log" />
-    <entry file="file://$PROJECT_DIR$/logs/hibernate.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/hibernate.log" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/8.5.3/tomcat-servlet-api-8.5.3.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1458,13 +1461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/SubCritterCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -1496,21 +1493,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal.md">
+    <entry file="file://$PROJECT_DIR$/timeLog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1296">
-            <caret line="54" column="331" selection-start-line="54" selection-start-column="331" selection-end-line="54" selection-end-column="331" />
+          <first_editor relative-caret-position="253">
+            <caret line="38" column="169" selection-start-line="38" selection-start-column="169" selection-end-line="38" selection-end-column="169" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timeLog.md">
+    <entry file="file://$PROJECT_DIR$/ProjectPlan.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret line="38" column="169" selection-start-line="38" selection-start-column="169" selection-end-line="38" selection-end-column="169" />
+          <first_editor relative-caret-position="169">
+            <caret line="132" column="26" lean-forward="true" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="457">
+            <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>

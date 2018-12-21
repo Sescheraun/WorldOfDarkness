@@ -53,3 +53,5 @@ As I sit here and ponder my AWS database, which is still not working, I feel a l
 
 # Week 16: 
 The end of the program has arrived,  I kind of feel like it got here too soon.  There was so much left to do and so many things still to learn.  I feel a little intimidated by the lack of a job in the field but i will keep looking and try not to fall into complacency and get comfortable in the job I'm going to have to go back to.
+
+# Week 17:
