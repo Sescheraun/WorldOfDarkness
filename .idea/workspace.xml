@@ -13,10 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login-error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -197,7 +194,7 @@
           <entry key="jpeg" value="1" />
           <entry key="jpg" value="3" />
           <entry key="js" value="15" />
-          <entry key="jsp" value="107" />
+          <entry key="jsp" value="108" />
           <entry key="log" value="71" />
           <entry key="md" value="15" />
           <entry key="placeholder" value="1" />
@@ -219,7 +216,7 @@
           <entry key="Database Element" value="11" />
           <entry key="Image" value="9" />
           <entry key="JAVA" value="294" />
-          <entry key="JSP" value="107" />
+          <entry key="JSP" value="108" />
           <entry key="JavaScript" value="15" />
           <entry key="Markdown" value="15" />
           <entry key="PLAIN_TEXT" value="80" />
@@ -238,7 +235,7 @@
           <entry key="gitignore" value="15" />
           <entry key="java" value="26829" />
           <entry key="js" value="6585" />
-          <entry key="jsp" value="5443" />
+          <entry key="jsp" value="5814" />
           <entry key="log" value="66" />
           <entry key="md" value="5829" />
           <entry key="properties" value="195" />
@@ -251,7 +248,7 @@
         <counts>
           <entry key="CSS" value="395" />
           <entry key="JAVA" value="26829" />
-          <entry key="JSP" value="5443" />
+          <entry key="JSP" value="5814" />
           <entry key="JavaScript" value="6585" />
           <entry key="Markdown" value="5829" />
           <entry key="PLAIN_TEXT" value="182" />
@@ -272,28 +269,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login-error.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="47" />
+            <state relative-caret-position="264">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360" />
+            <state relative-caret-position="360">
+              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -301,7 +291,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="87" />
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -346,7 +336,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/controler/IndexServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/sescheraun/worldoffuturedarkness/rest/UserRoles.java" />
@@ -397,6 +386,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/login-error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       </list>
     </option>
   </component>
@@ -534,7 +524,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545420599993" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545421912858" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="GenericSQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -1056,7 +1046,7 @@
       <workItem from="1545257375823" duration="412000" />
       <workItem from="1545276475084" duration="631000" />
       <workItem from="1545323706478" duration="177000" />
-      <workItem from="1545418501782" duration="2049000" />
+      <workItem from="1545418501782" duration="3367000" />
     </task>
     <servers />
   </component>
@@ -1093,7 +1083,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="483128000" />
+    <option name="totallyTimeSpent" value="484446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1108,7 +1098,7 @@
     <frame x="45" y="25" width="1635" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.16425425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49497208" visible="true" weight="0.16425425" />
       <window_info id="Structure" order="1" sideWeight="0.50502795" side_tool="true" weight="0.17809944" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1118,11 +1108,11 @@
       <window_info id="Web" order="7" sideWeight="0.5048544" side_tool="true" weight="0.32976714" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32402235" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3094972" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3094972" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.28156424" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4997245" weight="0.28044692" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500944" side_tool="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.499056" weight="0.23463687" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32849163" />
@@ -1531,29 +1521,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login-error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="456">
+          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="87" />
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login-error.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+        <state relative-caret-position="264">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
         </state>
       </provider>
     </entry>

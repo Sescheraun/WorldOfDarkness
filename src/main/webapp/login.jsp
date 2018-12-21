@@ -14,31 +14,45 @@
 
         <div id = "content" class = "card content">
 
-            <div class = "card-header">
-                Authorize
+            <div class = "card-header text-center">
+                Enter Credentials:
             </div>
 
-            <div class = "card-body">
-                <FORM ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
-                    <TABLE>
-                        <TR>
-                            <TD>User name:  </TD>
-                            <TD><INPUT TYPE="TEXT" NAME="j_username"></TD>
-                        </TR>
-                        <TR>
-                            <TD>Password:  </TD>
-                            <TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD>
-                        </TR>
-                        <TR>
-                            <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
-                        </TR>
-                    </TABLE>
+            <div class = "card-body text-center"">
+                <FORM  class = "text-center" ACTION="/WorldOfFutureDarkness/j_security_check" METHOD="POST">
+
+                    <div class = "row" id = "userNameRow">
+
+                        <div class = "col-sm-5 text-right">
+                            <label for = "j_username">User Name</label>
+                        </div>
+
+                        <div class = "col-sm-7 text-left">
+                            <TD><INPUT TYPE="TEXT" id = "j_username" NAME="j_username"></TD>
+                        </div>
+                    </div>
+                    <div class = "row" id = "passwordRow">
+
+                        <div class = "col-sm-5 text-right">
+                            <label for = "j_password">Password</label>
+                        </div>
+
+                        <div class = "col-sm-7 text-left">
+                            <TD><INPUT TYPE="TEXT" id = "j_password" NAME="j_password"></TD>
+                        </div>
+                    </div>
+
+                    <div class = "col-sm-12 text-center">
+                        <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
+                    </div>
                 </FORM>
+                <br /> <a class = "btn" href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
+                <br /> <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
             </div>
 
             <div class = "card-footer">
                 <%@ include file="foot.jsp"%>
-                <a href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
+
             </div>
         </div>
     </div>
