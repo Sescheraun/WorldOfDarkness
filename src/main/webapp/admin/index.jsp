@@ -14,6 +14,7 @@
             <div class = "card-header text-center">
                 I am the sys-admin, do NOT mess with me.
             </div>
+
             <div class = "card-body text-center">
                 <a class = "btn" href="Manage-Content.jsp">Content Management</a>
                 <br />
@@ -21,7 +22,9 @@
                 <br /><br />
                 <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
                 <br />
+            </div>
 
+            <div class = "card-footer text-center">
                 <%@ include file="../foot.jsp"%>
             </div>
         </div>
