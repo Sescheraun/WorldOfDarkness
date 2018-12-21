@@ -4,7 +4,7 @@ var aws = "http://18.224.147.146:8080/WorldOfFutureDarkness/";
 var subCritterIndex = 0;
 var subCritters = {};
 
-var CORE_LOCATION = aws;
+var CORE_LOCATION = localHost;
 
 $(document).ready( () => {
 

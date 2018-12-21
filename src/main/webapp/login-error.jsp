@@ -9,12 +9,20 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
+    <div class = "container">
 
-        <div id = "content">
-            Login phailled.
-            <a href="/WorldOfFutureDarkness/login.jsp">Try again?</a>
-            <%@ include file="foot.jsp"%>
+        <div id = "content" class = "card content">
+            <div class = "card-header text-center">
+                Login phailled.
+            </div>
+            <div class = "card-body text-center">
+                <br />    <a class = "btn" href="/WorldOfFutureDarkness/login.jsp">Try again?</a>
+                <br />    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
+            </div>
+            <div class = "card-footer text-center">
+                <%@ include file="foot.jsp"%>
+            </div>
         </div>
-
+    </div>
 </body>
 </html>
