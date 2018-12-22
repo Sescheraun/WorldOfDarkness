@@ -10,6 +10,8 @@
 <%@ include file="../head.jsp"%>
 
 <html>
+<script src="/WorldOfFutureDarkness/scripts/subCritterCrud.js" type="application/javascript"></script>
+
 <body>
 
     <div class="container">

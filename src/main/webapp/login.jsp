@@ -28,7 +28,7 @@
                         </div>
 
                         <div class = "col-sm-7 text-left">
-                            <TD><INPUT TYPE="TEXT" id = "j_username" NAME="j_username"></TD>
+                            <INPUT TYPE="TEXT" id = "j_username" NAME="j_username"></TD>
                         </div>
                     </div>
                     <div class = "row" id = "passwordRow">
@@ -38,7 +38,7 @@
                         </div>
 
                         <div class = "col-sm-7 text-left">
-                            <TD><INPUT TYPE="TEXT" id = "j_password" NAME="j_password"></TD>
+                            <INPUT TYPE="password" id = "j_password" NAME="j_password"></TD>
                         </div>
                     </div>
 
