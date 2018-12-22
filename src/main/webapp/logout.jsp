@@ -9,10 +9,10 @@
 <html>
     <%@ include file="head.jsp"%>
     <body>
-        <div class = "container">
+        <div class = "container-fluid">
             <%@ page session="true"%>
 
-            <div id = "content" class = "card content">
+            <div id = "content" class = "col-md-6 col-12 card content" >
 
                 <div class = "card-header text-center">
                     User '<%=request.getRemoteUser()%>':
@@ -22,7 +22,7 @@
                     You are the weakest link, goodbye.
                     <br />
                     <br />
-                    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+                    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
                 </div>
 
                 <div class = "card-footer">
