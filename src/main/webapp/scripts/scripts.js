@@ -7,7 +7,12 @@ $(document).ready( () => {
 
 })
 
+$(window).resize( () => {
 
+    // backgroundFlip();
+
+    centerTheThing();
+})
 
 
 /*********************************************************************
