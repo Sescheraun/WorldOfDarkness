@@ -5,6 +5,19 @@ $(document).ready( () => {
 
     centerTheThing();
 
+    var one = document.getElementById("cpLink"),
+        two = document.getElementById("WoDlink");
+
+    if (one.offsetHeight > two.offsetHeight)
+    {
+        two.style.height = one.offsetHeight+"px";
+    }else{
+        one.style.height = two.offsetHeight+"px";
+    }
+
+    // $("#cpLinkContainer").css("height",$("#WoDlinkContainer").height());
+    // $("#cpLink").css("height",$("#WoDlink").height());
+
 })
 
 $(window).resize( () => {
