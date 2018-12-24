@@ -10,7 +10,7 @@
 <%@ include file="head.jsp"%>
 <body>
     <script>backgroundShift();</script>
-    <div class = "container">
+    <div class = "container-fluid">
 
         <div id = "content" class = "card content">
 

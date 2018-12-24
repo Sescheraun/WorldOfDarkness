@@ -9,7 +9,7 @@
 <html>
 <%@ include file="head.jsp"%>
 <body>
-    <div class = "container">
+    <div class = "container-fluid">
 
         <div id = "content" class = "card content">
             <div class = "card-header text-center">
