@@ -12,6 +12,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sescheraun.worldoffuturedarkness.utilities.Emailer;
+import sescheraun.worldoffuturedarkness.utilities.Icons;
 import sescheraun.worldoffuturedarkness.utilities.PropertiesLoader;
 
 /**
@@ -23,6 +24,7 @@ import sescheraun.worldoffuturedarkness.utilities.PropertiesLoader;
 public class EmailServlet extends HttpServlet implements PropertiesLoader{
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Icons icons = new Icons();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException {
@@ -117,19 +119,19 @@ public class EmailServlet extends HttpServlet implements PropertiesLoader{
         String emailError = "";
 
         if (req.getParameter("senderName").length() <= 1) {
-            emailError += "Your Name is a required field.<br />";
+            emailError += icons.sadface() + " - Your Name is a required field.<br />";
         }
 
         if (req.getParameter("email").length() <= 1) {
-            emailError += "Your Email is a required field.<br />";
+            emailError += icons.sadface() + " - Your Email is a required field.<br />";
         }
 
         if (req.getParameter("subject").length() <= 1) {
-            emailError += "Topic is a required field.<br />";
+            emailError += icons.sadface() + " - Topic is a required field.<br />";
         }
 
         if (req.getParameter("messageBody").length() <= 1) {
-            emailError += "The message body is a required field.";
+            emailError += icons.sadface() + " - The message body is a required field.";
         }
 
         return emailError;

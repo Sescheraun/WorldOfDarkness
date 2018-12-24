@@ -3,7 +3,7 @@
 <%@ include file="head.jsp"%>
 <html>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div id = "content" class = "card content">
                 <div class = "card-header text-center">
                     Error!
@@ -11,10 +11,12 @@
 
                 <div class = "card-body text-center">
                     <h1>${warning}</h1>
-                    <div class = "col-sm-4 text-right float-left">Reason:</div>
-                    <div class = "col-sm-8 text-left float-right">${error}</div>
+                    <br />
+                    <div class = "col-12 col-sm-4 text-sm-right text-left float-sm-left">Reason:</div>
+                    <div class = "col-12 col-sm-8 text-left float-sm-right">${error}</div>
 
-                    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+                    <br>
+                    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
                 </div>
 
                 <div class = "card-footer text-center">

@@ -15,6 +15,7 @@ import java.security.NoSuchAlgorithmException;
 import org.apache.catalina.realm.MessageDigestCredentialHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import sescheraun.worldoffuturedarkness.utilities.Icons;
 
 import java.util.List;
 
@@ -27,6 +28,7 @@ import java.util.List;
 public class NewUserServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Icons icons = new Icons();
 
     /**
      * doGet Handles the post request for the users.
@@ -98,29 +100,29 @@ public class NewUserServlet extends HttpServlet {
 
         //TODO:  put some of this error checking in javascript as well.
         if (req.getParameter("firstName").length() <= 1) {
-            userNameError += "First Name is a required field<br />";
+            userNameError += icons.sadface() + " - First Name is a required field<br />";
 
         }
 
         if (req.getParameter("lastName").length() <= 1) {
-            userNameError += "Last Name is a required field<br />";
+            userNameError += icons.sadface() + " - Last Name is a required field<br />";
 
         }
 
         if (req.getParameter("userName").length() <= 1) {
-            userNameError += "User Name is a required field<br />";
+            userNameError += icons.sadface() + " - User Name is a required field<br />";
 
         }
         if (users.size() >= 1) {
-            userNameError += "The user name '" + req.getParameter("userName") + "' is already in use.<br />";
+            userNameError += icons.sadface() + " - The user name '" + req.getParameter("userName") + "' is already in use.<br />";
 
         }
         if (req.getParameter("EMAIL").length() <= 1) {
-            userNameError += "Email Address is a required field<br />";
+            userNameError += icons.sadface() + " - Email Address is a required field<br />";
 
         }
         if (!req.getParameter("password").equals(req.getParameter("password2")) || req.getParameter("password").length() < 10) {
-            userNameError += "The passwords must match and be at least 10 characters long.<br />";
+            userNameError += icons.sadface() + " - The passwords must match and be at least 10 characters long.<br />";
         }
 
         return userNameError;
