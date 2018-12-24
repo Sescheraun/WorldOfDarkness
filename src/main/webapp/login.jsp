@@ -23,21 +23,21 @@
 
                     <div class = "row" id = "userNameRow">
 
-                        <div class = "col-sm-5 text-right">
+                        <div class = "col-12 col-sm-5 text-right">
                             <label for = "j_username">User Name</label>
                         </div>
 
-                        <div class = "col-sm-7 text-left">
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="TEXT" id = "j_username" NAME="j_username"></TD>
                         </div>
                     </div>
                     <div class = "row" id = "passwordRow">
 
-                        <div class = "col-sm-5 text-right">
+                        <div class = "col-12 col-sm-5 text-right">
                             <label for = "j_password">Password</label>
                         </div>
 
-                        <div class = "col-sm-7 text-left">
+                        <div class = "colo-12 col-sm-7 text-left">
                             <INPUT TYPE="password" id = "j_password" NAME="j_password"></TD>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
                         <TH colspan="2" class = "text-center"><INPUT TYPE="SUBMIT" VALUE="Log In"></TH>
                     </div>
                 </FORM>
-                <br /> <a class = "btn" href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
-                <br /> <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
+                <br /> <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
+                <br /> <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
             </div>
 
             <div class = "card-footer">
