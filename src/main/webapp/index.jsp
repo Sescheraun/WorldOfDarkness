@@ -4,19 +4,21 @@
 <%@ include file="head.jsp"%>
 <html>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div id = "content" class = "card content">
                 <div class = "card-header text-center">
                     This is the launching off point for the page.
                 </div>
+
                 <div class = "card-body text-center">
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/admin/index.jsp">Link to the admin pages</a>
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/gamemaster/index.jsp">Link to the Game Master pages</a>
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/player/index.jsp">Link to the player pages</a>
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/logout.jsp">logout</a>
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
-                    <br />    <a class = "btn" href="/WorldOfFutureDarkness/contact.jsp">Contact The Administration</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/admin/index.jsp">Link to the admin pages</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/gamemaster/index.jsp">Link to the Game Master pages</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/player/index.jsp">Link to the player pages</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/logout.jsp">logout</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/createNewUser.jsp">Create an Account</a>
+                    <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/contact.jsp">Contact The Administration</a>
                 </div>
+
                 <div class = "card-footer text-center">
                     <%@ include file="foot.jsp"%>
                 </div>
