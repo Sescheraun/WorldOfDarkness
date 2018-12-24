@@ -16,8 +16,8 @@
                 Login phailled.
             </div>
             <div class = "card-body text-center">
-                <br />    <a class = "btn" href="/WorldOfFutureDarkness/login.jsp">Try again?</a>
-                <br />    <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
+                <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/login.jsp">Try again?</a>
+                <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return</a>
             </div>
             <div class = "card-footer text-center">
                 <%@ include file="foot.jsp"%>
