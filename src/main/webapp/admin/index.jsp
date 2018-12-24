@@ -20,7 +20,7 @@
                 <br />
                 <%--<a class = "btn" href="Manage-Users.jsp">User Management</a>--%>
                 <%--<br /><br />--%>
-                <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
+                <%@ include file="../homeButton.jsp"%>
                 <br />
             </div>
 

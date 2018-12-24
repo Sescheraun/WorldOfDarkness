@@ -19,8 +19,7 @@
 
         <div class = "card-body text-center">
             The requested resources could not be found.
-            <br />
-            <a class = "btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+            <%@ include file="../homeButton.jsp"%>
         </div>
 
         <div class = "card-footer text-center">

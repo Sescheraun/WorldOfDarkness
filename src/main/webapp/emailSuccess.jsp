@@ -10,7 +10,7 @@
         </div>
         <div class = "card-body text-center">
             <h1>Your Email Was Sent</h1>
-            <br />    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+            <%@ include file="homeButton.jsp"%>
         </div>
         <div class = "card-footer text-center">
             <%@ include file="foot.jsp"%>

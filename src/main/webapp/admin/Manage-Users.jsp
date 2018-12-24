@@ -10,8 +10,8 @@
             </div>
             <div class = "card-body text-center">
                 Future home of an abuse users button.
-                <br /><br />
-                <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
+                <br />
+                <%@ include file="../homeButton.jsp"%>
                 <br />
 
                 <div class = "card-footer text-center">

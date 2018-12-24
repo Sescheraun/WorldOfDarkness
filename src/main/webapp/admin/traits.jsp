@@ -52,6 +52,7 @@
                         </select>
                     </label>
                 </form>
+                <%@ include file="../homeButton.jsp"%>
             </div>
 
             <div class = "card-footer text-center">

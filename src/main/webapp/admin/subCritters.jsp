@@ -267,8 +267,11 @@
                         </div>
                     </div>
                 </div>
+                <%@ include file="../homeButton.jsp"%>
             </div>
-            <%@ include file="../foot.jsp"%>
+            <div class = "card-footer text-center">
+                <%@ include file="../foot.jsp"%>
+            </div>
         </div>
     </div>
 </body>

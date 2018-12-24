@@ -17,8 +17,7 @@
         </tr>
     </c:forEach>
     </table>
-    <br />
-    <a href="/WorldOfFutureDarkness">Link to the home page</a>
+    <%@ include file="../homeButton.jsp"%>
 
     <%@ include file="../foot.jsp"%>
 </div>

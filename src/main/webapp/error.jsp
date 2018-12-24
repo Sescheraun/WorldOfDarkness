@@ -15,8 +15,7 @@
                     <div class = "col-12 col-sm-4 text-sm-right text-left float-sm-left">Reason:</div>
                     <div class = "col-12 col-sm-8 text-left float-sm-right">${error}</div>
 
-                    <br>
-                    <a class = "col-sm-6 col-12 btn" href="/WorldOfFutureDarkness/index.jsp">Return Home</a>
+                    <%@ include file="homeButton.jsp"%>
                 </div>
 
                 <div class = "card-footer text-center">

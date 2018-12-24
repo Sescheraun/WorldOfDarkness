@@ -20,8 +20,7 @@
 
             <div class = "card-body text-center">
                 Players will manage their characters here.
-                <br />
-                <a class = "btn" href="/WorldOfFutureDarkness">Link to the home page</a>
+                <%@ include file="homeButton.jsp"%>
             </div>
 
             <div class = "card-footer text-center">
