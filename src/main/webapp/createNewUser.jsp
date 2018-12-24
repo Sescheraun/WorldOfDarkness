@@ -10,105 +10,103 @@
     <%@ include file="head.jsp"%>
 
     <body>
-    <div class="container">
+    <div class="container-fluid">
         <div id = "content" class = "card content">
             <div class = "card-header text-center">
                 Greetings, welcome to the World of Darkness.
             </div>
             <div class = "card-body text-center">
 
-            <FORM ACTION="addUser"
-                  METHOD="POST">
-                <%--onsubmit="return validateForm()">--%>
+                <FORM ACTION="addUser"
+                      METHOD="POST">
+                    <%--onsubmit="return validateForm()">--%>
+                    <div class = "row" id="firstNameRow">
 
-                <TABLE class = "col-md-12">
-                    <TR>
-                        <TD class = "text-right">
-                            First Name:
-                        </TD>
-                        <TD>
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for = "firstName">First Name:</label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="TEXT"
-                                     id="firstName"
+                                   id="firstName"
                                    NAME="firstName">
-                        </TD>
-                    </TR>
+                        </div>
 
-                    <TR>
-                        <TD class = "text-right">
-                            Last Name:
-                        </TD>
+                    </div>
 
-                        <TD>
+                    <div class = "row" id = "lastNameRow">
+
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for = "lastName">Last Name:</label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="TEXT"
-                                     id="lastName"
+                                   id="lastName"
                                    NAME="lastName">
-                        </TD>
-                    </TR>
+                        </div>
+                    </div>
 
-                    <TR>
-                        <TD class = "text-right">
-                            User Name:
-                        </TD>
+                    <div class = "row" id = "userNameRow">
 
-                        <TD>
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for = "userName">User Name:</label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="TEXT"
                                      id="userName"
                                    NAME="userName">
-                        </TD>
-                    </TR>
+                        </div>
+                    </div>
 
-                    <TR>
-                        <TD class = "text-right">
-                            Email Address:
-                        </TD>
+                    <div class = "row" id = "emailRow">
 
-                        <TD>
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for = "email">Email Address:</label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="TEXT"
-                                     id="email"
+                                   id="email"
                                    NAME="EMAIL">
-                        </TD>
-                    </TR>
-                    <%--<TR><TD>Cell Phone (optional):</TD><TD><INPUT TYPE="TEXT" NAME="cell"></TD></TR>--%>
+                        </div>
+                    </div>
 
-                    <TR>
-                        <TD class = "text-right">
-                            Password:
-                        </TD>
+                    <div class = "row" id = "passwordRow">
 
-                        <TD>
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for="password">Password: </label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="PASSWORD"
-                                     id="password"
+                                   id="password"
                                    NAME="password">
-                        </TD>
-                    </TR>
+                        </div>
+                    </div>
 
-                    <TR>
-                        <TD class = "text-right">
-                            Verify Password:
-                        </TD>
+                    <div class = "row" id = "confirmPasswordRow">
 
-                        <TD>
+                        <div class = "col-12 col-sm-5 text-sm-right text-left">
+                            <label for = "password2">Verify Password:</label>
+                        </div>
+
+                        <div class = "col-12 col-sm-7 text-left">
                             <INPUT TYPE="PASSWORD"
-                                     id="password2"
+                                   id="password2"
                                    NAME="password2">
-                        </TD>
-                    </TR>
+                        </div>
+                    </div>
 
-                    <TR>
-                        <th></th>
-                        <TH class = "text-center">
-                            <INPUT TYPE="SUBMIT"
-                                  VALUE="Sign up" />
-                        </TH>
-                    </TR>
-                </TABLE>
-            </FORM>
+                    <div class = "col-sm-12 text-center">
+                        <INPUT TYPE="SUBMIT"
+                               VALUE="Sign up" />
+                    </div>
 
-            <div id = "errorDisplay" class = "col-med-6 float-right">
-
-            </div>
-
-            </div>
+                </FORM>
+                <%@ include file="homeButton.jsp"%>
+            git add </div>
 
             <div class = "card-footer text-center">
                 <%@ include file="foot.jsp"%>
