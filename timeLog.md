@@ -55,3 +55,6 @@
 | 12.17.2018 | Presentation could have gone a little better. but I got some more stuff working. | 7 hours | one more real day of work |
 | 12.18.2018 | More time squashing bugs that hibernate managed to obscure.  I finally got the read and delete working and started on the update. | 16 hours | Almost Done, not gonna be pretty but will have full crud |
 | 12.19.2018 | Last day, I really am not ready to leave.  Spent a lot of time squashing the last few bugs, and learned a quirk of AJAX.  It calls the document after a call for some reason.  Was loading my on click methods multiple times. | 5 hours | I miss school already. |
+| 12.21.2018 | Styling adjustments to make all the pages look more uniform | 6 hours | The styling is coming along, and I set out a rough plan for the future. |
+| 12.22.2018 | Finished up the css corrections for the most part. | 5 hours | May be more out there, but I'll get them fixed as they creep up |
+ 
