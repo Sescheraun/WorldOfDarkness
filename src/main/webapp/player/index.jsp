@@ -20,7 +20,7 @@
 
             <div class = "card-body text-center">
                 Players will manage their characters here.
-                <%@ include file="homeButton.jsp"%>
+                <%@ include file="../homeButton.jsp"%>
             </div>
 
             <div class = "card-footer text-center">

@@ -1,11 +1,35 @@
+var width = 540;
+var container;
 
 $(document).ready( () => {
+
+    container = document.body.style
 
     backgroundFlip();
 
     centerTheThing();
 
-    var one = document.getElementById("cpLink"),
+    copyrightFix();
+
+
+})
+
+$(window).resize( () => {
+
+    backgroundFlip();
+    centerTheThing();
+    copyrightFix();
+})
+
+/*********************************************************************
+ **                           Copyright Fix                         **
+ *********************************************************************/
+/**
+ * Corrects the different sizes for the copyright buttons
+ */
+copyrightFix = () => {
+    // The following block of code
+    let one = document.getElementById("cpLink"),
         two = document.getElementById("WoDlink");
 
     if (one.offsetHeight > two.offsetHeight)
@@ -14,19 +38,7 @@ $(document).ready( () => {
     }else{
         one.style.height = two.offsetHeight+"px";
     }
-
-    // $("#cpLinkContainer").css("height",$("#WoDlinkContainer").height());
-    // $("#cpLink").css("height",$("#WoDlink").height());
-
-})
-
-$(window).resize( () => {
-
-    // backgroundFlip();
-
-    centerTheThing();
-})
-
+}
 
 /*********************************************************************
  **                         Background flip                         **
@@ -36,25 +48,31 @@ $(window).resize( () => {
  */
 //I need to put code in here to not du this if on mobile.
 backgroundFlip = () => {
-    var backgrounds = [
-        "midnightMeeting.png"
-        , "guyOnGargoyle.jpg"
-        , "futureCity.jpeg"
-        , "foggyDockside.jpg"
-        , "birdsEyeStreet.jpg"
-    ];
+    if( $(this).width() > width ) {
 
-    var picture = parseInt(Math.random() * backgrounds.length);
-    console.log(picture + " " + backgrounds[picture]);
+        var backgrounds = [
+            "midnightMeeting.png"
+            , "guyOnGargoyle.jpg"
+            , "futureCity.jpeg"
+            , "foggyDockside.jpg"
+            , "birdsEyeStreet.jpg"
+        ];
 
-    container = document.body.style;
+        var picture = parseInt(Math.random() * backgrounds.length);
+        console.log(picture + " " + backgrounds[picture]);
 
-    var image = "url('/WorldOfFutureDarkness/images/" + backgrounds[picture] + "')";
+        var image = "url('/WorldOfFutureDarkness/images/" + backgrounds[picture] + "')";
 
-    console.log(image);
+        console.log(image);
 
-    container.backgroundImage = image;
-    container.backgroundRepeat = "noRepeat";
+        container.backgroundImage = image;
+        container.backgroundRepeat = "noRepeat";
+
+    } else {
+        container.backgroundImage = "";
+        container.backgroundColor = "black";
+    }
+
 }
 
 /*********************************************************************
