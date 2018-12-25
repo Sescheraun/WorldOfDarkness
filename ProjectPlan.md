@@ -138,7 +138,7 @@ School is done and so the work above this line is no longer on such a high prior
 Current tasks as I see them...
 
 - [X] Work on the HTML/CSS to give the JSPs a more uniform look
-- [ ] Add java script to and modify CSS to make the project more responsive and mobile friendly. 
+- [X] Add java script to and modify CSS to make the project more responsive and mobile friendly. 
 - [ ] Get enough data into the subCritters section to start populating the traits object.
 - [ ] get some traits in so I can dump them and add them to the test database.
 - [ ] Unit test the traits stuff

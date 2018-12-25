@@ -55,3 +55,4 @@ As I sit here and ponder my AWS database, which is still not working, I feel a l
 The end of the program has arrived,  I kind of feel like it got here too soon.  There was so much left to do and so many things still to learn.  I feel a little intimidated by the lack of a job in the field but i will keep looking and try not to fall into complacency and get comfortable in the job I'm going to have to go back to.
 
 # Week 17:
+Schools been out for just about a week now, I still miss it.  But the project must go on.  The styling and responsiveness updates are pretty much done and next will be digging through books and entering data into the subcritter stuff.  My plan is to do 3 of each category.  So that will will be 3 houses, 3 kith, 3 seemings, 3 clans, 3 tribes ect...  I am still not sure what to enter for exalted, mummies, dragons and such, so they may just get left out of this. 

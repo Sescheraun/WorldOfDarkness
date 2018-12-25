@@ -57,4 +57,4 @@
 | 12.19.2018 | Last day, I really am not ready to leave.  Spent a lot of time squashing the last few bugs, and learned a quirk of AJAX.  It calls the document after a call for some reason.  Was loading my on click methods multiple times. | 5 hours | I miss school already. |
 | 12.21.2018 | Styling adjustments to make all the pages look more uniform | 6 hours | The styling is coming along, and I set out a rough plan for the future. |
 | 12.22.2018 | Finished up the css corrections for the most part. | 5 hours | May be more out there, but I'll get them fixed as they creep up |
- 
+| 12.25.2018 | Added code to make the backgroundFlip function not fire on a smaller viewport. | 1 hour | This should finish out the responsiveness for now.  Time to add sample data to the subCritters, I'm thinking 3 of each for each type. | 
