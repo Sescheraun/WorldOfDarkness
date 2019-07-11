@@ -1,5 +1,7 @@
 # The World of Darkness: 2020
 
+This project is going to be getting a new home soon, it will also likely be undergoing a sever back end refactoring, at least where the database is concerned.
+
 ## Problem Statement
 
 Running games across several environments makes coordinating with players for character creation kind of difficult ain the best of times   A solution to let them make characters in an online format and allow me to approve or discuss those characters when they are submitted would help to alleviate this issue. 
