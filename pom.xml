@@ -44,7 +44,7 @@
     <properties>
         <!-- Use the latest version whenever possible. -->
         <jackson.version>2.9.4</jackson.version>
-        <hibernate.version>5.2.12.Final</hibernate.version>
+        <hibernate.version>5.3.20.Final</hibernate.version>
         <log4j.version>2.10.0</log4j.version>
     </properties>
 
